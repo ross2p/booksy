@@ -17,8 +17,7 @@ public class Main {
         Gson gson = new Gson();
         List<Salon> salons = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader("src/Salon/salon.json"))) {
-            Type type = new TypeToken<List<Salon>>() {
-            }.getType();
+            Type type = new TypeToken<List<Salon>>(){}.getType();
             salons = gson.fromJson(reader, type);
             for (Salon salon : salons) {
                 System.out.println(salon);

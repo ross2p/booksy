@@ -23,7 +23,7 @@ public class Salon {
     @Override
     public String toString() {
         counter++;
-        return "Salon number " + counter +" {" + " Name: " + name + "  ; Employees: " + employees + "  ; Address: "
+        return "Salon number " + counter + " {" + " Name: " + name + "  ; Employees: " + employees + "  ; Address: "
                 + address + "  ; WorkingDays: " + workingDays + " }";
     }
 }
