@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Elegant Harmony",
+    "employees": [
+      "Isabella",
+      "Charlotte",
+      "Harper",
+      "Ruby",
+      "Mila",
+      "Aurora"
+    ],
+    "address": "22 Kennedy St.",
+    "workingDays": [
+      "MONDAY",
+      "TUESDAY",
+      "WEDNESDAY",
+      "THURSDAY",
+      "FRIDAY",
+      "SATURDAY",
+      "SUNDAY"
+    ]
+  },
+  {
+    "name": "Diamond Hands",
+    "employees": [
+      "Lily",
+      "Emilia",
+      "Sophie",
+      "Luna",
+      "Ava"
+    ],
+    "address": "119A Downing St.",
+    "workingDays": [
+      "MONDAY",
+      "TUESDAY",
+      "WEDNESDAY",
+      "THURSDAY",
+      "FRIDAY",
+      "SATURDAY"
+    ]
+  },
+  {
+    "name": "Barber Brothers",
+    "employees": [
+      "Edward ",
+      "Peter",
+      "Paul",
+      "Jack",
+      "Henry"
+    ],
+    "address": "12B Baker St.",
+    "workingDays": [
+      "MONDAY",
+      "TUESDAY",
+      "WEDNESDAY",
+      "THURSDAY",
+      "FRIDAY"
+    ]
+  },
+  {
+    "name": "Trimming Well",
+    "employees": [
+      "Bertie",
+      "Reggie",
+      "Thomas",
+      "Joseph",
+      "Freddie"
+    ],
+    "address": "162 Kensington Rd.",
+    "workingDays": [
+      "MONDAY",
+      "TUESDAY",
+      "WEDNESDAY",
+      "THURSDAY",
+      "FRIDAY"
+    ]
+  },
+  {
+    "name": "Blooming Beauty",
+    "employees": [
+      "Maeve",
+      "Scarlett",
+      "Delilah",
+      "Ayla",
+      "Chloe",
+      "Molly",
+      "Gracie"
+    ],
+    "address": "44A Fleet St.",
+    "workingDays": [
+      "MONDAY",
+      "TUESDAY",
+      "WEDNESDAY",
+      "THURSDAY",
+      "FRIDAY",
+      "SATURDAY",
+      "SUNDAY"
+    ]
+  },
+  {
+    "name": "Enchanted Glint",
+    "employees": [
+      "Lucy",
+      "Jessica",
+      "Darcie",
+      "Elizabeth",
+      "Iris",
+      "Margot",
+      "Lara"
+    ],
+    "address": "92 Covent Garden",
+    "workingDays": [
+      "MONDAY",
+      "TUESDAY",
+      "WEDNESDAY",
+      "THURSDAY",
+      "FRIDAY",
+      "SATURDAY",
+      "SUNDAY"
+    ]
+  },
+  {
+    "name": "Men's Craftsmanship",
+    "employees": [
+      "Theodore",
+      "Finley",
+      "Adam",
+      "Reuben",
+      "Benjamin",
+      "Daniel"
+    ],
+    "address": "87 Whitehall St.",
+    "workingDays": [
+      "MONDAY",
+      "TUESDAY",
+      "WEDNESDAY",
+      "THURSDAY",
+      "FRIDAY",
+      "SATURDAY"
+    ]
+  }
+]

@@ -5,11 +5,13 @@ import java.util.List;
 enum Days {
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
 }
+
 public class Salon {
     final String name;
     List<String> employees;
     final String address;
     final List<Days> workingDays;
+    private static int counter = 0;
 
     public Salon(String name, List<String> employees, String address, List<Days> workingDays) {
         this.name = name;
@@ -20,7 +22,8 @@ public class Salon {
 
     @Override
     public String toString() {
-        return "Salon{" + " Name : " + name + "; Employees : " + employees + "; Address : "
-                + address  + "; WorkingDays : " + workingDays + " }";
+        counter++;
+        return "Salon number " + counter +" {" + " Name: " + name + "  ; Employees: " + employees + "  ; Address: "
+                + address + "  ; WorkingDays: " + workingDays + " }";
     }
 }
