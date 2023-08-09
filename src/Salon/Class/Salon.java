@@ -18,6 +18,6 @@ public class Salon {
 
     @Override
     public String toString() {
-        return "Name: " +name+'\n'+ "Address: " + address +  '\n' +"HoursOfWork: " + HoursOfWork +'\n' + employee;
+        return "Name: " +name+'\n'+ "Address: " + address +  '\n' +"HoursOfWork: " + HoursOfWork + '\n' + employee;
     }
 }
