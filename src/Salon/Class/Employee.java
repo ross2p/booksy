@@ -30,6 +30,10 @@ public class Employee {
 
     @Override
     public String toString() {
-        return fullName + "\n" + services;
+        String servicesToStr = "";
+        for (Services s: services){
+            servicesToStr += "\n\t\t"+ s;
+        }
+        return fullName + servicesToStr;
     }
 }

@@ -18,6 +18,20 @@ public class Salon {
 
     @Override
     public String toString() {
-        return "Name: " +name+'\n'+ "Address: " + address +  '\n' +"HoursOfWork: " + HoursOfWork + '\n' + employee;
+        String HoursOfWorkToStr = "";
+
+        for (Map.Entry<Days, String> entry : HoursOfWork.entrySet()) {
+            HoursOfWorkToStr +="\n\t" +entry.getKey() + "\t" + entry.getValue();
+        }
+
+        String employeeToStr = "";
+        for (Employee e: employee){
+            employeeToStr +="\n\t" +  e.toString();
+        }
+
+        return "Name: " +name+'\n'+
+                "Address: " + address +  '\n' +
+                "HoursOfWork: " + HoursOfWorkToStr + '\n' +
+                "Employee: "+ employeeToStr;
     }
 }
