@@ -1,5 +1,6 @@
 package Salon.Class;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
@@ -27,13 +28,25 @@ public class Employee {
         fullName = new FullName(firstName, lastName);
         this.services = services;
     }
+    public Employee(FullName fullName, Services services) {
+        this.fullName =fullName;
+        this.services = new ArrayList<>();
+        this.services.add(services);
+    }
 
     @Override
     public String toString() {
-        String servicesToStr = "";
-        for (Services s: services){
-            servicesToStr += "\n\t\t"+ s;
+        StringBuilder servicesToStr = new StringBuilder();
+        for (Services s : services) {
+            servicesToStr.append("\n\t\t").append(s);
         }
-        return fullName + servicesToStr;
+        return fullName + servicesToStr.toString();
+    }
+    public FullName getFullName() {
+        return fullName;
+    }
+
+    public List<Services> getServices() {
+        return services;
     }
 }

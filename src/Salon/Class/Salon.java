@@ -1,5 +1,6 @@
 package Salon.Class;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -13,6 +14,13 @@ public class Salon {
         this.name = name;
         this.address = address;
         this.employee = employee;
+        HoursOfWork = hoursOfWork;
+    }
+    public Salon(String name, String address, Employee employee, Map<Days, String> hoursOfWork) {
+        this.name = name;
+        this.address = address;
+        this.employee = new ArrayList<>();
+        this.employee.add(employee);
         HoursOfWork = hoursOfWork;
     }
 
@@ -34,4 +42,22 @@ public class Salon {
                 "HoursOfWork: " + HoursOfWorkToStr + '\n' +
                 "Employee: "+ employeeToStr;
     }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public List<Employee> getEmployee() {
+        return employee;
+    }
+
+    public Map<Days, String> getHoursOfWork() {
+        return HoursOfWork;
+    }
+
 }
