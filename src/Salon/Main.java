@@ -18,7 +18,8 @@ public class Main {
         Gson gson = new Gson();
         List<Salon> salons = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader("src/Salon/salon.json"))) {
-            Type type = new TypeToken<List<Salon>>(){}.getType();
+            Type type = new TypeToken<List<Salon>>() {
+            }.getType();
             salons = gson.fromJson(reader, type);
 
             Scanner scanner = new Scanner(System.in);
@@ -41,7 +42,7 @@ public class Main {
                                 String hour = entry.getKey();
                                 boolean isAvailable = entry.getValue();
 
-                                if(temp == 4){
+                                if (temp == 4) {
                                     System.out.print("\n");
                                     temp = 0;
                                 }

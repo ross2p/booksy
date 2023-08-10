@@ -9,19 +9,22 @@ public class Salon {
     final List<Days> workingDays;
     private static int counter = 0;
 
-    public Salon(String name, List<Employee> employees,String address, List<Days> workingDays) {
+    public Salon(String name, List<Employee> employees, String address, List<Days> workingDays) {
         this.name = name;
         this.employees = employees;
         this.address = address;
         this.workingDays = workingDays;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public List<Employee> getEmployees(){
+
+    public List<Employee> getEmployees() {
         return employees;
     }
-    public String getAddress(){
+
+    public String getAddress() {
         return address;
     }
 
