@@ -1,11 +1,6 @@
 package Salon;
 
 import java.util.List;
-
-enum Days {
-    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
-}
-
 public class Salon {
     final String name;
     List<String> employees;
