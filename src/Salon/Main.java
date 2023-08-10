@@ -15,6 +15,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        Start.start();
         Gson gson = new Gson();
         List<Salon> salons = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader("src/Salon/salon.json"))) {
