@@ -26,10 +26,14 @@ public class Employee {
         return services;
     }
 
-    @Override
     public String toString() {
-        return "Employee{" + "Name: " + name + "  ; Services: " + services + '}';
+        StringBuilder servicesToStr = new StringBuilder();
+        for (ServiceAvailability s : services) {
+            servicesToStr.append("\n\t\t").append(s);
+        }
+        return name + servicesToStr.toString();
     }
+
 
     @Override
     public boolean equals(Object o) {

@@ -24,8 +24,7 @@ public class ListSalon {
 
     ListSalon(String fileName){
         Gson gson = new Gson();
-        List<Salon> list = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader("src/Salon/salon.json"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             Type type = new TypeToken<List<Salon>>() {
             }.getType();
             list = gson.fromJson(reader, type);

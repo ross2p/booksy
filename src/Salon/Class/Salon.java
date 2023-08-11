@@ -6,11 +6,10 @@ import java.util.Map;
 import java.util.Objects;
 
 public class Salon {
-    final String name;
+    private String name;
     List<Employee> employees;
-    final String address;
-    final Map<Days, String> workingDays;           // Map<Days, String> до кожного дня має бути година
-    private static int counter = 0;         // Мені здадється це не треба
+    private String address;
+    private Map<Days, String> workingDays;           // Map<Days, String> до кожного дня має бути година
 
     public Salon(String name, List<Employee> employees, String address, Map<Days, String> workingDays) {
         this.name = name;
@@ -45,10 +44,24 @@ public class Salon {
 
     @Override
     public String toString() {
-        counter++;
-        return "Salon number " + counter + " {" + " Name: " + name + "  ;\nEmployees: " + employees + "  ;\nAddress: "
-                + address + "\nWorkingDays: " + workingDays + " }\n\n";
+        String HoursOfWorkToStr = "";
+
+        for (Map.Entry<Days, String> entry : workingDays.entrySet()) {
+            HoursOfWorkToStr +="\n\t" +entry.getKey() + "\t" + entry.getValue();
+        }
+
+        String employeeToStr = "";
+        for (Employee e: employees){
+            employeeToStr +="\n\t" +  e.toString();
+        }
+
+        return "Name: " +name+'\n'+
+                "Address: " + address +  '\n' +
+                "HoursOfWork: " + HoursOfWorkToStr + '\n' +
+                "Employee: "+ employeeToStr;
     }
+
+
 
     @Override
     public boolean equals(Object o) {

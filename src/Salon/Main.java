@@ -21,6 +21,7 @@ public class Main {
             1. Print all Salon
             2. Search by salon name
             3. Search by service name
+            4. Sorted by name of Salon
             0. Finish
             """;
     public static void main(String[] args) {
@@ -34,6 +35,7 @@ public class Main {
             switch (choice){
                 case 1:{                            //Друк всого List
                     System.out.println(list);
+                    break;
                 }
                 case 2: {                           //Пошук по назві салону
                     System.out.print("Search: ");
