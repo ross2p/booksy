@@ -2,22 +2,23 @@ package Salon.Class;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 
 public class Salon {
     final String name;
     List<Employee> employees;
     final String address;
-    final List<Days> workingDays;           // Map<Days, String> до кожного дня має бути година яка
+    final Map<Days, String> workingDays;           // Map<Days, String> до кожного дня має бути година яка
     private static int counter = 0;         // Мені здадється це не треба
 
-    public Salon(String name, List<Employee> employees, String address, List<Days> workingDays) {
+    public Salon(String name, List<Employee> employees, String address, Map<Days, String> workingDays) {
         this.name = name;
         this.employees = employees;
         this.address = address;
         this.workingDays = workingDays;
     }
-    public Salon(String name, Employee employee, String address, List<Days> workingDays) {
+    public Salon(String name, Employee employee, String address, Map<Days, String> workingDays) {
         this.name = name;
         this.employees = new ArrayList<>();
         employees.add(employee);
@@ -38,7 +39,7 @@ public class Salon {
     }
 
 
-    public List<Days> getWorkingDays() {
+    public Map<Days, String> getWorkingDays() {
         return workingDays;
     }
 
