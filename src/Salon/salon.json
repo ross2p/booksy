@@ -8,12 +8,62 @@
           {
             "serviceName": "Manicure",
             "hoursAvailability": {
-              "9:30": true,
-              "11:30": false,
-              "13:30": true,
-              "15:00": false,
-              "17:00": true,
-              "19:00": false
+              "MONDAY":{
+                "9:30": true,
+                "11:30": false,
+                "13:30": true,
+                "15:00": false,
+                "17:00": true,
+                "19:00": false
+              },
+              "TUESDAY":{
+                "9:30": true,
+                "11:30": false,
+                "13:30": true,
+                "15:00": false,
+                "17:00": true,
+                "19:00": false
+              },
+              "WEDESDAY":{
+                "9:30": true,
+                "11:30": false,
+                "13:30": true,
+                "15:00": false,
+                "17:00": true,
+                "19:00": false
+              },
+              "THURSDAY":{
+                "9:30": true,
+                "11:30": false,
+                "13:30": true,
+                "15:00": false,
+                "17:00": true,
+                "19:00": false
+              },
+              "FRIDAY":{
+                "9:30": true,
+                "11:30": false,
+                "13:30": true,
+                "15:00": false,
+                "17:00": true,
+                "19:00": false
+              },
+              "SATURDAY":{
+                "9:30": true,
+                "11:30": false,
+                "13:30": true,
+                "15:00": false,
+                "17:00": true,
+                "19:00": false
+              },
+              "SUNDAY":{
+                "9:30": true,
+                "11:30": false,
+                "13:30": true,
+                "15:00": false,
+                "17:00": true,
+                "19:00": false
+              }
             }
           }
         ]
@@ -24,15 +74,83 @@
           {
             "serviceName": "Haircut",
             "hoursAvailability": {
-              "9:00": false,
-              "10:20": false,
-              "11:40": false,
-              "14:20": true,
-              "15:40": false,
-              "17:00": true,
-              "18:20": false,
-              "19:40": true,
-              "21:00": false
+              "MONDAY":{
+                "9:00": false,
+                "10:20": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": false,
+                "17:00": true,
+                "18:20": false,
+                "19:40": true,
+                "21:00": false
+              },
+              "TUESDAY":{
+                "9:00": false,
+                "10:20": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": false,
+                "17:00": true,
+                "18:20": false,
+                "19:40": true,
+                "21:00": false
+              },
+              "WEDESDAY":{
+                "9:00": false,
+                "10:20": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": false,
+                "17:00": true,
+                "18:20": false,
+                "19:40": true,
+                "21:00": false
+              },
+              "THURSDAY":{
+                "9:00": false,
+                "10:20": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": false,
+                "17:00": true,
+                "18:20": false,
+                "19:40": true,
+                "21:00": false
+              },
+              "FRIDAY":{
+                "9:00": false,
+                "10:20": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": false,
+                "17:00": true,
+                "18:20": false,
+                "19:40": true,
+                "21:00": false
+              },
+              "SATURDAY":{
+                "9:00": false,
+                "10:20": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": false,
+                "17:00": true,
+                "18:20": false,
+                "19:40": true,
+                "21:00": false
+              },
+              "SUNDAY":{
+                "9:00": false,
+                "10:20": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": false,
+                "17:00": true,
+                "18:20": false,
+                "19:40": true,
+                "21:00": false
+              }
             }
           }
         ]
@@ -43,12 +161,62 @@
           {
             "serviceName": "Massage",
             "hoursAvailability": {
-              "10:30": true,
-              "12:30": true,
-              "14:30": false,
-              "16:30": false,
-              "18:30": false,
-              "20:30": true
+              "MONDAY":{
+                "10:30": true,
+                "12:30": true,
+                "14:30": false,
+                "16:30": false,
+                "18:30": false,
+                "20:30": true
+              },
+              "TUESDAY":{
+                "10:30": true,
+                "12:30": true,
+                "14:30": false,
+                "16:30": false,
+                "18:30": false,
+                "20:30": true
+              },
+              "WEDESDAY":{
+                "10:30": true,
+                "12:30": true,
+                "14:30": false,
+                "16:30": false,
+                "18:30": false,
+                "20:30": true
+              },
+              "THURSDAY":{
+                "10:30": true,
+                "12:30": true,
+                "14:30": false,
+                "16:30": false,
+                "18:30": false,
+                "20:30": true
+              },
+              "FRIDAY":{
+                "10:30": true,
+                "12:30": true,
+                "14:30": false,
+                "16:30": false,
+                "18:30": false,
+                "20:30": true
+              },
+              "SATURDAY":{
+                "10:30": true,
+                "12:30": true,
+                "14:30": false,
+                "16:30": false,
+                "18:30": false,
+                "20:30": true
+              },
+              "SUNDAY":{
+                "10:30": true,
+                "12:30": true,
+                "14:30": false,
+                "16:30": false,
+                "18:30": false,
+                "20:30": true
+              }
             }
           }
         ]
@@ -59,15 +227,83 @@
           {
             "serviceName": "Epilation",
             "hoursAvailability": {
-              "8:30": true,
-              "9:00": true,
-              "10:30": false,
-              "12:00": false,
-              "13:30": true,
-              "15:00": true,
-              "16:30": false,
-              "18:00": true,
-              "19:30": false
+              "MONDAY":{
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false,
+                "18:00": true,
+                "19:30": false
+              },
+              "TUESDAY":{
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false,
+                "18:00": true,
+                "19:30": false
+              },
+              "WEDESDAY":{
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false,
+                "18:00": true,
+                "19:30": false
+              },
+              "THURSDAY":{
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false,
+                "18:00": true,
+                "19:30": false
+              },
+              "FRIDAY":{
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false,
+                "18:00": true,
+                "19:30": false
+              },
+              "SATURDAY":{
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false,
+                "18:00": true,
+                "19:30": false
+              },
+              "SUNDAY":{
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false,
+                "18:00": true,
+                "19:30": false
+              }
             }
           }
         ]
@@ -78,49 +314,321 @@
           {
             "serviceName": "Solariums",
             "hoursAvailability": {
-              "9:00": true,
-              "9:10": true,
-              "9:20": false,
-              "9:30": false,
-              "9:40": true,
-              "9:50": true,
-              "10:00": false,
-              "10:10": true,
-              "10:20": false,
-              "10:30": true,
-              "10:40": false,
-              "10:50": true,
-              "11:00": false,
-              "11:10": true,
-              "11:20": true,
-              "11:30": true,
-              "11:40": true,
-              "11:50": false,
-              "12:00": false,
-              "12:10": true,
-              "12:20": true,
-              "12:30": false,
-              "12:40": false,
-              "12:50": false,
-              "13:00": false,
-              "13:10": true,
-              "13:20": false,
-              "13:30": true,
-              "13:40": false,
-              "13:50": true,
-              "14:00": false,
-              "14:10": true,
-              "14:20": true,
-              "14:30": false,
-              "14:40": true,
-              "14:50": false,
-              "15:00": false,
-              "15:10": true,
-              "15:20": false,
-              "15:30": true,
-              "15:40": false,
-              "15:50": true,
-              "16:00": false
+              "MONDAY":{
+                "9:00": true,
+                "9:10": true,
+                "9:20": false,
+                "9:30": false,
+                "9:40": true,
+                "9:50": true,
+                "10:00": false,
+                "10:10": true,
+                "10:20": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
+                "11:00": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": false,
+                "12:00": false,
+                "12:10": true,
+                "12:20": true,
+                "12:30": false,
+                "12:40": false,
+                "12:50": false,
+                "13:00": false,
+                "13:10": true,
+                "13:20": false,
+                "13:30": true,
+                "13:40": false,
+                "13:50": true,
+                "14:00": false,
+                "14:10": true,
+                "14:20": true,
+                "14:30": false,
+                "14:40": true,
+                "14:50": false,
+                "15:00": false,
+                "15:10": true,
+                "15:20": false,
+                "15:30": true,
+                "15:40": false,
+                "15:50": true,
+                "16:00": false
+              },
+              "TUESDAY":{
+                "9:00": true,
+                "9:10": true,
+                "9:20": false,
+                "9:30": false,
+                "9:40": true,
+                "9:50": true,
+                "10:00": false,
+                "10:10": true,
+                "10:20": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
+                "11:00": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": false,
+                "12:00": false,
+                "12:10": true,
+                "12:20": true,
+                "12:30": false,
+                "12:40": false,
+                "12:50": false,
+                "13:00": false,
+                "13:10": true,
+                "13:20": false,
+                "13:30": true,
+                "13:40": false,
+                "13:50": true,
+                "14:00": false,
+                "14:10": true,
+                "14:20": true,
+                "14:30": false,
+                "14:40": true,
+                "14:50": false,
+                "15:00": false,
+                "15:10": true,
+                "15:20": false,
+                "15:30": true,
+                "15:40": false,
+                "15:50": true,
+                "16:00": false
+              },
+              "WEDESDAY":{
+                "9:00": true,
+                "9:10": true,
+                "9:20": false,
+                "9:30": false,
+                "9:40": true,
+                "9:50": true,
+                "10:00": false,
+                "10:10": true,
+                "10:20": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
+                "11:00": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": false,
+                "12:00": false,
+                "12:10": true,
+                "12:20": true,
+                "12:30": false,
+                "12:40": false,
+                "12:50": false,
+                "13:00": false,
+                "13:10": true,
+                "13:20": false,
+                "13:30": true,
+                "13:40": false,
+                "13:50": true,
+                "14:00": false,
+                "14:10": true,
+                "14:20": true,
+                "14:30": false,
+                "14:40": true,
+                "14:50": false,
+                "15:00": false,
+                "15:10": true,
+                "15:20": false,
+                "15:30": true,
+                "15:40": false,
+                "15:50": true,
+                "16:00": false
+              },
+              "THURSDAY":{
+                "9:00": true,
+                "9:10": true,
+                "9:20": false,
+                "9:30": false,
+                "9:40": true,
+                "9:50": true,
+                "10:00": false,
+                "10:10": true,
+                "10:20": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
+                "11:00": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": false,
+                "12:00": false,
+                "12:10": true,
+                "12:20": true,
+                "12:30": false,
+                "12:40": false,
+                "12:50": false,
+                "13:00": false,
+                "13:10": true,
+                "13:20": false,
+                "13:30": true,
+                "13:40": false,
+                "13:50": true,
+                "14:00": false,
+                "14:10": true,
+                "14:20": true,
+                "14:30": false,
+                "14:40": true,
+                "14:50": false,
+                "15:00": false,
+                "15:10": true,
+                "15:20": false,
+                "15:30": true,
+                "15:40": false,
+                "15:50": true,
+                "16:00": false
+              },
+              "FRIDAY":{
+                "9:00": true,
+                "9:10": true,
+                "9:20": false,
+                "9:30": false,
+                "9:40": true,
+                "9:50": true,
+                "10:00": false,
+                "10:10": true,
+                "10:20": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
+                "11:00": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": false,
+                "12:00": false,
+                "12:10": true,
+                "12:20": true,
+                "12:30": false,
+                "12:40": false,
+                "12:50": false,
+                "13:00": false,
+                "13:10": true,
+                "13:20": false,
+                "13:30": true,
+                "13:40": false,
+                "13:50": true,
+                "14:00": false,
+                "14:10": true,
+                "14:20": true,
+                "14:30": false,
+                "14:40": true,
+                "14:50": false,
+                "15:00": false,
+                "15:10": true,
+                "15:20": false,
+                "15:30": true,
+                "15:40": false,
+                "15:50": true,
+                "16:00": false
+              },
+              "SATURDAY":{
+                "9:00": true,
+                "9:10": true,
+                "9:20": false,
+                "9:30": false,
+                "9:40": true,
+                "9:50": true,
+                "10:00": false,
+                "10:10": true,
+                "10:20": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
+                "11:00": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": false,
+                "12:00": false,
+                "12:10": true,
+                "12:20": true,
+                "12:30": false,
+                "12:40": false,
+                "12:50": false,
+                "13:00": false,
+                "13:10": true,
+                "13:20": false,
+                "13:30": true,
+                "13:40": false,
+                "13:50": true,
+                "14:00": false,
+                "14:10": true,
+                "14:20": true,
+                "14:30": false,
+                "14:40": true,
+                "14:50": false,
+                "15:00": false,
+                "15:10": true,
+                "15:20": false,
+                "15:30": true,
+                "15:40": false,
+                "15:50": true,
+                "16:00": false
+              },
+              "SUNDAY":{
+                "9:00": true,
+                "9:10": true,
+                "9:20": false,
+                "9:30": false,
+                "9:40": true,
+                "9:50": true,
+                "10:00": false,
+                "10:10": true,
+                "10:20": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
+                "11:00": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": false,
+                "12:00": false,
+                "12:10": true,
+                "12:20": true,
+                "12:30": false,
+                "12:40": false,
+                "12:50": false,
+                "13:00": false,
+                "13:10": true,
+                "13:20": false,
+                "13:30": true,
+                "13:40": false,
+                "13:50": true,
+                "14:00": false,
+                "14:10": true,
+                "14:20": true,
+                "14:30": false,
+                "14:40": true,
+                "14:50": false,
+                "15:00": false,
+                "15:10": true,
+                "15:20": false,
+                "15:30": true,
+                "15:40": false,
+                "15:50": true,
+                "16:00": false
+              }
             }
           }
         ]
@@ -131,1113 +639,97 @@
           {
             "serviceName": "Pedicure",
             "hoursAvailability": {
-              "8:30": false,
-              "9:30": true,
-              "10:30": true,
-              "11:30": false,
-              "13:30": true,
-              "14:30": false,
-              "15:30": true,
-              "16:30": true,
-              "17:30": false
+              "MONDAY":{
+                "8:30": false,
+                "9:30": true,
+                "10:30": true,
+                "11:30": false,
+                "13:30": true,
+                "14:30": false,
+                "15:30": true,
+                "16:30": true,
+                "17:30": false
+              },
+              "TUESDAY":{
+                "8:30": false,
+                "9:30": true,
+                "10:30": true,
+                "11:30": false,
+                "13:30": true,
+                "14:30": false,
+                "15:30": true,
+                "16:30": true,
+                "17:30": false
+              },
+              "WEDESDAY":{
+                "8:30": false,
+                "9:30": true,
+                "10:30": true,
+                "11:30": false,
+                "13:30": true,
+                "14:30": false,
+                "15:30": true,
+                "16:30": true,
+                "17:30": false
+                },
+              "THURSDAY":{
+                "8:30": false,
+                "9:30": true,
+                "10:30": true,
+                "11:30": false,
+                "13:30": true,
+                "14:30": false,
+                "15:30": true,
+                "16:30": true,
+                "17:30": false
+              },
+              "FRIDAY":{
+                "8:30": false,
+                "9:30": true,
+                "10:30": true,
+                "11:30": false,
+                "13:30": true,
+                "14:30": false,
+                "15:30": true,
+                "16:30": true,
+                "17:30": false
+              },
+              "SATURDAY":{
+                "8:30": false,
+                "9:30": true,
+                "10:30": true,
+                "11:30": false,
+                "13:30": true,
+                "14:30": false,
+                "15:30": true,
+                "16:30": true,
+                "17:30": false
+              },
+              "SUNDAY":{
+                "8:30": false,
+                "9:30": true,
+                "10:30": true,
+                "11:30": false,
+                "13:30": true,
+                "14:30": false,
+                "15:30": true,
+                "16:30": true,
+                "17:30": false
+              }
             }
           }
         ]
       }
     ],
     "address": "22 Kennedy St.",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY",
-      "SATURDAY",
-      "SUNDAY"
-    ]
-  },
-  {
-    "name": "Diamond Hands",
-    "employees": [
-      {
-        "name": "Ava",
-        "services": [
-          {
-            "serviceName": "Manicure",
-            "hoursAvailability": {
-              "10:30": false,
-              "12:30": true,
-              "14:30": true,
-              "16:00": false,
-              "18:00": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Maeve",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": false,
-              "21:00": true
-            }
-          }
-        ]
-      },
-      {
-        "name": "Scarlett",
-        "services": [
-          {
-            "serviceName": "Massage",
-            "hoursAvailability": {
-              "11:30": true,
-              "13:30": false,
-              "15:30": true,
-              "17:30": true,
-              "19:30": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Delilah",
-        "services": [
-          {
-            "serviceName": "Epilation",
-            "hoursAvailability": {
-              "8:30": false,
-              "9:00": false,
-              "10:30": true,
-              "12:00": false,
-              "13:30": false,
-              "15:00": true,
-              "16:30": true,
-              "18:00": false,
-              "19:30": true
-            }
-          }
-        ]
-      },
-      {
-        "name": "Ayla",
-        "services": [
-          {
-            "serviceName": "Solariums",
-            "hoursAvailability": {
-              "9:00": false,
-              "9:10": false,
-              "9:20": true,
-              "9:30": true,
-              "9:40": false,
-              "9:50": false,
-              "10:00": true,
-              "10:10": false,
-              "10:20": true,
-              "10:30": false,
-              "10:40": true,
-              "10:50": false,
-              "11:00": true,
-              "11:10": false,
-              "11:20": false,
-              "11:30": false,
-              "11:40": false,
-              "11:50": false,
-              "12:00": true,
-              "12:10": false,
-              "12:20": true,
-              "12:30": false,
-              "12:40": true,
-              "12:50": true,
-              "13:00": false,
-              "13:10": true,
-              "13:20": true,
-              "13:30": false,
-              "13:40": false,
-              "13:50": false,
-              "14:00": false,
-              "14:10": true,
-              "14:20": false,
-              "14:30": true,
-              "14:40": false,
-              "14:50": true,
-              "15:00": false,
-              "15:10": true,
-              "15:20": false,
-              "15:30": true,
-              "15:40": true,
-              "15:50": false,
-              "16:00": true
-            }
-          }
-        ]
-      },
-      {
-        "name": "Chloe",
-        "services": [
-          {
-            "serviceName": "Pedicure",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:00": false,
-              "11:00": false,
-              "12:00": true,
-              "13:00": false,
-              "14:00": true,
-              "15:00": false,
-              "16:00": false,
-              "17:00": true,
-              "18:00": false
-            }
-          }
-        ]
+    "workingDays": {
+      "MONDAY": "8:00-22:00",
+      "TUESDAY": "8:00-22:00",
+      "WEDNESDAY": "8:00-22:00",
+      "THURSDAY": "8:00-22:00",
+      "FRIDAY": "8:00-22:00",
+      "SATURDAY": "8:00-22:00",
+      "SUNDAY": "8:00-22:00"
       }
-    ],
-    "address": "119A Downing St.",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY",
-      "SATURDAY"
-    ]
-  },
-  {
-    "name": "Barber Brothers",
-    "employees": [
-      {
-        "name": "Edward",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "10:30": true,
-              "12:00": false,
-              "13:30": false,
-              "15:00": true,
-              "16:30": false,
-              "18:00": true,
-              "19:30": false
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "10:30": true,
-              "12:00": false,
-              "13:30": false,
-              "15:00": true,
-              "16:30": false,
-              "18:00": true,
-              "19:30": false
-            }
-          },
-          {
-            "serviceName": "Hair styling",
-            "hoursAvailability": {
-              "10:30": true,
-              "11:00": true,
-              "11:30": true,
-              "12:00": false,
-              "12:30": false,
-              "13:00": false,
-              "13:30": false,
-              "14:00": false,
-              "14:30": false,
-              "15:00": true,
-              "15:30": true,
-              "16:00": true,
-              "16:30": false,
-              "17:00": false,
-              "17:30": false,
-              "18:00": true,
-              "18:30": true,
-              "19:00": true,
-              "19:30": false,
-              "20:00": false,
-              "20:30": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Peter",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "10:00": false,
-              "11:30": true,
-              "13:00": false,
-              "14:30": true,
-              "16:00": false,
-              "17:30": true,
-              "19:00": false
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "10:00": false,
-              "11:30": true,
-              "13:00": false,
-              "14:30": true,
-              "16:00": false,
-              "17:30": true,
-              "19:00": false
-            }
-          },
-          {
-            "serviceName": "Hair styling",
-            "hoursAvailability": {
-              "10:00": false,
-              "10:30": false,
-              "11:00": false,
-              "11:30": true,
-              "12:00": true,
-              "12:30": true,
-              "13:00": false,
-              "13:30": false,
-              "14:00": false,
-              "14:30": true,
-              "15:00": true,
-              "15:30": true,
-              "16:00": false,
-              "16:30": false,
-              "17:00": false,
-              "17:30": true,
-              "18:00": true,
-              "18:30": true,
-              "19:00": false,
-              "19:30": false,
-              "20:00": false,
-              "20:30": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Jack",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "10:00": true,
-              "11:30": true,
-              "13:00": false,
-              "14:30": true,
-              "16:00": false,
-              "17:30": false,
-              "19:00": true
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "10:00": true,
-              "11:30": true,
-              "13:00": false,
-              "14:30": true,
-              "16:00": false,
-              "17:30": false,
-              "19:00": true
-            }
-          },
-          {
-            "serviceName": "Hair styling",
-            "hoursAvailability": {
-              "10:00": true,
-              "10:30": true,
-              "11:00": true,
-              "11:30": true,
-              "12:00": true,
-              "12:30": true,
-              "13:00": false,
-              "13:30": false,
-              "14:00": false,
-              "14:30": true,
-              "15:00": true,
-              "15:30": true,
-              "16:00": false,
-              "16:30": false,
-              "17:00": false,
-              "17:30": false,
-              "18:00": false,
-              "18:30": false,
-              "19:00": true,
-              "19:30": true,
-              "20:00": true,
-              "20:30": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "12B Baker St.",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY"
-    ]
-  },
-  {
-    "name": "Trimming Well",
-    "employees": [
-      {
-        "name": "Henry",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:30": false,
-              "12:00": false,
-              "13:30": true,
-              "15:00": false,
-              "16:30": true
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:30": false,
-              "12:00": false,
-              "13:30": true,
-              "15:00": false,
-              "16:30": true
-            }
-          },
-          {
-            "serviceName": "Hair styling",
-            "hoursAvailability": {
-              "9:00": false,
-              "9:30": false,
-              "10:30": false,
-              "11:00": false,
-              "11:30": false,
-              "12:00": false,
-              "12:30": false,
-              "13:00": false,
-              "13:30": true,
-              "14:00": true,
-              "14:30": true,
-              "15:00": false,
-              "15:30": false,
-              "16:00": false,
-              "16:30": true,
-              "17:00": true,
-              "17:30": true
-            }
-          }
-        ]
-      },
-      {
-        "name": "Thomas",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:30": true,
-              "12:00": false,
-              "13:30": true,
-              "15:00": true,
-              "16:30": false
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:30": true,
-              "12:00": false,
-              "13:30": true,
-              "15:00": true,
-              "16:30": false
-            }
-          },
-          {
-            "serviceName": "Hair styling",
-            "hoursAvailability": {
-              "9:00": true,
-              "9:30": true,
-              "10:30": true,
-              "11:00": true,
-              "11:30": true,
-              "12:00": false,
-              "12:30": false,
-              "13:00": false,
-              "13:30": true,
-              "14:00": true,
-              "14:30": true,
-              "15:00": true,
-              "15:30": true,
-              "16:00": true,
-              "16:30": false,
-              "17:00": false,
-              "17:30": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Joseph",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": false,
-              "11:30": false,
-              "13:00": false,
-              "14:30": true
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "10:00": false,
-              "11:30": false,
-              "13:00": false,
-              "14:30": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "162 Kensington Rd.",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY"
-    ]
-  },
-  {
-    "name": "Blooming Beauty",
-    "employees": [
-      {
-        "name": "Lara",
-        "services": [
-          {
-            "serviceName": "Manicure",
-            "hoursAvailability": {
-              "9:00": false,
-              "11:30": true,
-              "13:30": false,
-              "15:00": false,
-              "17:00": false,
-              "19:00": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Elizabeth",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": true,
-              "21:00": true
-            }
-          }
-        ]
-      },
-      {
-        "name": "Margot",
-        "services": [
-          {
-            "serviceName": "Massage",
-            "hoursAvailability": {
-              "10:30": false,
-              "12:30": false,
-              "14:30": true,
-              "16:30": true,
-              "18:30": true,
-              "20:30": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Lara",
-        "services": [
-          {
-            "serviceName": "Epilation",
-            "hoursAvailability": {
-              "8:30": false,
-              "9:00": false,
-              "10:30": true,
-              "12:00": true,
-              "13:30": false,
-              "15:00": true,
-              "16:30": false,
-              "18:00": false,
-              "19:30": true
-            }
-          }
-        ]
-      },
-      {
-        "name": "Charlotte",
-        "services": [
-          {
-            "serviceName": "Pedicure",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:00": true,
-              "11:00": true,
-              "12:00": true,
-              "13:00": false,
-              "14:00": true,
-              "15:00": false,
-              "16:00": false,
-              "17:00": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "44A Fleet St.",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY",
-      "SATURDAY",
-      "SUNDAY"
-    ]
-  },
-  {
-    "name": "Classic Cuts",
-    "employees": [
-      {
-        "name": "James",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:30": true,
-              "12:00": false,
-              "13:30": true,
-              "15:00": true,
-              "16:30": false
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:30": true,
-              "12:00": false,
-              "13:30": true,
-              "15:00": true,
-              "16:30": false
-            }
-          },
-          {
-            "serviceName": "Mustache styling",
-            "hoursAvailability": {
-              "9:30": true,
-              "11:00": true,
-              "12:30": false,
-              "14:00": true,
-              "15:30": true,
-              "17:00": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Robert",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "10:00": false,
-              "11:30": true,
-              "13:00": true,
-              "14:30": true,
-              "16:00": false,
-              "17:30": true
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "10:00": false,
-              "11:30": true,
-              "13:00": true,
-              "14:30": true,
-              "16:00": false,
-              "17:30": true
-            }
-          },
-          {
-            "serviceName": "Mustache styling",
-            "hoursAvailability": {
-              "10:30": false,
-              "12:00": true,
-              "13:30": true,
-              "15:00": true,
-              "16:30": false,
-              "18:00": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "32 Oxford Street",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY"
-    ]
-  },
-  {
-    "name": "Enchanted Glint",
-    "employees": [
-      {
-        "name": "Isabella",
-        "services": [
-          {
-            "serviceName": "Manicure",
-            "hoursAvailability": {
-              "8:30": true,
-              "9:30": true,
-              "10:30": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Charlotte",
-        "services": [
-          {
-            "serviceName": "Pedicure",
-            "hoursAvailability": {
-              "8:30": false,
-              "9:30": true,
-              "10:30": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "92 Covent Garden",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY",
-      "SATURDAY",
-      "SUNDAY"
-    ]
-  },
-  {
-    "name": "The Gentleman's Den",
-    "employees": [
-      {
-        "name": "William",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:30": true,
-              "12:00": false,
-              "13:30": true,
-              "15:00": true,
-              "16:30": false
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "9:00": true,
-              "10:30": true,
-              "12:00": false,
-              "13:30": true,
-              "15:00": true,
-              "16:30": false
-            }
-          },
-          {
-            "serviceName": "Shave",
-            "hoursAvailability": {
-              "9:30": true,
-              "11:00": true,
-              "12:30": false,
-              "14:00": true,
-              "15:30": true,
-              "17:00": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Thomas",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "10:00": false,
-              "11:30": true,
-              "13:00": true,
-              "14:30": true,
-              "16:00": false,
-              "17:30": true
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "10:00": false,
-              "11:30": true,
-              "13:00": true,
-              "14:30": true,
-              "16:00": false,
-              "17:30": true
-            }
-          },
-          {
-            "serviceName": "Shave",
-            "hoursAvailability": {
-              "10:30": false,
-              "12:00": true,
-              "13:30": true,
-              "15:00": true,
-              "16:30": false,
-              "18:00": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "87 Savile Row",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY"
-    ]
-  },
-  {
-    "name": "La Femme Beauty Spa",
-    "employees": [
-      {
-        "name": "Olivia",
-        "services": [
-          {
-            "serviceName": "Manicure",
-            "hoursAvailability": {
-              "9:00": true,
-              "11:30": true,
-              "13:30": false,
-              "15:00": false,
-              "17:00": false,
-              "19:00": false
-            }
-          },
-          {
-            "serviceName": "Pedicure",
-            "hoursAvailability": {
-              "9:00": true,
-              "11:30": true,
-              "13:30": false,
-              "15:00": false,
-              "17:00": false,
-              "19:00": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Sophia",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": true,
-              "21:00": true
-            }
-          },
-          {
-            "serviceName": "Hair coloring",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": true,
-              "21:00": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "133 Blossom Lane",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY"
-    ]
-  },
-  {
-    "name": "Beauty Haven",
-    "employees": [
-      {
-        "name": "Emma",
-        "services": [
-          {
-            "serviceName": "Manicure",
-            "hoursAvailability": {
-              "9:00": true,
-              "11:30": true,
-              "13:30": false,
-              "15:00": false,
-              "17:00": false,
-              "19:00": false
-            }
-          },
-          {
-            "serviceName": "Pedicure",
-            "hoursAvailability": {
-              "9:00": true,
-              "11:30": true,
-              "13:30": false,
-              "15:00": false,
-              "17:00": false,
-              "19:00": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Isabella",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": true,
-              "21:00": true
-            }
-          },
-          {
-            "serviceName": "Hair styling",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": true,
-              "21:00": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "456 Glamour Avenue",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY"
-    ]
-  },
-  {
-    "name": "Chic Beauty Lounge",
-    "employees": [
-      {
-        "name": "Ava",
-        "services": [
-          {
-            "serviceName": "Manicure",
-            "hoursAvailability": {
-              "9:00": true,
-              "11:30": true,
-              "13:30": false,
-              "15:00": false,
-              "17:00": false,
-              "19:00": false
-            }
-          },
-          {
-            "serviceName": "Pedicure",
-            "hoursAvailability": {
-              "9:00": true,
-              "11:30": true,
-              "13:30": false,
-              "15:00": false,
-              "17:00": false,
-              "19:00": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Ella",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": true,
-              "21:00": true
-            }
-          },
-          {
-            "serviceName": "Hair coloring",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": true,
-              "21:00": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "789 Elegance Street",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY"
-    ]
-  },
-  {
-    "name": "Rugged Gents Barbershop",
-    "employees": [
-      {
-        "name": "Max",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": true,
-              "11:30": true,
-              "13:30": false,
-              "15:00": false,
-              "17:00": false,
-              "19:00": false
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "9:00": true,
-              "11:30": true,
-              "13:30": false,
-              "15:00": false,
-              "17:00": false,
-              "19:00": false
-            }
-          }
-        ]
-      },
-      {
-        "name": "Daniel",
-        "services": [
-          {
-            "serviceName": "Haircut",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": true,
-              "21:00": true
-            }
-          },
-          {
-            "serviceName": "Beard trimming",
-            "hoursAvailability": {
-              "9:00": false,
-              "10:20": true,
-              "11:40": true,
-              "14:20": false,
-              "15:40": false,
-              "17:00": false,
-              "18:20": true,
-              "19:40": true,
-              "21:00": true
-            }
-          }
-        ]
-      }
-    ],
-    "address": "87 Whitehall St.",
-    "workingDays": [
-      "MONDAY",
-      "TUESDAY",
-      "WEDNESDAY",
-      "THURSDAY",
-      "FRIDAY"
-    ]
   }
 ]

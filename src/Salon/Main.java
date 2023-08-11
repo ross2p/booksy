@@ -35,6 +35,7 @@ public class Main {
             switch (choice){
                 case 1:{                            //Друк всого List
                     System.out.println(list);
+                    break;
                 }
                 case 2: {                           //Пошук по назві салону
                     System.out.print("Search: ");

@@ -11,6 +11,24 @@ public class ServiceAvailability {
         this.hoursAvailability = hoursAvailability;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder reservationToStr = new StringBuilder();
+
+        for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
+            Days day = entry.getKey();
+            Map<String, Boolean> roomMap = entry.getValue();
+            reservationToStr.append("\n\t\t\t").append(day).append("\n\t\t\t\t");
+
+            for (Map.Entry<String, Boolean> hourEntry : roomMap.entrySet()) {
+                String hour = hourEntry.getKey();
+                Boolean isReserved = hourEntry.getValue();
+                reservationToStr.append("[").append(hour).append(": ").append(Boolean.toString(isReserved)).append("]");
+            }
+        }
+        return serviceName + reservationToStr.toString();
+    }
+
     public String getServiceName() {
         return serviceName;
     }
