@@ -21,6 +21,7 @@ public class Main {
             1. Print all Salon
             2. Search by salon name
             3. Search by service name
+            4. Sorted by name of Salon
             0. Finish
             """;
     public static void main(String[] args) {
