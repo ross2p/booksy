@@ -1,5 +1,6 @@
 package Salon.Class;
 
+import java.time.LocalTime;
 import java.util.Map;
 
 public class ServiceAvailability {
@@ -18,12 +19,24 @@ public class ServiceAvailability {
         for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
             Days day = entry.getKey();
             Map<String, Boolean> roomMap = entry.getValue();
+            int temp = 0;
             reservationToStr.append("\n\t\t\t").append(day).append("\n\t\t\t\t");
-
             for (Map.Entry<String, Boolean> hourEntry : roomMap.entrySet()) {
                 String hour = hourEntry.getKey();
                 Boolean isReserved = hourEntry.getValue();
-                reservationToStr.append("[").append(hour).append(": ").append(Boolean.toString(isReserved)).append("]");
+                if(temp == 4){
+                    reservationToStr.append("\n\t\t\t\t");
+                    temp = 0;
+
+                }
+                temp++;
+                if(isReserved){
+
+                    reservationToStr.append("[").append("\u001B[32m"+(hour)+"\u001B[0m").append("]\t");
+                }
+                else {
+                    reservationToStr.append("[").append("\u001B[31m"+(hour)+"\u001B[0m").append("]\t");
+                }
             }
         }
         return serviceName + reservationToStr.toString();
@@ -42,30 +55,18 @@ public class ServiceAvailability {
             Days newDay = newEntry.getKey();
             Map<String, Boolean> newInnerMap = newEntry.getValue();
 
-            for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
-                Days day = entry.getKey();
-                Map<String, Boolean> innerMap = entry.getValue();
+            if (hoursAvailability.containsKey(newDay)) {
+                Map<String, Boolean> innerMap = hoursAvailability.get(newDay);
 
-                if (newDay == day) {
-                    for (Map.Entry<String, Boolean> newInnerEntry : newInnerMap.entrySet()) {
-                        String newKey = newInnerEntry.getKey();
-                        Boolean newValue = newInnerEntry.getValue();
-                        boolean isRepeated = false;
-                        for (Map.Entry<String, Boolean> innerEntry : innerMap.entrySet()) {
-                            String key = innerEntry.getKey();
-                            Boolean value = innerEntry.getValue();
-                            if (key.equals(newKey)) {
-                               isRepeated = true;
-                               value = newValue;
-                            }
-                        }
-                        if (!isRepeated){
-                            innerMap.put(newKey,newValue);
-                        }
+                for (Map.Entry<String, Boolean> newInnerEntry : newInnerMap.entrySet()) {
+                    String newKey = newInnerEntry.getKey();
+                    Boolean newValue = newInnerEntry.getValue();
+
+                    if (!innerMap.containsKey(newKey)) {
+                        innerMap.put(newKey, newValue);
                     }
                 }
             }
         }
     }
-
 }

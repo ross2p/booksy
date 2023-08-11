@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Start {
     public static void start(){
-        String start = """
+        String start = "\u001B[34m"+"""
                  .oooooo..o           oooo                       \s
                 d8P'    `Y8           `888                       \s
                 Y88bo.       .oooo.    888   .ooooo.  ooo. .oo.  \s
@@ -15,7 +15,7 @@ public class Start {
                                                                  \s
                 Ross&Lev company                                 \s
                                                                  \s
-                """;
+                """+"\u001B[0m";
         System.out.println("\n"+start);
         Scanner sc = new Scanner(System.in);
         sc.nextLine();
