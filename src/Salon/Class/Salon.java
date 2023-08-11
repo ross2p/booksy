@@ -17,6 +17,7 @@ public class Salon {
         this.address = address;
         this.workingDays = workingDays;
     }
+
     public Salon(String name, Employee employee, String address, Map<Days, String> workingDays) {
         this.name = name;
         this.employees = new ArrayList<>();
@@ -44,23 +45,26 @@ public class Salon {
 
     @Override
     public String toString() {
-        String HoursOfWorkToStr = "";
+        StringBuilder HoursOfWorkToStr = new StringBuilder();
+        HoursOfWorkToStr.append(String.format("\n+------------+-------------+"));
+        HoursOfWorkToStr.append(String.format("\n| %-10s | %-11s |", "Day", "HoursOfWork"));
+        HoursOfWorkToStr.append(String.format("\n+------------+-------------+"));
 
         for (Map.Entry<Days, String> entry : workingDays.entrySet()) {
-            HoursOfWorkToStr +="\n\t" +entry.getKey() + "\t" + entry.getValue();
+            HoursOfWorkToStr.append(String.format("\n| %-10s | %-11s |", entry.getKey(), entry.getValue()));
         }
+        HoursOfWorkToStr.append(String.format("\n+------------+-------------+"));
 
         String employeeToStr = "";
-        for (Employee e: employees){
-            employeeToStr +="\n\t" +  e.toString();
+        for (Employee e : employees) {
+            employeeToStr += "\n\t" + e.toString();
         }
 
-        return "Name: " +name+'\n'+
-                "Address: " + address +  '\n' +
-                "HoursOfWork: " + HoursOfWorkToStr + '\n' +
-                "Employee: "+ employeeToStr;
+        return "Name: " + name + '\n' +
+                "Address: " + address +  /*'\n' +
+                "HoursOfWork: " + */ HoursOfWorkToStr.toString() + '\n' +
+                "Employee: " + employeeToStr;
     }
-
 
 
     @Override
@@ -75,16 +79,16 @@ public class Salon {
         return Objects.hash(name, address, workingDays);
     }
 
-    public void  addEmployees(Salon newElement){
-        for (Employee newEmployee: newElement.getEmployees()){
+    public void addEmployees(Salon newElement) {
+        for (Employee newEmployee : newElement.getEmployees()) {
             boolean isRepeated = false;
-            for (Employee e:employees){
-                if (e.equals(newEmployee)){
-                        isRepeated = true;
-                        e.addServices(newEmployee.getServices());
+            for (Employee e : employees) {
+                if (e.equals(newEmployee)) {
+                    isRepeated = true;
+                    e.addServices(newEmployee.getServices());
                 }
             }
-            if (!isRepeated){
+            if (!isRepeated) {
                 employees.add(newEmployee);
             }
         }
