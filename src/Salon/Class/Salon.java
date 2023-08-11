@@ -9,7 +9,7 @@ public class Salon {
     final String name;
     List<Employee> employees;
     final String address;
-    final Map<Days, String> workingDays;           // Map<Days, String> до кожного дня має бути година яка
+    final Map<Days, String> workingDays;           // Map<Days, String> до кожного дня має бути година
     private static int counter = 0;         // Мені здадється це не треба
 
     public Salon(String name, List<Employee> employees, String address, Map<Days, String> workingDays) {
