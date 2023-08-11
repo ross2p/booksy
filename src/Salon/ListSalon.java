@@ -13,6 +13,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ListSalon {
@@ -83,5 +85,16 @@ public class ListSalon {
         }
 
         return listByServices;
+    }
+
+    public void sortBySalonName(){
+        Collections.sort(list, new SortBySalonName());
+    }
+
+    private class SortBySalonName implements Comparator<Salon> {
+        @Override
+        public int compare(Salon s1, Salon s2) {
+            return s1.getName().compareTo(s2.getName());
+        }
     }
 }
