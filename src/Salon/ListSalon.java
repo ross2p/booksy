@@ -12,17 +12,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class ListSalon {
-    List<Salon> list = new ArrayList<>();
+     List<Salon> list = new ArrayList<>();
 
     ListSalon(){}
 
-    ListSalon(String fileName){
+    ListSalon(String fileName) {
         Gson gson = new Gson();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             Type type = new TypeToken<List<Salon>>() {
@@ -37,7 +34,6 @@ public class ListSalon {
         }
     }
     public void add(Salon newElement){
-        //Перевірка
         boolean isRepeated = false;
         for (Salon s: list){
             if (this.equals(newElement)) {
@@ -59,12 +55,12 @@ public class ListSalon {
         return listToStr;
     }
 
-    public ListSalon searchByNameSalon(String name){
+    public ListSalon searchByNameSalon(String name) {
         ListSalon listByName = new ListSalon();
-        for (Salon s: list){
-           if (s.getName().toUpperCase().contains(name.toUpperCase())){
-               listByName.add(s);
-           }
+        for (Salon s : list) {
+            if (s.getName().toUpperCase().contains(name.toUpperCase())) {
+                listByName.add(s);
+            }
         }
         return listByName;
     }

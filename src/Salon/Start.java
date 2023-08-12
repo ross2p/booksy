@@ -18,7 +18,7 @@ public class Start {
                 ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝   ╚═╝                       \s
                 Lev&Ross project                                                       \s
                 """+"\u001B[0m";
-        System.out.println("\n"+start);
+        System.out.println(start);
         sc.nextLine();
     }
 }

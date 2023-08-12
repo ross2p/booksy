@@ -15,29 +15,36 @@ public class Main {
         Start.start();
         ListSalon list = new ListSalon("src/Salon/salon.json");
         int choice;
-        do{
-
+        do {
             System.out.println(menu);
             choice = sc.nextInt();
-            switch (choice){
-                case 1:{                            //Друк всого List
+            switch (choice) {
+                case 1: {                            //Друк всого List
                     System.out.println(list);
                     break;
                 }
                 case 2: {                           //Пошук по назві салону
+                    sc.nextLine();
                     System.out.print("Search: ");
                     String searchNameSalon = sc.nextLine();
-                    list.searchByNameSalon(searchNameSalon);
+                    ListSalon resultNameSalon = list.searchByNameSalon(searchNameSalon);
+
+                    System.out.println(resultNameSalon);
 
                     break;
                 }
-                case 3:{                            //Пошук по послугам
+                case 3: {
+                    sc.nextLine();
                     System.out.print("Search: ");
                     String searchNameServices = sc.nextLine();
-                    list.searchByNameServices(searchNameServices);
+                    ListSalon resultNameServices = list.searchByNameServices(searchNameServices);
+
+                    System.out.println(resultNameServices);
+
                     break;
                 }
-                case 4:{                             //Сортування
+                case 4: {
+                    System.out.print("All salons sorted: \n");
                     list.sortBySalonName();
                     System.out.println(list);
                 }

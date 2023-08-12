@@ -9,7 +9,7 @@
             "serviceName": "Manicure",
             "hoursAvailability": {
               "MONDAY": {
-                "9:30": true,
+                "9:30": false,
                 "11:30": false,
                 "13:30": true,
                 "15:00": false,

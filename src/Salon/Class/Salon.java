@@ -55,15 +55,9 @@ public class Salon {
         }
         HoursOfWorkToStr.append(String.format("\n+------------+-------------+"));
 
-        String employeeToStr = "";
-        for (Employee e : employees) {
-            employeeToStr += "\n\t" + e.toString();
-        }
-
-        return "Name: " + name + '\n' +
+        return "\nName: " + name + '\n' +
                 "Address: " + address +  /*'\n' +
-                "HoursOfWork: " + */ HoursOfWorkToStr.toString() + '\n' +
-                "Employee: " + employeeToStr;
+                "HoursOfWork: " + */ HoursOfWorkToStr.toString() + '\n' ;
     }
 
 
@@ -72,11 +66,6 @@ public class Salon {
         if (this == o) return true;
         if (!(o instanceof Salon salon)) return false;
         return Objects.equals(name, salon.name) && Objects.equals(address, salon.address) && Objects.equals(workingDays, salon.workingDays);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, address, workingDays);
     }
 
     public void addEmployees(Salon newElement) {
