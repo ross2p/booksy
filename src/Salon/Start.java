@@ -19,10 +19,7 @@ public class Start {
                 Lev&Ross project                                                       \s
                 """+"\u001B[0m";
         System.out.println(start);
-        /*System.out.println("Do you want to continue?");
         String answer = sc.nextLine();
-        if(answer.equalsIgnoreCase("yes")){
 
-        }*/
     }
 }

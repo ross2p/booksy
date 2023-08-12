@@ -1,20 +1,18 @@
 package Salon.Class;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 public class Employee {
     private String name;
-    private List<ServiceAvailability> services;
+    private Set<ServiceAvailability> services;         //щоб не було однакових послуг
 
-    public Employee(String name, List<ServiceAvailability> services) {
+    public Employee(String name, Set<ServiceAvailability> services) {
         this.name = name;
         this.services = services;
     }
     public Employee(String name, ServiceAvailability service) {
         this.name = name;
-        this.services = new ArrayList<>();
+        this.services = new HashSet<>();
         services.add(service);
     }
 
@@ -22,7 +20,7 @@ public class Employee {
         return name;
     }
 
-    public List<ServiceAvailability> getServices() {
+    public Set<ServiceAvailability> getServices() {
         return services;
     }
 
@@ -36,6 +34,7 @@ public class Employee {
 
 
     @Override
+    //По назві
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Employee employee)) return false;
@@ -46,7 +45,7 @@ public class Employee {
     public int hashCode() {
         return Objects.hash(name);
     }
-    public void addServices(List<ServiceAvailability> newElement){
+    public void addServices(Set<ServiceAvailability> newElement){
         for (ServiceAvailability newServices: newElement){
             boolean isRepeated = false;
             for (ServiceAvailability s:services){
@@ -59,5 +58,13 @@ public class Employee {
                 services.add(newServices);
             }
         }
+    }
+    public ServiceAvailability getService(String servicesName){
+        for (ServiceAvailability ser: services){
+            if (ser.getServiceName().equals(servicesName)){
+                return ser;
+            }
+        }
+        return null;
     }
 }

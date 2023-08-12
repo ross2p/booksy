@@ -4,6 +4,7 @@ import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class ServiceAvailability {
     private String serviceName;
@@ -20,10 +21,10 @@ public class ServiceAvailability {
 
         for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
             Days day = entry.getKey();
-            Map<String, Boolean> roomMap = entry.getValue();
+            Map<String, Boolean> hoursMap = entry.getValue();
             int temp = 0;
             reservationToStr.append("\n\t\t\t").append(day).append("\n\t\t\t\t");
-            for (Map.Entry<String, Boolean> hourEntry : roomMap.entrySet()) {
+            for (Map.Entry<String, Boolean> hourEntry : hoursMap.entrySet()) {
                 String hour = hourEntry.getKey();
                 Boolean isReserved = hourEntry.getValue();
                 if(temp == 4){
@@ -52,6 +53,20 @@ public class ServiceAvailability {
         return hoursAvailability;
     }
 
+
+    @Override
+    // Тільки по Service Name
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ServiceAvailability that)) return false;
+        return Objects.equals(serviceName, that.serviceName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(serviceName);
+    }
+
     public void addHoursAvailability(Map<Days, Map<String, Boolean>> newHoursAvailability) {
         for (Map.Entry<Days, Map<String, Boolean>> newEntry : newHoursAvailability.entrySet()) {
             Days newDay = newEntry.getKey();
@@ -70,5 +85,16 @@ public class ServiceAvailability {
                 }
             }
         }
+    }
+    public Map<String,Boolean> getHoursInDay(String nameDay){
+
+        for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
+            Days day = entry.getKey();
+            if (day.equals(Days.getDay(nameDay))){
+                Map<String, Boolean> hoursMap = entry.getValue();
+                return hoursMap;
+            }
+        }
+        return null;
     }
 }

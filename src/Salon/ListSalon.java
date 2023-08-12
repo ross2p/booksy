@@ -16,10 +16,9 @@ import java.lang.reflect.Type;
 import java.util.*;
 
 public class ListSalon {
-    static List<Salon> list = new ArrayList<>();
+    private  List<Salon> list = new ArrayList<>();
 
-    ListSalon() {
-    }
+    ListSalon() {}
 
     ListSalon(String fileName) {
         Gson gson = new Gson();
@@ -58,117 +57,56 @@ public class ListSalon {
         return listToStr;
     }
 
-    public static List<Salon> searchByNameSalon(String name) {
-        List<Salon> foundSalons = new ArrayList<>();
-        for (Salon s : list) {
-            if (s.getName().toUpperCase().contains(name.toUpperCase())) {
-                foundSalons.add(s);
+    public ListSalon searchByNameSalon(String name){
+        ListSalon listByName = new ListSalon();
+        for (Salon s: list){
+            if (s.getName().toUpperCase().contains(name.toUpperCase())){
+                listByName.add(s);
             }
         }
-        return foundSalons;
+        return listByName;
     }
-
-    public static void searchAndMakeReservation(String name) {
-        List<Salon> foundSalons = searchByNameSalon(name);
-
-        if (foundSalons.isEmpty()) {
-            System.out.println("\u001B[31m" + "No salons found with the given name." + "\u001B[0m");
-            return;
-        }
-        System.out.println("Found " + foundSalons.size() + " salons:");
-        for (int i = 0; i < foundSalons.size(); i++) {
-            System.out.println((i + 1) + ". " + foundSalons.get(i).getName());
-        }
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("\nDo you want to make a reservation? (yes/no): ");
-        String response = scanner.nextLine();
-
-        if (response.equalsIgnoreCase("yes")) {
-            System.out.print("Enter the index of the salon you want to make a reservation at: ");
-            int index = scanner.nextInt();
-
-            if (index >= 0 && index < foundSalons.size()) {
-                Salon selectedSalon = foundSalons.get(index - 1);
-                makeReservation(selectedSalon);
-            } else {
-                System.out.println("\u001B[31m" + "Invalid index." + "\u001B[0m");
-            }
-        }
-    }
-
-    private static void makeReservation(Salon salon) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Masters found:");
-        List<Employee> employees = salon.getEmployees();
-        for (int i = 0; i < employees.size(); i++) {
-            System.out.println((i + 1) + ". " + employees.get(i).getName());
-        }
-        System.out.print("Enter the master number: ");
-        int employeeIndex = scanner.nextInt();
-
-        if (employeeIndex >= 1 && employeeIndex <= employees.size()) {
-            Employee selectedEmployee = employees.get(employeeIndex - 1);
-
-            System.out.println("Select service:");
-            List<ServiceAvailability> services = selectedEmployee.getServices();
-            for (int i = 0; i < services.size(); i++) {
-                System.out.println((i + 1) + ". " + services.get(i).getServiceName());
-            }
-            System.out.print("Enter the service number: ");
-            int serviceIndex = scanner.nextInt();
-
-            if (serviceIndex >= 1 && serviceIndex <= services.size()) {
-                ServiceAvailability selectedService = services.get(serviceIndex - 1);
-
-                System.out.print("Enter day : ");
-                String dayInput = scanner.next().toUpperCase();
-                try {
-                    Days day = Days.valueOf(dayInput);
-                    Map<String, Boolean> availableHours = selectedService.getHoursAvailability().get(day);
-                    System.out.println("Available hours for " + (selectedEmployee.getName()) + " on " + day + ":");
-                    for (Map.Entry<String, Boolean> entry : availableHours.entrySet()) {
-                        if (entry.getValue()) {
-                            System.out.println("\u001B[32m" + entry.getKey() + "\u001B[0m");
+    private boolean makeReservation(Salon salon,Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
+        for (Salon s: list){
+            if (s.equals(salon)){
+                for (Employee e: s.getEmployees()){
+                    if (e.equals(employee)){
+                        for (ServiceAvailability serAva: e.getServices()){
+                            if (serAva.equals(serviceAvailability)){
+                                serAva.getHoursAvailability().get(day).replace(hours,false);
+                                return true;    //Успішно змінено
+                            }
                         }
                     }
-                    System.out.print("Enter hour: ");
-                    String hour = scanner.next();
-
-                    if (availableHours.containsKey(hour) && availableHours.get(hour)) {
-                        availableHours.put(hour, false);
-                        System.out.println("+-------------+--------------------+");
-                        System.out.println("|              𝗥𝗘𝗖𝗢𝗥𝗗              |");
-                        System.out.println("+-------------+--------------------+");
-                        System.out.println("|  Salon name |" + String.format("%-20s", salon.getName()) + "|");
-                        System.out.println("|  Address    |" + String.format("%-20s", salon.getAddress()) + "|");
-                        System.out.println("|  Service    |" + String.format("%-20s", selectedService.getServiceName()) + "|");
-                        System.out.println("|  Master     |" + String.format("%-20s", selectedEmployee.getName()) + "|");
-                        System.out.println("|  Day        |" + String.format("%-20s", day) + "|");
-                        System.out.println("|  Time       |" + String.format("%-20s", hour) + "|");
-                        System.out.println("+--------------+-------------------+");
-                    } else {
-                        System.out.println("\u001B[32m" + "It is not possible to sign up at this hour. Please choose another hour." + "\u001B[0m");
-                    }
-
-                } catch (IllegalArgumentException e) {
-                    System.out.println("Invalid day input.");
                 }
-            } else {
-                System.out.println("Invalid service index.");
             }
-        } else {
-            System.out.println("Invalid employee index.");
         }
+        return false;   //Резервація не завершена
+    }
+    public boolean makeReservation(String salonName,String employeeName, String serviceAvailabilityName, String dayName, String hours) {
+        for (Salon s: list){
+            if (s.getName().equals(salonName)){
+                for (Employee e: s.getEmployees()){
+                    if (e.getName().equals(employeeName)){
+                        for (ServiceAvailability serAva: e.getServices()){
+                            if (serAva.getServiceName().equals(serviceAvailabilityName)){
+                                serAva.getHoursAvailability().get(Days.getDay(dayName)).replace(hours,false);
+                                return true;    //Успішно змінено
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return false;   //Резервація не завершена
     }
 
-    public static List<Salon> searchByService(String serviceName) {
-        List<Salon> foundSalons = new ArrayList<>();
+    public ListSalon searchByService(String serviceName) {
+        ListSalon foundSalons = new ListSalon();
         for (Salon s : list) {
-            List<Employee> employeeList = s.getEmployees();
+            Set<Employee> employeeList = s.getEmployees();
             for (Employee e : employeeList) {
-                List<ServiceAvailability> services = e.getServices();
+                Set<ServiceAvailability> services = e.getServices();
                 for (ServiceAvailability ser : services) {
                     if (ser.getServiceName().toUpperCase().contains(serviceName.toUpperCase())) {
                         Employee temp = new Employee(e.getName(), ser);
@@ -178,37 +116,6 @@ public class ListSalon {
             }
         }
         return foundSalons;
-    }
-
-    public static void searchByServiceAndMakeReservation(String serviceName) {
-        List<Salon> foundSalons = searchByService(serviceName);
-
-        if (foundSalons.isEmpty()) {
-            System.out.println("\u001B[31m" + "No salons found offering the requested service." + "\u001B[0m");
-            return;
-        }
-
-        System.out.println("Found " + foundSalons.size() + " salons offering the requested service:");
-        for (int i = 0; i < foundSalons.size(); i++) {
-            System.out.println((i + 1) + ". " + foundSalons.get(i).getName());
-        }
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("\nDo you want to make a reservation? (yes/no): ");
-        String response = scanner.nextLine();
-
-        if (response.equalsIgnoreCase("yes")) {
-            System.out.print("Enter the index of the salon you want to make a reservation at: ");
-            int index = scanner.nextInt();
-            index--;
-
-            if (index >= 0 && index < foundSalons.size()) {
-                Salon selectedSalon = foundSalons.get(index);
-                makeReservation(selectedSalon);
-            } else {
-                System.out.println("\u001B[31m" + "Invalid index." + "\u001B[0m");
-            }
-        }
     }
 
     public void sortBySalonName() {
@@ -221,4 +128,14 @@ public class ListSalon {
             return s1.getName().compareTo(s2.getName());
         }
     }
+
+    public Salon getSalon(String name){
+        for (Salon s: list){
+            if (s.getName().equals(name)){
+                return s;
+            }
+        }
+        return null;
+    }
+
 }

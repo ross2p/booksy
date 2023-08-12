@@ -1,17 +1,14 @@
 package Salon.Class;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 public class Salon {
     private String name;
-    List<Employee> employees;
+    Set<Employee> employees;
     private String address;
     private Map<Days, String> workingDays;           // Map<Days, String> до кожного дня має бути година
 
-    public Salon(String name, List<Employee> employees, String address, Map<Days, String> workingDays) {
+    public Salon(String name, Set<Employee> employees, String address, Map<Days, String> workingDays) {
         this.name = name;
         this.employees = employees;
         this.address = address;
@@ -20,7 +17,7 @@ public class Salon {
 
     public Salon(String name, Employee employee, String address, Map<Days, String> workingDays) {
         this.name = name;
-        this.employees = new ArrayList<>();
+        this.employees = new HashSet<>();
         employees.add(employee);
         this.address = address;
         this.workingDays = workingDays;
@@ -30,7 +27,7 @@ public class Salon {
         return name;
     }
 
-    public List<Employee> getEmployees() {
+    public Set<Employee> getEmployees() {
         return employees;
     }
 
@@ -60,12 +57,17 @@ public class Salon {
                 "HoursOfWork: " + */ HoursOfWorkToStr.toString() + '\n' ;
     }
 
-
     @Override
+    //По назві салону
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Salon salon)) return false;
-        return Objects.equals(name, salon.name) && Objects.equals(address, salon.address) && Objects.equals(workingDays, salon.workingDays);
+        return Objects.equals(name, salon.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 
     public void addEmployees(Salon newElement) {
@@ -81,5 +83,13 @@ public class Salon {
                 employees.add(newEmployee);
             }
         }
+    }
+    public Employee getEmployee(String name){
+        for (Employee e: employees){
+            if (e.getName().equals(name)){
+                return e;
+            }
+        }
+        return null;
     }
 }
