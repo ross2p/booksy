@@ -16,11 +16,14 @@ import java.lang.reflect.Type;
 import java.util.*;
 
 public class ListSalon {
-    private  List<Salon> list = new ArrayList<>();
+    private List<Salon> list;
 
-    ListSalon() {}
+    ListSalon() {
+        list = new ArrayList<>();
+    }
 
     ListSalon(String fileName) {
+        list = new ArrayList<>();
         Gson gson = new Gson();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             Type type = new TypeToken<List<Salon>>() {
@@ -104,10 +107,8 @@ public class ListSalon {
     public ListSalon searchByService(String serviceName) {
         ListSalon foundSalons = new ListSalon();
         for (Salon s : list) {
-            Set<Employee> employeeList = s.getEmployees();
-            for (Employee e : employeeList) {
-                Set<ServiceAvailability> services = e.getServices();
-                for (ServiceAvailability ser : services) {
+            for (Employee e : s.getEmployees()) {
+                for (ServiceAvailability ser : e.getServices()) {
                     if (ser.getServiceName().toUpperCase().contains(serviceName.toUpperCase())) {
                         Employee temp = new Employee(e.getName(), ser);
                         foundSalons.add(new Salon(s.getName(), temp, s.getAddress(), s.getWorkingDays()));

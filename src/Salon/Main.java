@@ -35,15 +35,15 @@ public class Main {
                     System.out.println(list.searchByNameSalon(searchNameSalon));
                     break;
 
-                case 3:
+                case 3: {
                     sc.nextLine();
                     System.out.print("Search: ");
                     String searchNameServices = sc.nextLine();
-                    list.searchByService(searchNameServices);
+                    System.out.println(searchNameServices);
                     System.out.println(list.searchByService(searchNameServices));
 
                     break;
-
+                }
                 case 4:
                     System.out.print("All salons sorted: \n");
                     list.sortBySalonName();
@@ -73,12 +73,13 @@ public class Main {
                     System.out.print("Hours: ");
                     hour = sc.nextLine();
 
-                   list.makeReservation(salonName,employeeName,service,day,hour);
+                    list.makeReservation(salonName,employeeName,service,day,hour);
                 default:
                     choice = 0;
                     break;
 
             }
         }while(choice != 0);
+        sc.close();
     }
 }

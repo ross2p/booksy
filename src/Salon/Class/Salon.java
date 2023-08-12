@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Salon {
     private String name;
-    Set<Employee> employees;
+    private List<Employee> employees;
     private String address;
     private Map<Days, String> workingDays;           // Map<Days, String> до кожного дня має бути година
 
-    public Salon(String name, Set<Employee> employees, String address, Map<Days, String> workingDays) {
+    public Salon(String name, List<Employee> employees, String address, Map<Days, String> workingDays) {
         this.name = name;
         this.employees = employees;
         this.address = address;
@@ -17,7 +17,7 @@ public class Salon {
 
     public Salon(String name, Employee employee, String address, Map<Days, String> workingDays) {
         this.name = name;
-        this.employees = new HashSet<>();
+        this.employees = new ArrayList<>();
         employees.add(employee);
         this.address = address;
         this.workingDays = workingDays;
@@ -27,7 +27,7 @@ public class Salon {
         return name;
     }
 
-    public Set<Employee> getEmployees() {
+    public List<Employee> getEmployees() {
         return employees;
     }
 

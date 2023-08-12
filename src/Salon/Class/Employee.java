@@ -4,15 +4,15 @@ import java.util.*;
 
 public class Employee {
     private String name;
-    private Set<ServiceAvailability> services;         //щоб не було однакових послуг
+    private List<ServiceAvailability> services;         //щоб не було однакових послуг
 
-    public Employee(String name, Set<ServiceAvailability> services) {
+    public Employee(String name, List<ServiceAvailability> services) {
         this.name = name;
         this.services = services;
     }
     public Employee(String name, ServiceAvailability service) {
         this.name = name;
-        this.services = new HashSet<>();
+        this.services = new ArrayList<>();
         services.add(service);
     }
 
@@ -20,7 +20,7 @@ public class Employee {
         return name;
     }
 
-    public Set<ServiceAvailability> getServices() {
+    public List<ServiceAvailability> getServices() {
         return services;
     }
 
@@ -45,7 +45,7 @@ public class Employee {
     public int hashCode() {
         return Objects.hash(name);
     }
-    public void addServices(Set<ServiceAvailability> newElement){
+    public void addServices(List<ServiceAvailability> newElement){
         for (ServiceAvailability newServices: newElement){
             boolean isRepeated = false;
             for (ServiceAvailability s:services){
