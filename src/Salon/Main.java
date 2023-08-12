@@ -15,21 +15,18 @@ public class Main {
         Start.start();
         ListSalon list = new ListSalon("src/Salon/salon.json");
         int choice;
-        do {
             System.out.println(menu);
             choice = sc.nextInt();
             switch (choice) {
-                case 1: {                            //Друк всого List
+                case 1: {
                     System.out.println(list);
                     break;
                 }
-                case 2: {                           //Пошук по назві салону
+                case 2: {
                     sc.nextLine();
                     System.out.print("Search: ");
                     String searchNameSalon = sc.nextLine();
-                    ListSalon resultNameSalon = list.searchByNameSalon(searchNameSalon);
-
-                    System.out.println(resultNameSalon);
+                    ListSalon.searchAndMakeReservation(searchNameSalon);
 
                     break;
                 }
@@ -37,9 +34,7 @@ public class Main {
                     sc.nextLine();
                     System.out.print("Search: ");
                     String searchNameServices = sc.nextLine();
-                    ListSalon resultNameServices = list.searchByNameServices(searchNameServices);
-
-                    System.out.println(resultNameServices);
+                    ListSalon.searchByServiceAndMakeReservation(searchNameServices);
 
                     break;
                 }
@@ -52,6 +47,6 @@ public class Main {
                     choice = 0;
                     break;
             }
-        }while(choice != 0);
+
     }
 }

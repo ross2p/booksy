@@ -1,5 +1,5 @@
 package Salon.Class;
 
-enum Days {
+public enum Days {
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
 };
