@@ -37,5 +37,4 @@ public class Reservation {
         }
         return output.toString();
     }
-
 }
