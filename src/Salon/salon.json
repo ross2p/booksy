@@ -9,18 +9,18 @@
             "serviceName": "Manicure",
             "hoursAvailability": {
               "MONDAY": {
-                "9:30": false,
-                "11:30": false,
+                "9:30": true,
+                "11:30": true,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "17:00": true,
                 "19:00": false
               },
               "TUESDAY": {
                 "9:30": true,
-                "11:30": false,
+                "11:30": true,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "17:00": true,
                 "19:00": false
               },
@@ -35,34 +35,34 @@
               "THURSDAY": {
                 "9:30": true,
                 "11:30": false,
-                "13:30": true,
-                "15:00": false,
+                "13:30": false,
+                "15:00": true,
                 "17:00": true,
-                "19:00": false
+                "19:00": true
               },
               "FRIDAY": {
                 "9:30": true,
-                "11:30": false,
+                "11:30": true,
                 "13:30": true,
-                "15:00": false,
-                "17:00": true,
-                "19:00": false
+                "15:00": true,
+                "17:00": false,
+                "19:00": true
               },
               "SATURDAY": {
                 "9:30": true,
                 "11:30": false,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "17:00": true,
                 "19:00": false
               },
               "SUNDAY": {
                 "9:30": true,
-                "11:30": false,
-                "13:30": true,
+                "11:30": true,
+                "13:30": false,
                 "15:00": false,
                 "17:00": true,
-                "19:00": false
+                "19:00": true
               }
             }
           }
@@ -75,81 +75,81 @@
             "serviceName": "Haircut",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
-                "10:20": false,
+                "9:00": true,
+                "10:20": true,
                 "11:40": false,
                 "14:20": true,
                 "15:40": false,
                 "17:00": true,
-                "18:20": false,
+                "18:20": true,
                 "19:40": true,
-                "21:00": false
+                "21:00": true
               },
               "TUESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": false,
-                "11:40": false,
+                "11:40": true,
                 "14:20": true,
-                "15:40": false,
-                "17:00": true,
-                "18:20": false,
+                "15:40": true,
+                "17:00": false,
+                "18:20": true,
                 "19:40": true,
-                "21:00": false
+                "21:00": true
               },
               "WEDNESDAY": {
                 "9:00": false,
-                "10:20": false,
-                "11:40": false,
+                "10:20": true,
+                "11:40": true,
                 "14:20": true,
-                "15:40": false,
+                "15:40": true,
                 "17:00": true,
-                "18:20": false,
+                "18:20": true,
                 "19:40": true,
-                "21:00": false
+                "21:00": true
               },
               "THURSDAY": {
-                "9:00": false,
-                "10:20": false,
-                "11:40": false,
-                "14:20": true,
+                "9:00": true,
+                "10:20": true,
+                "11:40": true,
+                "14:20": false,
                 "15:40": false,
                 "17:00": true,
-                "18:20": false,
+                "18:20": true,
                 "19:40": true,
-                "21:00": false
+                "21:00": true
               },
               "FRIDAY": {
-                "9:00": false,
-                "10:20": false,
-                "11:40": false,
-                "14:20": true,
-                "15:40": false,
+                "9:00": true,
+                "10:20": true,
+                "11:40": true,
+                "14:20": false,
+                "15:40": true,
                 "17:00": true,
-                "18:20": false,
+                "18:20": true,
                 "19:40": true,
-                "21:00": false
+                "21:00": true
               },
               "SATURDAY": {
                 "9:00": false,
-                "10:20": false,
-                "11:40": false,
+                "10:20": true,
+                "11:40": true,
                 "14:20": true,
                 "15:40": false,
                 "17:00": true,
-                "18:20": false,
+                "18:20": true,
                 "19:40": true,
-                "21:00": false
+                "21:00": true
               },
               "SUNDAY": {
-                "9:00": false,
-                "10:20": false,
-                "11:40": false,
+                "9:00": true,
+                "10:20": true,
+                "11:40": true,
                 "14:20": true,
-                "15:40": false,
+                "15:40": true,
                 "17:00": true,
-                "18:20": false,
+                "18:20": true,
                 "19:40": true,
-                "21:00": false
+                "21:00": true
               }
             }
           }
@@ -164,57 +164,57 @@
               "MONDAY": {
                 "10:30": true,
                 "12:30": true,
-                "14:30": false,
+                "14:30": true,
                 "16:30": false,
-                "18:30": false,
-                "20:30": true
+                "18:30": true,
+                "20:30": false
               },
               "TUESDAY": {
                 "10:30": true,
                 "12:30": true,
-                "14:30": false,
-                "16:30": false,
-                "18:30": false,
+                "14:30": true,
+                "16:30": true,
+                "18:30": true,
                 "20:30": true
               },
               "WEDNESDAY": {
                 "10:30": true,
-                "12:30": true,
-                "14:30": false,
-                "16:30": false,
-                "18:30": false,
-                "20:30": true
+                "12:30": false,
+                "14:30": true,
+                "16:30": true,
+                "18:30": true,
+                "20:30": false
               },
               "THURSDAY": {
                 "10:30": true,
                 "12:30": true,
-                "14:30": false,
-                "16:30": false,
-                "18:30": false,
+                "14:30": true,
+                "16:30": true,
+                "18:30": true,
                 "20:30": true
               },
               "FRIDAY": {
                 "10:30": true,
                 "12:30": true,
-                "14:30": false,
-                "16:30": false,
-                "18:30": false,
+                "14:30": true,
+                "16:30": true,
+                "18:30": true,
                 "20:30": true
               },
               "SATURDAY": {
                 "10:30": true,
                 "12:30": true,
-                "14:30": false,
-                "16:30": false,
-                "18:30": false,
+                "14:30": true,
+                "16:30": true,
+                "18:30": true,
                 "20:30": true
               },
               "SUNDAY": {
                 "10:30": true,
                 "12:30": true,
-                "14:30": false,
-                "16:30": false,
-                "18:30": false,
+                "14:30": true,
+                "16:30": true,
+                "18:30": true,
                 "20:30": true
               }
             }
@@ -230,79 +230,79 @@
               "MONDAY": {
                 "8:30": true,
                 "9:00": true,
-                "10:30": false,
-                "12:00": false,
+                "10:30": true,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               },
               "TUESDAY": {
-                "8:30": true,
+                "8:30": false,
                 "9:00": true,
                 "10:30": false,
-                "12:00": false,
-                "13:30": true,
+                "12:00": true,
+                "13:30": false,
                 "15:00": true,
                 "16:30": false,
-                "18:00": true,
+                "18:00": false,
                 "19:30": false
               },
               "WEDNESDAY": {
                 "8:30": true,
                 "9:00": true,
-                "10:30": false,
+                "10:30": true,
                 "12:00": false,
-                "13:30": true,
+                "13:30": false,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               },
               "THURSDAY": {
                 "8:30": true,
                 "9:00": true,
-                "10:30": false,
-                "12:00": false,
+                "10:30": true,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               },
               "FRIDAY": {
                 "8:30": true,
                 "9:00": true,
-                "10:30": false,
+                "10:30": true,
                 "12:00": false,
                 "13:30": true,
-                "15:00": true,
+                "15:00": false,
                 "16:30": false,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               },
               "SATURDAY": {
                 "8:30": true,
                 "9:00": true,
-                "10:30": false,
+                "10:30": true,
                 "12:00": false,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": true,
-                "19:30": false
+                "16:30": true,
+                "18:00": false,
+                "19:30": true
               },
               "SUNDAY": {
                 "8:30": true,
                 "9:00": true,
-                "10:30": false,
+                "10:30": true,
                 "12:00": false,
                 "13:30": true,
                 "15:00": true,
                 "16:30": false,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               }
             }
           }
@@ -317,90 +317,90 @@
               "MONDAY": {
                 "9:00": true,
                 "9:10": true,
-                "9:20": false,
-                "9:30": false,
+                "9:20": true,
+                "9:30": true,
                 "9:40": true,
                 "9:50": true,
-                "10:00": false,
+                "10:00": true,
                 "10:10": true,
-                "10:20": false,
+                "10:20": true,
                 "10:30": true,
-                "10:40": false,
-                "10:50": true,
-                "11:00": false,
+                "10:40": true,
+                "10:50": false,
+                "11:00": true,
                 "11:10": true,
-                "11:20": true,
-                "11:30": true,
-                "11:40": true,
-                "11:50": false,
+                "11:20": false,
+                "11:30": false,
+                "11:40": false,
+                "11:50": true,
                 "12:00": false,
                 "12:10": true,
                 "12:20": true,
-                "12:30": false,
-                "12:40": false,
-                "12:50": false,
+                "12:30": true,
+                "12:40": true,
+                "12:50": true,
                 "13:00": false,
                 "13:10": true,
                 "13:20": false,
                 "13:30": true,
                 "13:40": false,
                 "13:50": true,
-                "14:00": false,
+                "14:00": true,
                 "14:10": true,
                 "14:20": true,
-                "14:30": false,
+                "14:30": true,
                 "14:40": true,
                 "14:50": false,
-                "15:00": false,
+                "15:00": true,
                 "15:10": true,
                 "15:20": false,
-                "15:30": true,
-                "15:40": false,
+                "15:30": false,
+                "15:40": true,
                 "15:50": true,
-                "16:00": false
+                "16:00": true
               },
               "TUESDAY": {
                 "9:00": true,
                 "9:10": true,
-                "9:20": false,
-                "9:30": false,
+                "9:20": true,
+                "9:30": true,
                 "9:40": true,
                 "9:50": true,
                 "10:00": false,
                 "10:10": true,
-                "10:20": false,
-                "10:30": true,
-                "10:40": false,
+                "10:20": true,
+                "10:30": false,
+                "10:40": true,
                 "10:50": true,
-                "11:00": false,
+                "11:00": true,
                 "11:10": true,
                 "11:20": true,
                 "11:30": true,
                 "11:40": true,
-                "11:50": false,
+                "11:50": true,
                 "12:00": false,
                 "12:10": true,
                 "12:20": true,
-                "12:30": false,
-                "12:40": false,
-                "12:50": false,
+                "12:30": true,
+                "12:40": true,
+                "12:50": true,
                 "13:00": false,
                 "13:10": true,
-                "13:20": false,
+                "13:20": true,
                 "13:30": true,
-                "13:40": false,
-                "13:50": true,
-                "14:00": false,
+                "13:40": true,
+                "13:50": false,
+                "14:00": true,
                 "14:10": true,
                 "14:20": true,
-                "14:30": false,
-                "14:40": true,
-                "14:50": false,
-                "15:00": false,
+                "14:30": true,
+                "14:40": false,
+                "14:50": true,
+                "15:00": true,
                 "15:10": true,
-                "15:20": false,
+                "15:20": true,
                 "15:30": true,
-                "15:40": false,
+                "15:40": true,
                 "15:50": true,
                 "16:00": false
               },
@@ -409,225 +409,225 @@
                 "9:10": true,
                 "9:20": false,
                 "9:30": false,
-                "9:40": true,
-                "9:50": true,
+                "9:40": false,
+                "9:50": false,
                 "10:00": false,
                 "10:10": true,
-                "10:20": false,
+                "10:20": true,
                 "10:30": true,
                 "10:40": false,
                 "10:50": true,
-                "11:00": false,
+                "11:00": true,
                 "11:10": true,
                 "11:20": true,
                 "11:30": true,
                 "11:40": true,
-                "11:50": false,
-                "12:00": false,
+                "11:50": true,
+                "12:00": true,
                 "12:10": true,
-                "12:20": true,
-                "12:30": false,
-                "12:40": false,
-                "12:50": false,
-                "13:00": false,
+                "12:20": false,
+                "12:30": true,
+                "12:40": true,
+                "12:50": true,
+                "13:00": true,
                 "13:10": true,
-                "13:20": false,
+                "13:20": true,
                 "13:30": true,
-                "13:40": false,
+                "13:40": true,
                 "13:50": true,
-                "14:00": false,
+                "14:00": true,
                 "14:10": true,
                 "14:20": true,
-                "14:30": false,
-                "14:40": true,
+                "14:30": true,
+                "14:40": false,
                 "14:50": false,
-                "15:00": false,
-                "15:10": true,
-                "15:20": false,
+                "15:00": true,
+                "15:10": false,
+                "15:20": true,
                 "15:30": true,
-                "15:40": false,
+                "15:40": true,
                 "15:50": true,
-                "16:00": false
+                "16:00": true
               },
               "THURSDAY": {
                 "9:00": true,
                 "9:10": true,
-                "9:20": false,
-                "9:30": false,
-                "9:40": true,
+                "9:20": true,
+                "9:30": true,
+                "9:40": false,
                 "9:50": true,
-                "10:00": false,
+                "10:00": true,
                 "10:10": true,
                 "10:20": false,
                 "10:30": true,
-                "10:40": false,
+                "10:40": true,
                 "10:50": true,
                 "11:00": false,
                 "11:10": true,
                 "11:20": true,
                 "11:30": true,
-                "11:40": true,
-                "11:50": false,
-                "12:00": false,
+                "11:40": false,
+                "11:50": true,
+                "12:00": true,
                 "12:10": true,
                 "12:20": true,
-                "12:30": false,
-                "12:40": false,
-                "12:50": false,
-                "13:00": false,
+                "12:30": true,
+                "12:40": true,
+                "12:50": true,
+                "13:00": true,
                 "13:10": true,
-                "13:20": false,
-                "13:30": true,
-                "13:40": false,
+                "13:20": true,
+                "13:30": false,
+                "13:40": true,
                 "13:50": true,
-                "14:00": false,
+                "14:00": true,
                 "14:10": true,
                 "14:20": true,
-                "14:30": false,
+                "14:30": true,
                 "14:40": true,
-                "14:50": false,
-                "15:00": false,
+                "14:50": true,
+                "15:00": true,
                 "15:10": true,
-                "15:20": false,
+                "15:20": true,
                 "15:30": true,
-                "15:40": false,
+                "15:40": true,
                 "15:50": true,
-                "16:00": false
+                "16:00": true
               },
               "FRIDAY": {
                 "9:00": true,
                 "9:10": true,
-                "9:20": false,
-                "9:30": false,
+                "9:20": true,
+                "9:30": true,
                 "9:40": true,
                 "9:50": true,
-                "10:00": false,
+                "10:00": true,
                 "10:10": true,
-                "10:20": false,
+                "10:20": true,
                 "10:30": true,
-                "10:40": false,
+                "10:40": true,
                 "10:50": true,
-                "11:00": false,
+                "11:00": true,
                 "11:10": true,
                 "11:20": true,
                 "11:30": true,
                 "11:40": true,
-                "11:50": false,
-                "12:00": false,
-                "12:10": true,
+                "11:50": true,
+                "12:00": true,
+                "12:10": false,
                 "12:20": true,
-                "12:30": false,
+                "12:30": true,
                 "12:40": false,
-                "12:50": false,
-                "13:00": false,
+                "12:50": true,
+                "13:00": true,
                 "13:10": true,
-                "13:20": false,
+                "13:20": true,
                 "13:30": true,
-                "13:40": false,
+                "13:40": true,
                 "13:50": true,
-                "14:00": false,
+                "14:00": true,
                 "14:10": true,
                 "14:20": true,
-                "14:30": false,
+                "14:30": true,
                 "14:40": true,
-                "14:50": false,
-                "15:00": false,
+                "14:50": true,
+                "15:00": true,
                 "15:10": true,
-                "15:20": false,
-                "15:30": true,
+                "15:20": true,
+                "15:30": false,
                 "15:40": false,
                 "15:50": true,
-                "16:00": false
+                "16:00": true
               },
               "SATURDAY": {
                 "9:00": true,
                 "9:10": true,
-                "9:20": false,
+                "9:20": true,
                 "9:30": false,
                 "9:40": true,
-                "9:50": true,
+                "9:50": false,
                 "10:00": false,
-                "10:10": true,
-                "10:20": false,
+                "10:10": false,
+                "10:20": true,
                 "10:30": true,
-                "10:40": false,
+                "10:40": true,
                 "10:50": true,
-                "11:00": false,
+                "11:00": true,
                 "11:10": true,
                 "11:20": true,
                 "11:30": true,
                 "11:40": true,
-                "11:50": false,
+                "11:50": true,
                 "12:00": false,
                 "12:10": true,
                 "12:20": true,
-                "12:30": false,
-                "12:40": false,
-                "12:50": false,
+                "12:30": true,
+                "12:40": true,
+                "12:50": true,
                 "13:00": false,
                 "13:10": true,
                 "13:20": false,
                 "13:30": true,
-                "13:40": false,
+                "13:40": true,
                 "13:50": true,
-                "14:00": false,
-                "14:10": true,
+                "14:00": true,
+                "14:10": false,
                 "14:20": true,
-                "14:30": false,
+                "14:30": true,
                 "14:40": true,
-                "14:50": false,
-                "15:00": false,
+                "14:50": true,
+                "15:00": true,
                 "15:10": true,
                 "15:20": false,
                 "15:30": true,
-                "15:40": false,
+                "15:40": true,
                 "15:50": true,
-                "16:00": false
+                "16:00": true
               },
               "SUNDAY": {
                 "9:00": true,
                 "9:10": true,
-                "9:20": false,
-                "9:30": false,
+                "9:20": true,
+                "9:30": true,
                 "9:40": true,
-                "9:50": true,
-                "10:00": false,
+                "9:50": false,
+                "10:00": true,
                 "10:10": true,
-                "10:20": false,
+                "10:20": true,
                 "10:30": true,
-                "10:40": false,
+                "10:40": true,
                 "10:50": true,
-                "11:00": false,
+                "11:00": true,
                 "11:10": true,
                 "11:20": true,
                 "11:30": true,
                 "11:40": true,
-                "11:50": false,
-                "12:00": false,
+                "11:50": true,
+                "12:00": true,
                 "12:10": true,
                 "12:20": true,
                 "12:30": false,
-                "12:40": false,
+                "12:40": true,
                 "12:50": false,
-                "13:00": false,
+                "13:00": true,
                 "13:10": true,
                 "13:20": false,
                 "13:30": true,
-                "13:40": false,
+                "13:40": true,
                 "13:50": true,
                 "14:00": false,
                 "14:10": true,
                 "14:20": true,
-                "14:30": false,
+                "14:30": true,
                 "14:40": true,
-                "14:50": false,
-                "15:00": false,
+                "14:50": true,
+                "15:00": true,
                 "15:10": true,
-                "15:20": false,
+                "15:20": true,
                 "15:30": true,
-                "15:40": false,
+                "15:40": true,
                 "15:50": true,
-                "16:00": false
+                "16:00": true
               }
             }
           }
@@ -645,73 +645,73 @@
                 "10:30": true,
                 "11:30": false,
                 "13:30": true,
-                "14:30": false,
+                "14:30": true,
                 "15:30": true,
-                "16:30": true,
-                "17:30": false
+                "16:30": false,
+                "17:30": true
               },
               "TUESDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
                 "10:30": true,
-                "11:30": false,
-                "13:30": true,
-                "14:30": false,
+                "11:30": true,
+                "13:30": false,
+                "14:30": true,
                 "15:30": true,
                 "16:30": true,
                 "17:30": false
               },
               "WEDNESDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
                 "10:30": true,
                 "11:30": false,
-                "13:30": true,
-                "14:30": false,
+                "13:30": false,
+                "14:30": true,
                 "15:30": true,
-                "16:30": true,
+                "16:30": false,
                 "17:30": false
               },
               "THURSDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
                 "10:30": true,
-                "11:30": false,
+                "11:30": true,
                 "13:30": true,
-                "14:30": false,
+                "14:30": true,
                 "15:30": true,
                 "16:30": true,
-                "17:30": false
+                "17:30": true
               },
               "FRIDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
                 "10:30": true,
-                "11:30": false,
-                "13:30": true,
+                "11:30": true,
+                "13:30": false,
                 "14:30": false,
                 "15:30": true,
                 "16:30": true,
-                "17:30": false
+                "17:30": true
               },
               "SATURDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
                 "10:30": true,
-                "11:30": false,
+                "11:30": true,
                 "13:30": true,
-                "14:30": false,
+                "14:30": true,
                 "15:30": true,
                 "16:30": true,
-                "17:30": false
+                "17:30": true
               },
               "SUNDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
                 "10:30": true,
                 "11:30": false,
-                "13:30": true,
-                "14:30": false,
+                "13:30": false,
+                "14:30": true,
                 "15:30": true,
                 "16:30": true,
                 "17:30": false
@@ -742,53 +742,53 @@
             "serviceName": "Manicure",
             "hoursAvailability": {
               "MONDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:30": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "18:00": false
               },
               "TUESDAY": {
                 "10:30": false,
                 "12:30": true,
-                "14:30": true,
+                "14:30": false,
                 "16:00": false,
-                "18:00": false
+                "18:00": true
               },
               "WEDNESDAY": {
-                "10:30": false,
-                "12:30": true,
+                "10:30": true,
+                "12:30": false,
                 "14:30": true,
-                "16:00": false,
-                "18:00": false
+                "16:00": true,
+                "18:00": true
               },
               "THURSDAY": {
-                "10:30": false,
-                "12:30": true,
+                "10:30": true,
+                "12:30": false,
                 "14:30": true,
-                "16:00": false,
-                "18:00": false
+                "16:00": true,
+                "18:00": true
               },
               "FRIDAY": {
                 "10:30": false,
                 "12:30": true,
                 "14:30": true,
-                "16:00": false,
-                "18:00": false
+                "16:00": true,
+                "18:00": true
               },
               "SATURDAY": {
                 "10:30": false,
                 "12:30": true,
                 "14:30": true,
-                "16:00": false,
-                "18:00": false
+                "16:00": true,
+                "18:00": true
               },
               "SUNDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:30": true,
                 "14:30": true,
-                "16:00": false,
-                "18:00": false
+                "16:00": true,
+                "18:00": true
               }
             }
           }
@@ -803,34 +803,34 @@
               "MONDAY": {
                 "9:00": true,
                 "10:20": true,
-                "11:40": true,
-                "14:20": false,
+                "11:40": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
-                "19:40": false,
+                "19:40": true,
                 "21:00": true
               },
               "TUESDAY": {
                 "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
-                "19:40": false,
+                "19:40": true,
                 "21:00": true
               },
               "WEDNESDAY": {
-                "9:00": true,
+                "9:00": false,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
-                "19:40": false,
+                "19:40": true,
                 "21:00": true
               },
               "THURSDAY": {
@@ -838,7 +838,7 @@
                 "10:20": true,
                 "11:40": true,
                 "14:20": false,
-                "15:40": false,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
                 "19:40": false,
@@ -846,35 +846,35 @@
               },
               "FRIDAY": {
                 "9:00": true,
-                "10:20": true,
-                "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "10:20": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
-                "19:40": false,
-                "21:00": true
+                "19:40": true,
+                "21:00": false
               },
               "SATURDAY": {
                 "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
-                "18:20": true,
-                "19:40": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
+                "18:20": false,
+                "19:40": true,
                 "21:00": true
               },
               "SUNDAY": {
                 "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
-                "19:40": false,
+                "19:40": true,
                 "21:00": true
               }
             }
@@ -888,36 +888,36 @@
             "serviceName": "Massage",
             "hoursAvailability": {
               "MONDAY": {
-                "11:30": true,
-                "13:30": false,
+                "11:30": false,
+                "13:30": true,
                 "15:30": true,
-                "17:30": true,
-                "19:30": false
+                "17:30": false,
+                "19:30": true
               },
               "TUESDAY": {
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:30": true,
                 "17:30": true,
-                "19:30": false
+                "19:30": true
               },
               "WEDNESDAY": {
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:30": true,
                 "17:30": true,
-                "19:30": false
+                "19:30": true
               },
               "THURSDAY": {
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:30": true,
                 "17:30": true,
-                "19:30": false
+                "19:30": true
               },
               "FRIDAY": {
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:30": true,
                 "17:30": true,
                 "19:30": false
@@ -926,12 +926,12 @@
                 "11:30": true,
                 "13:30": false,
                 "15:30": true,
-                "17:30": true,
-                "19:30": false
+                "17:30": false,
+                "19:30": true
               },
               "SUNDAY": {
-                "11:30": true,
-                "13:30": false,
+                "11:30": false,
+                "13:30": true,
                 "15:30": true,
                 "17:30": true,
                 "19:30": false
@@ -947,80 +947,80 @@
             "serviceName": "Epilation",
             "hoursAvailability": {
               "MONDAY": {
-                "8:30": false,
-                "9:00": false,
+                "8:30": true,
+                "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": false,
                 "15:00": true,
                 "16:30": true,
-                "18:00": false,
-                "19:30": true
+                "18:00": true,
+                "19:30": false
               },
               "TUESDAY": {
-                "8:30": false,
-                "9:00": false,
+                "8:30": true,
+                "9:00": true,
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
-                "15:00": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
                 "16:30": true,
-                "18:00": false,
+                "18:00": true,
                 "19:30": true
               },
               "WEDNESDAY": {
-                "8:30": false,
-                "9:00": false,
+                "8:30": true,
+                "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": false,
                 "15:00": true,
                 "16:30": true,
-                "18:00": false,
+                "18:00": true,
                 "19:30": true
               },
               "THURSDAY": {
-                "8:30": false,
-                "9:00": false,
-                "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
                 "16:30": true,
-                "18:00": false,
+                "18:00": true,
                 "19:30": true
               },
               "FRIDAY": {
-                "8:30": false,
-                "9:00": false,
+                "8:30": true,
+                "9:00": true,
                 "10:30": true,
                 "12:00": false,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
                 "16:30": true,
-                "18:00": false,
+                "18:00": true,
                 "19:30": true
               },
               "SATURDAY": {
-                "8:30": false,
-                "9:00": false,
+                "8:30": true,
+                "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": false,
                 "15:00": true,
                 "16:30": true,
-                "18:00": false,
+                "18:00": true,
                 "19:30": true
               },
               "SUNDAY": {
-                "8:30": false,
-                "9:00": false,
+                "8:30": true,
+                "9:00": true,
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
                 "16:30": true,
-                "18:00": false,
+                "18:00": true,
                 "19:30": true
               }
             }
@@ -1035,318 +1035,318 @@
             "hoursAvailability": {
               "MONDAY": {
                 "9:00": false,
-                "9:10": false,
+                "9:10": true,
                 "9:20": true,
                 "9:30": true,
-                "9:40": false,
-                "9:50": false,
+                "9:40": true,
+                "9:50": true,
                 "10:00": true,
-                "10:10": false,
+                "10:10": true,
                 "10:20": true,
-                "10:30": false,
+                "10:30": true,
                 "10:40": true,
-                "10:50": false,
+                "10:50": true,
                 "11:00": true,
                 "11:10": false,
-                "11:20": false,
+                "11:20": true,
                 "11:30": false,
-                "11:40": false,
-                "11:50": false,
-                "12:00": true,
-                "12:10": false,
+                "11:40": true,
+                "11:50": true,
+                "12:00": false,
+                "12:10": true,
                 "12:20": true,
-                "12:30": false,
+                "12:30": true,
                 "12:40": true,
                 "12:50": true,
-                "13:00": false,
+                "13:00": true,
                 "13:10": true,
                 "13:20": true,
-                "13:30": false,
-                "13:40": false,
+                "13:30": true,
+                "13:40": true,
                 "13:50": false,
-                "14:00": false,
+                "14:00": true,
                 "14:10": true,
-                "14:20": false,
+                "14:20": true,
                 "14:30": true,
-                "14:40": false,
+                "14:40": true,
                 "14:50": true,
                 "15:00": false,
                 "15:10": true,
-                "15:20": false,
+                "15:20": true,
                 "15:30": true,
                 "15:40": true,
-                "15:50": false,
+                "15:50": true,
                 "16:00": true
               },
               "TUESDAY": {
-                "9:00": false,
-                "9:10": false,
+                "9:00": true,
+                "9:10": true,
                 "9:20": true,
-                "9:30": true,
+                "9:30": false,
                 "9:40": false,
-                "9:50": false,
+                "9:50": true,
                 "10:00": true,
                 "10:10": false,
                 "10:20": true,
-                "10:30": false,
-                "10:40": true,
-                "10:50": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
                 "11:00": true,
-                "11:10": false,
+                "11:10": true,
                 "11:20": false,
-                "11:30": false,
-                "11:40": false,
-                "11:50": false,
+                "11:30": true,
+                "11:40": true,
+                "11:50": true,
                 "12:00": true,
-                "12:10": false,
+                "12:10": true,
                 "12:20": true,
                 "12:30": false,
                 "12:40": true,
                 "12:50": true,
                 "13:00": false,
                 "13:10": true,
-                "13:20": true,
-                "13:30": false,
+                "13:20": false,
+                "13:30": true,
                 "13:40": false,
-                "13:50": false,
+                "13:50": true,
                 "14:00": false,
                 "14:10": true,
-                "14:20": false,
+                "14:20": true,
                 "14:30": true,
-                "14:40": false,
+                "14:40": true,
                 "14:50": true,
-                "15:00": false,
+                "15:00": true,
                 "15:10": true,
-                "15:20": false,
+                "15:20": true,
                 "15:30": true,
                 "15:40": true,
-                "15:50": false,
+                "15:50": true,
                 "16:00": true
               },
               "WEDNESDAY": {
-                "9:00": false,
-                "9:10": false,
+                "9:00": true,
+                "9:10": true,
                 "9:20": true,
                 "9:30": true,
-                "9:40": false,
+                "9:40": true,
                 "9:50": false,
                 "10:00": true,
-                "10:10": false,
+                "10:10": true,
                 "10:20": true,
-                "10:30": false,
+                "10:30": true,
                 "10:40": true,
-                "10:50": false,
-                "11:00": true,
-                "11:10": false,
-                "11:20": false,
-                "11:30": false,
-                "11:40": false,
-                "11:50": false,
+                "10:50": true,
+                "11:00": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": true,
                 "12:00": true,
                 "12:10": false,
                 "12:20": true,
                 "12:30": false,
-                "12:40": true,
-                "12:50": true,
-                "13:00": false,
+                "12:40": false,
+                "12:50": false,
+                "13:00": true,
                 "13:10": true,
                 "13:20": true,
-                "13:30": false,
+                "13:30": true,
                 "13:40": false,
-                "13:50": false,
-                "14:00": false,
+                "13:50": true,
+                "14:00": true,
                 "14:10": true,
-                "14:20": false,
-                "14:30": true,
-                "14:40": false,
+                "14:20": true,
+                "14:30": false,
+                "14:40": true,
                 "14:50": true,
-                "15:00": false,
+                "15:00": true,
                 "15:10": true,
-                "15:20": false,
+                "15:20": true,
                 "15:30": true,
                 "15:40": true,
-                "15:50": false,
+                "15:50": true,
                 "16:00": true
               },
               "THURSDAY": {
-                "9:00": false,
-                "9:10": false,
+                "9:00": true,
+                "9:10": true,
                 "9:20": true,
-                "9:30": true,
-                "9:40": false,
-                "9:50": false,
+                "9:30": false,
+                "9:40": true,
+                "9:50": true,
                 "10:00": true,
-                "10:10": false,
-                "10:20": true,
-                "10:30": false,
-                "10:40": true,
-                "10:50": false,
+                "10:10": true,
+                "10:20": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
                 "11:00": true,
-                "11:10": false,
-                "11:20": false,
-                "11:30": false,
-                "11:40": false,
-                "11:50": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": true,
                 "12:00": true,
-                "12:10": false,
+                "12:10": true,
                 "12:20": true,
-                "12:30": false,
+                "12:30": true,
                 "12:40": true,
                 "12:50": true,
                 "13:00": false,
                 "13:10": true,
-                "13:20": true,
-                "13:30": false,
+                "13:20": false,
+                "13:30": true,
                 "13:40": false,
-                "13:50": false,
-                "14:00": false,
+                "13:50": true,
+                "14:00": true,
                 "14:10": true,
-                "14:20": false,
+                "14:20": true,
                 "14:30": true,
                 "14:40": false,
                 "14:50": true,
                 "15:00": false,
                 "15:10": true,
-                "15:20": false,
+                "15:20": true,
                 "15:30": true,
                 "15:40": true,
-                "15:50": false,
+                "15:50": true,
                 "16:00": true
               },
               "FRIDAY": {
-                "9:00": false,
-                "9:10": false,
-                "9:20": true,
-                "9:30": true,
-                "9:40": false,
-                "9:50": false,
+                "9:00": true,
+                "9:10": true,
+                "9:20": false,
+                "9:30": false,
+                "9:40": true,
+                "9:50": true,
                 "10:00": true,
-                "10:10": false,
-                "10:20": true,
-                "10:30": false,
+                "10:10": true,
+                "10:20": false,
+                "10:30": true,
                 "10:40": true,
-                "10:50": false,
+                "10:50": true,
                 "11:00": true,
                 "11:10": false,
-                "11:20": false,
-                "11:30": false,
-                "11:40": false,
-                "11:50": false,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": true,
                 "12:00": true,
-                "12:10": false,
+                "12:10": true,
                 "12:20": true,
                 "12:30": false,
                 "12:40": true,
                 "12:50": true,
-                "13:00": false,
-                "13:10": true,
+                "13:00": true,
+                "13:10": false,
                 "13:20": true,
-                "13:30": false,
-                "13:40": false,
-                "13:50": false,
+                "13:30": true,
+                "13:40": true,
+                "13:50": true,
                 "14:00": false,
-                "14:10": true,
-                "14:20": false,
-                "14:30": true,
-                "14:40": false,
-                "14:50": true,
-                "15:00": false,
+                "14:10": false,
+                "14:20": true,
+                "14:30": false,
+                "14:40": true,
+                "14:50": false,
+                "15:00": true,
                 "15:10": true,
                 "15:20": false,
-                "15:30": true,
+                "15:30": false,
                 "15:40": true,
-                "15:50": false,
-                "16:00": true
+                "15:50": true,
+                "16:00": false
               },
               "SATURDAY": {
-                "9:00": false,
-                "9:10": false,
-                "9:20": true,
+                "9:00": true,
+                "9:10": true,
+                "9:20": false,
                 "9:30": true,
-                "9:40": false,
-                "9:50": false,
+                "9:40": true,
+                "9:50": true,
                 "10:00": true,
-                "10:10": false,
+                "10:10": true,
                 "10:20": true,
-                "10:30": false,
-                "10:40": true,
-                "10:50": false,
+                "10:30": true,
+                "10:40": false,
+                "10:50": true,
                 "11:00": true,
-                "11:10": false,
-                "11:20": false,
-                "11:30": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
                 "11:40": false,
                 "11:50": false,
                 "12:00": true,
-                "12:10": false,
+                "12:10": true,
                 "12:20": true,
-                "12:30": false,
+                "12:30": true,
                 "12:40": true,
                 "12:50": true,
                 "13:00": false,
                 "13:10": true,
                 "13:20": true,
                 "13:30": false,
-                "13:40": false,
-                "13:50": false,
-                "14:00": false,
+                "13:40": true,
+                "13:50": true,
+                "14:00": true,
                 "14:10": true,
-                "14:20": false,
+                "14:20": true,
                 "14:30": true,
-                "14:40": false,
+                "14:40": true,
                 "14:50": true,
-                "15:00": false,
+                "15:00": true,
                 "15:10": true,
-                "15:20": false,
-                "15:30": true,
+                "15:20": true,
+                "15:30": false,
                 "15:40": true,
                 "15:50": false,
                 "16:00": true
               },
               "SUNDAY": {
-                "9:00": false,
-                "9:10": false,
+                "9:00": true,
+                "9:10": true,
                 "9:20": true,
                 "9:30": true,
-                "9:40": false,
-                "9:50": false,
+                "9:40": true,
+                "9:50": true,
                 "10:00": true,
-                "10:10": false,
+                "10:10": true,
                 "10:20": true,
-                "10:30": false,
+                "10:30": true,
                 "10:40": true,
                 "10:50": false,
                 "11:00": true,
-                "11:10": false,
-                "11:20": false,
-                "11:30": false,
-                "11:40": false,
-                "11:50": false,
+                "11:10": true,
+                "11:20": true,
+                "11:30": true,
+                "11:40": true,
+                "11:50": true,
                 "12:00": true,
-                "12:10": false,
-                "12:20": true,
+                "12:10": true,
+                "12:20": false,
                 "12:30": false,
                 "12:40": true,
                 "12:50": true,
-                "13:00": false,
+                "13:00": true,
                 "13:10": true,
                 "13:20": true,
-                "13:30": false,
-                "13:40": false,
-                "13:50": false,
+                "13:30": true,
+                "13:40": true,
+                "13:50": true,
                 "14:00": false,
                 "14:10": true,
-                "14:20": false,
+                "14:20": true,
                 "14:30": true,
-                "14:40": false,
+                "14:40": true,
                 "14:50": true,
-                "15:00": false,
+                "15:00": true,
                 "15:10": true,
-                "15:20": false,
+                "15:20": true,
                 "15:30": true,
                 "15:40": true,
-                "15:50": false,
-                "16:00": true
+                "15:50": true,
+                "16:00": false
               }
             }
           }
@@ -1363,36 +1363,36 @@
                 "10:00": false,
                 "11:00": false,
                 "12:00": true,
-                "13:00": false,
+                "13:00": true,
                 "14:00": true,
-                "15:00": false,
+                "15:00": true,
                 "16:00": false,
                 "17:00": true,
-                "18:00": false
+                "18:00": true
               },
               "TUESDAY": {
                 "9:00": true,
-                "10:00": false,
-                "11:00": false,
-                "12:00": true,
-                "13:00": false,
+                "10:00": true,
+                "11:00": true,
+                "12:00": false,
+                "13:00": true,
                 "14:00": true,
-                "15:00": false,
-                "16:00": false,
+                "15:00": true,
+                "16:00": true,
                 "17:00": true,
-                "18:00": false
+                "18:00": true
               },
               "WEDNESDAY": {
                 "9:00": true,
-                "10:00": false,
-                "11:00": false,
-                "12:00": true,
+                "10:00": true,
+                "11:00": true,
+                "12:00": false,
                 "13:00": false,
                 "14:00": true,
-                "15:00": false,
+                "15:00": true,
                 "16:00": false,
                 "17:00": true,
-                "18:00": false
+                "18:00": true
               },
               "THURSDAY": {
                 "9:00": true,
@@ -1400,42 +1400,42 @@
                 "11:00": false,
                 "12:00": true,
                 "13:00": false,
-                "14:00": true,
-                "15:00": false,
+                "14:00": false,
+                "15:00": true,
                 "16:00": false,
                 "17:00": true,
-                "18:00": false
+                "18:00": true
               },
               "FRIDAY": {
                 "9:00": true,
                 "10:00": false,
-                "11:00": false,
+                "11:00": true,
                 "12:00": true,
                 "13:00": false,
                 "14:00": true,
-                "15:00": false,
-                "16:00": false,
+                "15:00": true,
+                "16:00": true,
                 "17:00": true,
-                "18:00": false
+                "18:00": true
               },
               "SATURDAY": {
                 "9:00": true,
-                "10:00": false,
+                "10:00": true,
                 "11:00": false,
-                "12:00": true,
-                "13:00": false,
+                "12:00": false,
+                "13:00": true,
                 "14:00": true,
-                "15:00": false,
-                "16:00": false,
+                "15:00": true,
+                "16:00": true,
                 "17:00": true,
-                "18:00": false
+                "18:00": true
               },
               "SUNDAY": {
-                "9:00": true,
-                "10:00": false,
-                "11:00": false,
+                "9:00": false,
+                "10:00": true,
+                "11:00": true,
                 "12:00": true,
-                "13:00": false,
+                "13:00": true,
                 "14:00": true,
                 "15:00": false,
                 "16:00": false,
@@ -1468,59 +1468,59 @@
             "serviceName": "Haircut",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:30": false,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": false,
                 "16:30": true
               },
               "TUESDAY": {
-                "9:00": false,
-                "10:30": false,
-                "12:00": false,
-                "13:30": true,
-                "15:00": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
                 "16:30": true
               },
               "WEDNESDAY": {
-                "9:00": false,
-                "10:30": false,
-                "12:00": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
                 "13:30": true,
-                "15:00": false,
-                "16:30": true
+                "15:00": true,
+                "16:30": false
               },
               "THURSDAY": {
-                "9:00": false,
-                "10:30": false,
-                "12:00": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
                 "13:30": true,
                 "15:00": false,
-                "16:30": true
+                "16:30": false
               },
               "FRIDAY": {
                 "9:00": false,
-                "10:30": false,
-                "12:00": false,
-                "13:30": true,
-                "15:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
                 "16:30": true
               },
               "SATURDAY": {
-                "9:00": false,
-                "10:30": false,
+                "9:00": true,
+                "10:30": true,
                 "12:00": false,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "16:30": true
               },
               "SUNDAY": {
                 "9:00": false,
-                "10:30": false,
+                "10:30": true,
                 "12:00": false,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "16:30": true
               }
             }
@@ -1530,58 +1530,58 @@
             "hoursAvailability": {
               "MONDAY": {
                 "9:00": false,
-                "10:30": false,
-                "12:00": false,
+                "10:30": true,
+                "12:00": true,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "16:30": true
               },
               "TUESDAY": {
-                "9:00": false,
-                "10:30": false,
+                "9:00": true,
+                "10:30": true,
                 "12:00": false,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "16:30": true
               },
               "WEDNESDAY": {
                 "9:00": false,
-                "10:30": false,
-                "12:00": false,
+                "10:30": true,
+                "12:00": true,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "16:30": true
               },
               "THURSDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:30": false,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": false,
                 "16:30": true
               },
               "FRIDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:30": false,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "16:30": true
               },
               "SATURDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:30": false,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "16:30": true
               },
               "SUNDAY": {
-                "9:00": false,
-                "10:30": false,
-                "12:00": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
                 "13:30": true,
-                "15:00": false,
+                "15:00": true,
                 "16:30": true
               }
             }
@@ -1590,132 +1590,132 @@
             "serviceName": "Hair styling",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
-                "9:30": false,
-                "10:30": false,
-                "11:00": false,
-                "11:30": false,
+                "9:00": true,
+                "9:30": true,
+                "10:30": true,
+                "11:00": true,
+                "11:30": true,
                 "12:00": false,
-                "12:30": false,
+                "12:30": true,
                 "13:00": false,
                 "13:30": true,
                 "14:00": true,
                 "14:30": true,
                 "15:00": false,
-                "15:30": false,
-                "16:00": false,
+                "15:30": true,
+                "16:00": true,
                 "16:30": true,
                 "17:00": true,
                 "17:30": true
               },
               "TUESDAY": {
-                "9:00": false,
-                "9:30": false,
-                "10:30": false,
+                "9:00": true,
+                "9:30": true,
+                "10:30": true,
                 "11:00": false,
-                "11:30": false,
+                "11:30": true,
                 "12:00": false,
-                "12:30": false,
-                "13:00": false,
+                "12:30": true,
+                "13:00": true,
                 "13:30": true,
                 "14:00": true,
                 "14:30": true,
-                "15:00": false,
-                "15:30": false,
-                "16:00": false,
+                "15:00": true,
+                "15:30": true,
+                "16:00": true,
                 "16:30": true,
                 "17:00": true,
                 "17:30": true
               },
               "WEDNESDAY": {
-                "9:00": false,
-                "9:30": false,
-                "10:30": false,
-                "11:00": false,
+                "9:00": true,
+                "9:30": true,
+                "10:30": true,
+                "11:00": true,
                 "11:30": false,
-                "12:00": false,
-                "12:30": false,
+                "12:00": true,
+                "12:30": true,
                 "13:00": false,
-                "13:30": true,
+                "13:30": false,
                 "14:00": true,
                 "14:30": true,
                 "15:00": false,
-                "15:30": false,
-                "16:00": false,
-                "16:30": true,
+                "15:30": true,
+                "16:00": true,
+                "16:30": false,
                 "17:00": true,
                 "17:30": true
               },
               "THURSDAY": {
                 "9:00": false,
-                "9:30": false,
-                "10:30": false,
+                "9:30": true,
+                "10:30": true,
                 "11:00": false,
                 "11:30": false,
-                "12:00": false,
-                "12:30": false,
-                "13:00": false,
+                "12:00": true,
+                "12:30": true,
+                "13:00": true,
                 "13:30": true,
                 "14:00": true,
                 "14:30": true,
-                "15:00": false,
-                "15:30": false,
+                "15:00": true,
+                "15:30": true,
                 "16:00": false,
-                "16:30": true,
+                "16:30": false,
                 "17:00": true,
                 "17:30": true
               },
               "FRIDAY": {
-                "9:00": false,
-                "9:30": false,
+                "9:00": true,
+                "9:30": true,
                 "10:30": false,
-                "11:00": false,
-                "11:30": false,
+                "11:00": true,
+                "11:30": true,
                 "12:00": false,
-                "12:30": false,
-                "13:00": false,
+                "12:30": true,
+                "13:00": true,
                 "13:30": true,
-                "14:00": true,
+                "14:00": false,
                 "14:30": true,
-                "15:00": false,
-                "15:30": false,
-                "16:00": false,
-                "16:30": true,
+                "15:00": true,
+                "15:30": true,
+                "16:00": true,
+                "16:30": false,
                 "17:00": true,
                 "17:30": true
               },
               "SATURDAY": {
-                "9:00": false,
-                "9:30": false,
-                "10:30": false,
-                "11:00": false,
-                "11:30": false,
-                "12:00": false,
-                "12:30": false,
-                "13:00": false,
+                "9:00": true,
+                "9:30": true,
+                "10:30": true,
+                "11:00": true,
+                "11:30": true,
+                "12:00": true,
+                "12:30": true,
+                "13:00": true,
                 "13:30": true,
-                "14:00": true,
+                "14:00": false,
                 "14:30": true,
-                "15:00": false,
+                "15:00": true,
                 "15:30": false,
                 "16:00": false,
-                "16:30": true,
+                "16:30": false,
                 "17:00": true,
                 "17:30": true
               },
               "SUNDAY": {
                 "9:00": false,
-                "9:30": false,
-                "10:30": false,
-                "11:00": false,
-                "11:30": false,
+                "9:30": true,
+                "10:30": true,
+                "11:00": true,
+                "11:30": true,
                 "12:00": false,
-                "12:30": false,
-                "13:00": false,
+                "12:30": true,
+                "13:00": true,
                 "13:30": true,
                 "14:00": true,
                 "14:30": true,
-                "15:00": false,
+                "15:00": true,
                 "15:30": false,
                 "16:00": false,
                 "16:30": true,
@@ -1735,50 +1735,50 @@
               "MONDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
                 "16:30": false
               },
               "TUESDAY": {
-                "9:00": true,
+                "9:00": false,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "THURSDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
                 "16:30": false
               },
               "FRIDAY": {
                 "9:00": true,
-                "10:30": true,
-                "12:00": false,
-                "13:30": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
                 "15:00": true,
                 "16:30": false
               },
               "SATURDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "SUNDAY": {
                 "9:00": true,
@@ -1786,7 +1786,7 @@
                 "12:00": false,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               }
             }
           },
@@ -1796,10 +1796,10 @@
               "MONDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "TUESDAY": {
                 "9:00": true,
@@ -1807,15 +1807,15 @@
                 "12:00": false,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
-                "15:00": true,
-                "16:30": false
+                "15:00": false,
+                "16:30": true
               },
               "THURSDAY": {
                 "9:00": true,
@@ -1823,31 +1823,31 @@
                 "12:00": false,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "FRIDAY": {
-                "9:00": true,
+                "9:00": false,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "SATURDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
-                "13:30": true,
+                "12:00": true,
+                "13:30": false,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "SUNDAY": {
-                "9:00": true,
+                "9:00": false,
                 "10:30": true,
                 "12:00": false,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               }
             }
           },
@@ -1855,61 +1855,61 @@
             "serviceName": "Hair styling",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": true,
+                "9:00": false,
                 "9:30": true,
                 "10:30": true,
-                "11:00": true,
+                "11:00": false,
                 "11:30": true,
-                "12:00": false,
-                "12:30": false,
-                "13:00": false,
+                "12:00": true,
+                "12:30": true,
+                "13:00": true,
                 "13:30": true,
                 "14:00": true,
                 "14:30": true,
-                "15:00": true,
+                "15:00": false,
                 "15:30": true,
                 "16:00": true,
-                "16:30": false,
-                "17:00": false,
-                "17:30": false
+                "16:30": true,
+                "17:00": true,
+                "17:30": true
               },
               "TUESDAY": {
                 "9:00": true,
                 "9:30": true,
                 "10:30": true,
                 "11:00": true,
-                "11:30": true,
-                "12:00": false,
-                "12:30": false,
+                "11:30": false,
+                "12:00": true,
+                "12:30": true,
                 "13:00": false,
                 "13:30": true,
-                "14:00": true,
+                "14:00": false,
                 "14:30": true,
                 "15:00": true,
-                "15:30": true,
+                "15:30": false,
                 "16:00": true,
-                "16:30": false,
-                "17:00": false,
-                "17:30": false
+                "16:30": true,
+                "17:00": true,
+                "17:30": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "9:30": true,
-                "10:30": true,
+                "10:30": false,
                 "11:00": true,
                 "11:30": true,
-                "12:00": false,
-                "12:30": false,
-                "13:00": false,
+                "12:00": true,
+                "12:30": true,
+                "13:00": true,
                 "13:30": true,
                 "14:00": true,
                 "14:30": true,
                 "15:00": true,
-                "15:30": true,
-                "16:00": true,
-                "16:30": false,
-                "17:00": false,
-                "17:30": false
+                "15:30": false,
+                "16:00": false,
+                "16:30": true,
+                "17:00": true,
+                "17:30": true
               },
               "THURSDAY": {
                 "9:00": true,
@@ -1917,18 +1917,18 @@
                 "10:30": true,
                 "11:00": true,
                 "11:30": true,
-                "12:00": false,
-                "12:30": false,
-                "13:00": false,
-                "13:30": true,
-                "14:00": true,
+                "12:00": true,
+                "12:30": true,
+                "13:00": true,
+                "13:30": false,
+                "14:00": false,
                 "14:30": true,
                 "15:00": true,
                 "15:30": true,
                 "16:00": true,
-                "16:30": false,
-                "17:00": false,
-                "17:30": false
+                "16:30": true,
+                "17:00": true,
+                "17:30": true
               },
               "FRIDAY": {
                 "9:00": true,
@@ -1937,17 +1937,17 @@
                 "11:00": true,
                 "11:30": true,
                 "12:00": false,
-                "12:30": false,
-                "13:00": false,
-                "13:30": true,
-                "14:00": true,
+                "12:30": true,
+                "13:00": true,
+                "13:30": false,
+                "14:00": false,
                 "14:30": true,
                 "15:00": true,
                 "15:30": true,
-                "16:00": true,
-                "16:30": false,
-                "17:00": false,
-                "17:30": false
+                "16:00": false,
+                "16:30": true,
+                "17:00": true,
+                "17:30": true
               },
               "SATURDAY": {
                 "9:00": true,
@@ -1955,37 +1955,37 @@
                 "10:30": true,
                 "11:00": true,
                 "11:30": true,
-                "12:00": false,
-                "12:30": false,
+                "12:00": true,
+                "12:30": true,
                 "13:00": false,
                 "13:30": true,
                 "14:00": true,
-                "14:30": true,
+                "14:30": false,
                 "15:00": true,
                 "15:30": true,
                 "16:00": true,
-                "16:30": false,
+                "16:30": true,
                 "17:00": false,
-                "17:30": false
+                "17:30": true
               },
               "SUNDAY": {
-                "9:00": true,
+                "9:00": false,
                 "9:30": true,
                 "10:30": true,
-                "11:00": true,
+                "11:00": false,
                 "11:30": true,
-                "12:00": false,
-                "12:30": false,
-                "13:00": false,
-                "13:30": true,
+                "12:00": true,
+                "12:30": true,
+                "13:00": true,
+                "13:30": false,
                 "14:00": true,
                 "14:30": true,
                 "15:00": true,
                 "15:30": true,
                 "16:00": true,
-                "16:30": false,
+                "16:30": true,
                 "17:00": false,
-                "17:30": false
+                "17:30": true
               }
             }
           }
@@ -1998,45 +1998,45 @@
             "serviceName": "Haircut",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
-                "11:30": false,
-                "13:00": false,
-                "14:30": true
+                "9:00": true,
+                "11:30": true,
+                "13:00": true,
+                "14:30": false
               },
               "TUESDAY": {
-                "9:00": false,
-                "11:30": false,
+                "9:00": true,
+                "11:30": true,
                 "13:00": false,
                 "14:30": true
               },
               "WEDNESDAY": {
-                "9:00": false,
-                "11:30": false,
+                "9:00": true,
+                "11:30": true,
                 "13:00": false,
-                "14:30": true
+                "14:30": false
               },
               "THURSDAY": {
-                "9:00": false,
-                "11:30": false,
+                "9:00": true,
+                "11:30": true,
                 "13:00": false,
                 "14:30": true
               },
               "FRIDAY": {
-                "9:00": false,
-                "11:30": false,
-                "13:00": false,
-                "14:30": true
+                "9:00": true,
+                "11:30": true,
+                "13:00": true,
+                "14:30": false
               },
               "SATURDAY": {
-                "9:00": false,
-                "11:30": false,
-                "13:00": false,
-                "14:30": true
+                "9:00": true,
+                "11:30": true,
+                "13:00": true,
+                "14:30": false
               },
               "SUNDAY": {
                 "9:00": false,
-                "11:30": false,
-                "13:00": false,
+                "11:30": true,
+                "13:00": true,
                 "14:30": true
               }
             }
@@ -2045,45 +2045,45 @@
             "serviceName": "Beard trimming",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
-                "11:30": false,
-                "13:00": false,
+                "9:00": true,
+                "11:30": true,
+                "13:00": true,
                 "14:30": true
               },
               "TUESDAY": {
-                "9:00": false,
-                "11:30": false,
-                "13:00": false,
+                "9:00": true,
+                "11:30": true,
+                "13:00": true,
                 "14:30": true
               },
               "WEDNESDAY": {
                 "9:00": false,
-                "11:30": false,
+                "11:30": true,
                 "13:00": false,
                 "14:30": true
               },
               "THURSDAY": {
                 "9:00": false,
-                "11:30": false,
-                "13:00": false,
+                "11:30": true,
+                "13:00": true,
                 "14:30": true
               },
               "FRIDAY": {
-                "9:00": false,
-                "11:30": false,
-                "13:00": false,
+                "9:00": true,
+                "11:30": true,
+                "13:00": true,
                 "14:30": true
               },
               "SATURDAY": {
-                "9:00": false,
-                "11:30": false,
-                "13:00": false,
-                "14:30": true
+                "9:00": true,
+                "11:30": true,
+                "13:00": true,
+                "14:30": false
               },
               "SUNDAY": {
-                "9:00": false,
-                "11:30": false,
-                "13:00": false,
+                "9:00": true,
+                "11:30": true,
+                "13:00": true,
                 "14:30": true
               }
             }
@@ -2112,60 +2112,60 @@
             "serviceName": "Manicure",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
+                "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               },
               "TUESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               },
               "WEDNESDAY": {
                 "9:00": false,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "THURSDAY": {
                 "9:00": false,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "FRIDAY": {
-                "9:00": false,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "9:00": true,
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               },
               "SATURDAY": {
-                "9:00": false,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "9:00": true,
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SUNDAY": {
-                "9:00": false,
+                "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               }
             }
           }
@@ -2181,21 +2181,21 @@
                 "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
-                "19:40": true,
-                "21:00": true
+                "19:40": false,
+                "21:00": false
               },
               "TUESDAY": {
                 "9:00": true,
-                "10:20": true,
-                "11:40": true,
+                "10:20": false,
+                "11:40": false,
                 "14:20": false,
-                "15:40": false,
-                "17:00": false,
-                "18:20": true,
+                "15:40": true,
+                "17:00": true,
+                "18:20": false,
                 "19:40": true,
                 "21:00": true
               },
@@ -2203,9 +2203,9 @@
                 "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -2214,10 +2214,10 @@
                 "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
-                "18:20": true,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
+                "18:20": false,
                 "19:40": true,
                 "21:00": true
               },
@@ -2225,9 +2225,9 @@
                 "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -2235,10 +2235,10 @@
               "SATURDAY": {
                 "9:00": true,
                 "10:20": true,
-                "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -2247,9 +2247,9 @@
                 "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -2265,60 +2265,60 @@
             "serviceName": "Massage",
             "hoursAvailability": {
               "MONDAY": {
-                "10:30": false,
-                "12:30": false,
+                "10:30": true,
+                "12:30": true,
                 "14:30": true,
                 "16:30": true,
                 "18:30": true,
-                "20:30": false
+                "20:30": true
               },
               "TUESDAY": {
                 "10:30": false,
-                "12:30": false,
+                "12:30": true,
                 "14:30": true,
-                "16:30": true,
+                "16:30": false,
                 "18:30": true,
-                "20:30": false
+                "20:30": true
               },
               "WEDNESDAY": {
                 "10:30": false,
                 "12:30": false,
-                "14:30": true,
+                "14:30": false,
                 "16:30": true,
                 "18:30": true,
-                "20:30": false
+                "20:30": true
               },
               "THURSDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:30": false,
                 "14:30": true,
                 "16:30": true,
                 "18:30": true,
-                "20:30": false
+                "20:30": true
               },
               "FRIDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:30": false,
                 "14:30": true,
                 "16:30": true,
-                "18:30": true,
-                "20:30": false
+                "18:30": false,
+                "20:30": true
               },
               "SATURDAY": {
-                "10:30": false,
-                "12:30": false,
+                "10:30": true,
+                "12:30": true,
                 "14:30": true,
                 "16:30": true,
-                "18:30": true,
-                "20:30": false
+                "18:30": false,
+                "20:30": true
               },
               "SUNDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:30": false,
                 "14:30": true,
-                "16:30": true,
+                "16:30": false,
                 "18:30": true,
-                "20:30": false
+                "20:30": true
               }
             }
           }
@@ -2332,78 +2332,78 @@
             "hoursAvailability": {
               "MONDAY": {
                 "8:30": false,
-                "9:00": false,
-                "10:30": true,
+                "9:00": true,
+                "10:30": false,
                 "12:00": true,
                 "13:30": false,
                 "15:00": true,
-                "16:30": false,
-                "18:00": false,
-                "19:30": true
+                "16:30": true,
+                "18:00": true,
+                "19:30": false
               },
               "TUESDAY": {
-                "8:30": false,
-                "9:00": false,
+                "8:30": true,
+                "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": false,
+                "16:30": true,
+                "18:00": true,
                 "19:30": true
               },
               "WEDNESDAY": {
-                "8:30": false,
-                "9:00": false,
+                "8:30": true,
+                "9:00": true,
                 "10:30": true,
-                "12:00": true,
-                "13:30": false,
+                "12:00": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": false,
+                "16:30": true,
+                "18:00": true,
                 "19:30": true
               },
               "THURSDAY": {
-                "8:30": false,
-                "9:00": false,
-                "10:30": true,
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": false,
+                "16:30": true,
+                "18:00": true,
                 "19:30": true
               },
               "FRIDAY": {
                 "8:30": false,
-                "9:00": false,
+                "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": false,
+                "16:30": true,
+                "18:00": true,
                 "19:30": true
               },
               "SATURDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:00": false,
                 "10:30": true,
-                "12:00": true,
-                "13:30": false,
+                "12:00": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": false,
+                "16:30": true,
+                "18:00": true,
                 "19:30": true
               },
               "SUNDAY": {
-                "8:30": false,
-                "9:00": false,
+                "8:30": true,
+                "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": false,
                 "19:30": true
               }
@@ -2420,9 +2420,9 @@
               "MONDAY": {
                 "9:00": true,
                 "10:00": true,
-                "11:00": true,
+                "11:00": false,
                 "12:00": true,
-                "13:00": false,
+                "13:00": true,
                 "14:00": true,
                 "15:00": false,
                 "16:00": false,
@@ -2433,53 +2433,53 @@
                 "10:00": true,
                 "11:00": true,
                 "12:00": true,
-                "13:00": false,
+                "13:00": true,
                 "14:00": true,
-                "15:00": false,
-                "16:00": false,
+                "15:00": true,
+                "16:00": true,
                 "17:00": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "10:00": true,
                 "11:00": true,
-                "12:00": true,
-                "13:00": false,
+                "12:00": false,
+                "13:00": true,
                 "14:00": true,
                 "15:00": false,
-                "16:00": false,
+                "16:00": true,
                 "17:00": true
               },
               "THURSDAY": {
                 "9:00": true,
-                "10:00": true,
+                "10:00": false,
                 "11:00": true,
                 "12:00": true,
-                "13:00": false,
+                "13:00": true,
                 "14:00": true,
                 "15:00": false,
-                "16:00": false,
+                "16:00": true,
                 "17:00": true
               },
               "FRIDAY": {
                 "9:00": true,
-                "10:00": true,
+                "10:00": false,
                 "11:00": true,
                 "12:00": true,
-                "13:00": false,
+                "13:00": true,
                 "14:00": true,
-                "15:00": false,
-                "16:00": false,
+                "15:00": true,
+                "16:00": true,
                 "17:00": true
               },
               "SATURDAY": {
-                "9:00": true,
-                "10:00": true,
-                "11:00": true,
+                "9:00": false,
+                "10:00": false,
+                "11:00": false,
                 "12:00": true,
-                "13:00": false,
+                "13:00": true,
                 "14:00": true,
-                "15:00": false,
+                "15:00": true,
                 "16:00": false,
                 "17:00": true
               },
@@ -2488,11 +2488,11 @@
                 "10:00": true,
                 "11:00": true,
                 "12:00": true,
-                "13:00": false,
+                "13:00": true,
                 "14:00": true,
-                "15:00": false,
-                "16:00": false,
-                "17:00": true
+                "15:00": true,
+                "16:00": true,
+                "17:00": false
               }
             }
           }
@@ -2524,63 +2524,63 @@
                 "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "TUESDAY": {
                 "8:30": true,
                 "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "WEDNESDAY": {
                 "8:30": true,
-                "9:00": true,
-                "10:30": true,
+                "9:00": false,
+                "10:30": false,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "THURSDAY": {
                 "8:30": true,
                 "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
-                "15:00": true,
-                "16:30": false
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
               },
               "FRIDAY": {
                 "8:30": true,
                 "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
-                "15:00": true,
-                "16:30": false
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
               },
               "SATURDAY": {
-                "8:30": true,
+                "8:30": false,
                 "9:00": true,
                 "10:30": true,
-                "12:00": true,
-                "13:30": false,
+                "12:00": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "SUNDAY": {
                 "8:30": true,
                 "9:00": true,
                 "10:30": true,
-                "12:00": true,
-                "13:30": false,
+                "12:00": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               }
             }
           },
@@ -2592,63 +2592,63 @@
                 "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "TUESDAY": {
-                "8:30": true,
+                "8:30": false,
                 "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "WEDNESDAY": {
                 "8:30": true,
                 "9:00": true,
-                "10:30": true,
+                "10:30": false,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "THURSDAY": {
                 "8:30": true,
                 "9:00": true,
                 "10:30": true,
-                "12:00": true,
-                "13:30": false,
+                "12:00": false,
+                "13:30": true,
                 "15:00": true,
                 "16:30": false
               },
               "FRIDAY": {
                 "8:30": true,
-                "9:00": true,
+                "9:00": false,
                 "10:30": true,
                 "12:00": true,
                 "13:30": false,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "SATURDAY": {
                 "8:30": true,
                 "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "SUNDAY": {
-                "8:30": true,
+                "8:30": false,
                 "9:00": true,
                 "10:30": true,
                 "12:00": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               }
             }
           },
@@ -2660,8 +2660,8 @@
                 "11:00": true,
                 "12:30": false,
                 "14:00": true,
-                "15:30": true,
-                "17:00": false
+                "15:30": false,
+                "17:00": true
               },
               "TUESDAY": {
                 "9:30": true,
@@ -2674,42 +2674,42 @@
               "WEDNESDAY": {
                 "9:30": true,
                 "11:00": true,
-                "12:30": false,
+                "12:30": true,
                 "14:00": true,
                 "15:30": true,
-                "17:00": false
+                "17:00": true
               },
               "THURSDAY": {
                 "9:30": true,
-                "11:00": true,
+                "11:00": false,
                 "12:30": false,
                 "14:00": true,
-                "15:30": true,
+                "15:30": false,
                 "17:00": false
               },
               "FRIDAY": {
                 "9:30": true,
                 "11:00": true,
-                "12:30": false,
+                "12:30": true,
                 "14:00": true,
                 "15:30": true,
-                "17:00": false
+                "17:00": true
               },
               "SATURDAY": {
                 "9:30": true,
                 "11:00": true,
-                "12:30": false,
+                "12:30": true,
                 "14:00": true,
                 "15:30": true,
-                "17:00": false
+                "17:00": true
               },
               "SUNDAY": {
                 "9:30": true,
                 "11:00": true,
-                "12:30": false,
+                "12:30": true,
                 "14:00": true,
                 "15:30": true,
-                "17:00": false
+                "17:00": true
               }
             }
           }
@@ -2722,59 +2722,59 @@
             "serviceName": "Haircut",
             "hoursAvailability": {
               "MONDAY": {
-                "10:00": false,
-                "11:30": true,
+                "10:00": true,
+                "11:30": false,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "TUESDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
-                "13:00": true,
+                "13:00": false,
                 "14:30": true,
                 "16:00": false,
-                "17:30": true
+                "17:30": false
               },
               "WEDNESDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
-                "14:30": true,
+                "14:30": false,
                 "16:00": false,
-                "17:30": true
+                "17:30": false
               },
               "THURSDAY": {
-                "10:00": false,
-                "11:30": true,
+                "10:00": true,
+                "11:30": false,
                 "13:00": true,
-                "14:30": true,
-                "16:00": false,
+                "14:30": false,
+                "16:00": true,
                 "17:30": true
               },
               "FRIDAY": {
-                "10:00": false,
-                "11:30": true,
+                "10:00": true,
+                "11:30": false,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "SATURDAY": {
-                "10:00": false,
-                "11:30": true,
+                "10:00": true,
+                "11:30": false,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": true
+                "16:00": true,
+                "17:30": false
               },
               "SUNDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               }
             }
@@ -2784,41 +2784,41 @@
             "hoursAvailability": {
               "MONDAY": {
                 "10:00": false,
-                "11:30": true,
+                "11:30": false,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": true
+                "16:00": true,
+                "17:30": false
               },
               "TUESDAY": {
                 "10:00": false,
                 "11:30": true,
                 "13:00": true,
-                "14:30": true,
-                "16:00": false,
+                "14:30": false,
+                "16:00": true,
                 "17:30": true
               },
               "WEDNESDAY": {
-                "10:00": false,
-                "11:30": true,
+                "10:00": true,
+                "11:30": false,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": true
+                "16:00": true,
+                "17:30": false
               },
               "THURSDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "FRIDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
-                "14:30": true,
+                "14:30": false,
                 "16:00": false,
                 "17:30": true
               },
@@ -2827,15 +2827,15 @@
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "SUNDAY": {
-                "10:00": false,
-                "11:30": true,
+                "10:00": true,
+                "11:30": false,
                 "13:00": true,
-                "14:30": true,
-                "16:00": false,
+                "14:30": false,
+                "16:00": true,
                 "17:30": true
               }
             }
@@ -2844,11 +2844,11 @@
             "serviceName": "Mustache styling",
             "hoursAvailability": {
               "MONDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true
               },
               "TUESDAY": {
@@ -2856,35 +2856,35 @@
                 "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true
               },
               "WEDNESDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
                 "15:00": true,
                 "16:30": false,
-                "18:00": true
+                "18:00": false
               },
               "THURSDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
-                "15:00": true,
+                "15:00": false,
                 "16:30": false,
                 "18:00": true
               },
               "FRIDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
-                "15:00": true,
+                "15:00": false,
                 "16:30": false,
-                "18:00": true
+                "18:00": false
               },
               "SATURDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
                 "15:00": true,
@@ -2892,12 +2892,12 @@
                 "18:00": true
               },
               "SUNDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": true
+                "16:30": true,
+                "18:00": false
               }
             }
           }
@@ -2925,39 +2925,39 @@
             "serviceName": "Manicure",
             "hoursAvailability": {
               "MONDAY": {
-                "8:30": true,
+                "8:30": false,
                 "9:30": true,
-                "10:30": false
+                "10:30": true
               },
               "TUESDAY": {
-                "8:30": true,
+                "8:30": false,
                 "9:30": true,
-                "10:30": false
+                "10:30": true
               },
               "WEDNESDAY": {
                 "8:30": true,
                 "9:30": true,
-                "10:30": false
+                "10:30": true
               },
               "THURSDAY": {
                 "8:30": true,
                 "9:30": true,
-                "10:30": false
+                "10:30": true
               },
               "FRIDAY": {
                 "8:30": true,
                 "9:30": true,
-                "10:30": false
+                "10:30": true
               },
               "SATURDAY": {
-                "8:30": true,
+                "8:30": false,
                 "9:30": true,
-                "10:30": false
+                "10:30": true
               },
               "SUNDAY": {
                 "8:30": true,
                 "9:30": true,
-                "10:30": false
+                "10:30": true
               }
             }
           }
@@ -2975,24 +2975,24 @@
                 "10:30": true
               },
               "TUESDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
                 "10:30": true
               },
               "WEDNESDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
                 "10:30": true
               },
               "THURSDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
                 "10:30": true
               },
               "FRIDAY": {
-                "8:30": false,
+                "8:30": true,
                 "9:30": true,
-                "10:30": true
+                "10:30": false
               },
               "SATURDAY": {
                 "8:30": false,
@@ -3002,7 +3002,7 @@
               "SUNDAY": {
                 "8:30": false,
                 "9:30": true,
-                "10:30": true
+                "10:30": false
               }
             }
           }
@@ -3032,31 +3032,31 @@
               "MONDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "TUESDAY": {
                 "9:00": true,
-                "10:30": true,
-                "12:00": false,
+                "10:30": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "THURSDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
                 "16:30": false
@@ -3064,26 +3064,26 @@
               "FRIDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
-                "15:00": true,
-                "16:30": false
+                "15:00": false,
+                "16:30": true
               },
               "SATURDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
-                "15:00": true,
-                "16:30": false
+                "15:00": false,
+                "16:30": true
               },
               "SUNDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               }
             }
           },
@@ -3101,23 +3101,23 @@
               "TUESDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
-                "15:00": true,
-                "16:30": false
+                "15:00": false,
+                "16:30": true
               },
               "THURSDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
                 "16:30": false
@@ -3125,23 +3125,23 @@
               "FRIDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false
+                "16:30": true
               },
               "SATURDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
-                "15:00": true,
-                "16:30": false
+                "15:00": false,
+                "16:30": true
               },
               "SUNDAY": {
                 "9:00": true,
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": true,
                 "15:00": true,
                 "16:30": false
@@ -3152,26 +3152,26 @@
             "serviceName": "Shave",
             "hoursAvailability": {
               "MONDAY": {
-                "9:30": true,
+                "9:30": false,
                 "11:00": true,
                 "12:30": false,
                 "14:00": true,
                 "15:30": true,
-                "17:00": false
+                "17:00": true
               },
               "TUESDAY": {
-                "9:30": true,
+                "9:30": false,
                 "11:00": true,
-                "12:30": false,
+                "12:30": true,
                 "14:00": true,
                 "15:30": true,
                 "17:00": false
               },
               "WEDNESDAY": {
                 "9:30": true,
-                "11:00": true,
-                "12:30": false,
-                "14:00": true,
+                "11:00": false,
+                "12:30": true,
+                "14:00": false,
                 "15:30": true,
                 "17:00": false
               },
@@ -3181,30 +3181,30 @@
                 "12:30": false,
                 "14:00": true,
                 "15:30": true,
-                "17:00": false
+                "17:00": true
               },
               "FRIDAY": {
                 "9:30": true,
                 "11:00": true,
-                "12:30": false,
+                "12:30": true,
                 "14:00": true,
                 "15:30": true,
-                "17:00": false
+                "17:00": true
               },
               "SATURDAY": {
                 "9:30": true,
                 "11:00": true,
-                "12:30": false,
-                "14:00": true,
+                "12:30": true,
+                "14:00": false,
                 "15:30": true,
-                "17:00": false
+                "17:00": true
               },
               "SUNDAY": {
                 "9:30": true,
                 "11:00": true,
-                "12:30": false,
-                "14:00": true,
-                "15:30": true,
+                "12:30": true,
+                "14:00": false,
+                "15:30": false,
                 "17:00": false
               }
             }
@@ -3221,40 +3221,40 @@
                 "10:00": false,
                 "11:30": true,
                 "13:00": true,
-                "14:30": true,
-                "16:00": false,
+                "14:30": false,
+                "16:00": true,
                 "17:30": true
               },
               "TUESDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
-                "14:30": true,
-                "16:00": false,
+                "14:30": false,
+                "16:00": true,
                 "17:30": true
               },
               "WEDNESDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": true
+                "16:00": true,
+                "17:30": false
               },
               "THURSDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
-                "14:30": true,
-                "16:00": false,
+                "14:30": false,
+                "16:00": true,
                 "17:30": true
               },
               "FRIDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "SATURDAY": {
@@ -3262,11 +3262,11 @@
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "SUNDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
@@ -3283,19 +3283,19 @@
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "TUESDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
-                "14:30": true,
-                "16:00": false,
+                "14:30": false,
+                "16:00": true,
                 "17:30": true
               },
               "WEDNESDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
@@ -3303,11 +3303,11 @@
                 "17:30": true
               },
               "THURSDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "FRIDAY": {
@@ -3315,23 +3315,23 @@
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "SATURDAY": {
                 "10:00": false,
-                "11:30": true,
+                "11:30": false,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               },
               "SUNDAY": {
-                "10:00": false,
+                "10:00": true,
                 "11:30": true,
                 "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": true
               }
             }
@@ -3340,60 +3340,60 @@
             "serviceName": "Shave",
             "hoursAvailability": {
               "MONDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true
               },
               "TUESDAY": {
-                "10:30": false,
-                "12:00": true,
+                "10:30": true,
+                "12:00": false,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": true
+                "16:30": true,
+                "18:00": false
               },
               "WEDNESDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
-                "15:00": true,
+                "15:00": false,
                 "16:30": false,
                 "18:00": true
               },
               "THURSDAY": {
                 "10:30": false,
                 "12:00": true,
-                "13:30": true,
+                "13:30": false,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true
               },
               "FRIDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true
               },
               "SATURDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": true
+                "16:30": true,
+                "18:00": false
               },
               "SUNDAY": {
-                "10:30": false,
+                "10:30": true,
                 "12:00": true,
                 "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": true
+                "16:30": true,
+                "18:00": false
               }
             }
           }
@@ -3421,60 +3421,60 @@
             "serviceName": "Manicure",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": true,
+                "9:00": false,
                 "11:30": true,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "TUESDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "WEDNESDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               },
               "THURSDAY": {
-                "9:00": true,
+                "9:00": false,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               },
               "FRIDAY": {
                 "9:00": true,
                 "11:30": true,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SATURDAY": {
-                "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
+                "9:00": false,
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
                 "17:00": false,
-                "19:00": false
+                "19:00": true
               },
               "SUNDAY": {
-                "9:00": true,
-                "11:30": true,
+                "9:00": false,
+                "11:30": false,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               }
             }
           },
@@ -3484,58 +3484,58 @@
               "MONDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "TUESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "17:00": true,
+                "19:00": true
               },
               "THURSDAY": {
                 "9:00": true,
                 "11:30": true,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "FRIDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": false,
-                "17:00": false,
+                "17:00": true,
                 "19:00": false
               },
               "SATURDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SUNDAY": {
-                "9:00": true,
+                "9:00": false,
                 "11:30": true,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               }
             }
           }
@@ -3548,55 +3548,55 @@
             "serviceName": "Haircut",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
                 "14:20": false,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
+                "19:40": false,
                 "21:00": true
               },
               "TUESDAY": {
-                "9:00": false,
-                "10:20": true,
+                "9:00": true,
+                "10:20": false,
                 "11:40": true,
                 "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
+                "19:40": false,
                 "21:00": true
               },
               "WEDNESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "THURSDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
+                "19:40": false,
                 "21:00": true
               },
               "FRIDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
-                "11:40": true,
+                "11:40": false,
                 "14:20": false,
-                "15:40": false,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
                 "19:40": true,
@@ -3606,20 +3606,20 @@
                 "9:00": false,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "SUNDAY": {
-                "9:00": false,
-                "10:20": true,
+                "9:00": true,
+                "10:20": false,
                 "11:40": true,
                 "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -3630,22 +3630,22 @@
             "serviceName": "Hair coloring",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
-                "19:40": true,
-                "21:00": true
+                "19:40": false,
+                "21:00": false
               },
               "TUESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
-                "11:40": true,
+                "11:40": false,
                 "14:20": false,
-                "15:40": false,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
                 "19:40": true,
@@ -3655,33 +3655,33 @@
                 "9:00": false,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "THURSDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               },
               "FRIDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
+                "19:40": false,
                 "21:00": true
               },
               "SATURDAY": {
@@ -3689,22 +3689,22 @@
                 "10:20": true,
                 "11:40": true,
                 "14:20": false,
-                "15:40": false,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               },
               "SUNDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               }
             }
           }
@@ -3732,58 +3732,58 @@
               "MONDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "TUESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "17:00": true,
+                "19:00": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "THURSDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": false,
                 "17:00": false,
-                "19:00": false
+                "19:00": true
               },
               "FRIDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SATURDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SUNDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
+                "11:30": false,
+                "13:30": true,
                 "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "17:00": true,
+                "19:00": true
               }
             }
           },
@@ -3792,58 +3792,58 @@
             "hoursAvailability": {
               "MONDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
+                "11:30": false,
+                "13:30": true,
                 "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "17:00": true,
+                "19:00": true
               },
               "TUESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
+                "13:30": true,
+                "15:00": true,
                 "17:00": false,
-                "19:00": false
+                "19:00": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "THURSDAY": {
-                "9:00": true,
+                "9:00": false,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               },
               "FRIDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SATURDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SUNDAY": {
                 "9:00": true,
-                "11:30": true,
+                "11:30": false,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               }
             }
@@ -3857,45 +3857,45 @@
             "serviceName": "Haircut",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
-                "18:20": true,
-                "19:40": true,
+                "17:00": true,
+                "18:20": false,
+                "19:40": false,
                 "21:00": true
               },
               "TUESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
-                "18:20": true,
+                "18:20": false,
                 "19:40": true,
                 "21:00": true
               },
               "WEDNESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
+                "19:40": false,
                 "21:00": true
               },
               "THURSDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -3904,34 +3904,34 @@
                 "9:00": false,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "SATURDAY": {
-                "9:00": false,
-                "10:20": true,
+                "9:00": true,
+                "10:20": false,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
-                "18:20": true,
+                "18:20": false,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               },
               "SUNDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
-                "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               }
             }
           },
@@ -3939,79 +3939,79 @@
             "serviceName": "Hair styling",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
-                "11:40": true,
-                "14:20": false,
+                "11:40": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "TUESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "WEDNESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "THURSDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "FRIDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
+                "19:40": false,
                 "21:00": true
               },
               "SATURDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
-                "18:20": true,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
+                "18:20": false,
                 "19:40": true,
                 "21:00": true
               },
               "SUNDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
-                "18:20": true,
+                "17:00": true,
+                "18:20": false,
                 "19:40": true,
                 "21:00": true
               }
@@ -4041,58 +4041,58 @@
               "MONDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "TUESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "WEDNESDAY": {
-                "9:00": true,
+                "9:00": false,
                 "11:30": true,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "THURSDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "FRIDAY": {
                 "9:00": true,
                 "11:30": true,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SATURDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SUNDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               }
             }
           },
@@ -4100,59 +4100,59 @@
             "serviceName": "Pedicure",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": true,
+                "9:00": false,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
+                "13:30": true,
+                "15:00": true,
                 "17:00": false,
-                "19:00": false
+                "19:00": true
               },
               "TUESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "WEDNESDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
+                "11:30": false,
+                "13:30": true,
                 "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "17:00": true,
+                "19:00": true
               },
               "THURSDAY": {
                 "9:00": true,
                 "11:30": true,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "FRIDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SATURDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": false,
-                "17:00": false,
+                "17:00": true,
                 "19:00": false
               },
               "SUNDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               }
             }
@@ -4166,12 +4166,12 @@
             "serviceName": "Haircut",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
-                "10:20": true,
+                "9:00": true,
+                "10:20": false,
                 "11:40": true,
                 "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -4179,54 +4179,54 @@
               "TUESDAY": {
                 "9:00": false,
                 "10:20": true,
-                "11:40": true,
-                "14:20": false,
+                "11:40": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               },
               "WEDNESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
-                "11:40": true,
+                "11:40": false,
                 "14:20": false,
-                "15:40": false,
-                "17:00": false,
-                "18:20": true,
+                "15:40": true,
+                "17:00": true,
+                "18:20": false,
                 "19:40": true,
                 "21:00": true
               },
               "THURSDAY": {
-                "9:00": false,
-                "10:20": true,
+                "9:00": true,
+                "10:20": false,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
-                "21:00": true
+                "19:40": false,
+                "21:00": false
               },
               "FRIDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
+                "19:40": false,
                 "21:00": true
               },
               "SATURDAY": {
-                "9:00": false,
-                "10:20": true,
+                "9:00": true,
+                "10:20": false,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -4234,13 +4234,13 @@
               "SUNDAY": {
                 "9:00": false,
                 "10:20": true,
-                "11:40": true,
-                "14:20": false,
+                "11:40": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               }
             }
           },
@@ -4248,45 +4248,45 @@
             "serviceName": "Hair coloring",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
-                "10:20": true,
+                "9:00": true,
+                "10:20": false,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
-                "18:20": true,
+                "18:20": false,
                 "19:40": true,
                 "21:00": true
               },
               "TUESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
-                "11:40": true,
-                "14:20": false,
+                "11:40": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
-                "18:20": true,
+                "17:00": true,
+                "18:20": false,
                 "19:40": true,
                 "21:00": true
               },
               "WEDNESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
+                "19:40": false,
                 "21:00": true
               },
               "THURSDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -4295,31 +4295,31 @@
                 "9:00": false,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               },
               "SATURDAY": {
                 "9:00": false,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "SUNDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -4350,60 +4350,60 @@
             "serviceName": "Haircut",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": true,
+                "9:00": false,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               },
               "TUESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
+                "13:30": true,
                 "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "17:00": true,
+                "19:00": true
               },
               "THURSDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "FRIDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SATURDAY": {
                 "9:00": true,
                 "11:30": true,
                 "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SUNDAY": {
                 "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
                 "17:00": false,
-                "19:00": false
+                "19:00": true
               }
             }
           },
@@ -4413,57 +4413,57 @@
               "MONDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
+                "13:30": true,
+                "15:00": true,
                 "17:00": false,
-                "19:00": false
+                "19:00": true
               },
               "TUESDAY": {
-                "9:00": true,
+                "9:00": false,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "WEDNESDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "THURSDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "FRIDAY": {
-                "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "9:00": false,
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SATURDAY": {
-                "9:00": true,
-                "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
-                "19:00": false
+                "9:00": false,
+                "11:30": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
+                "19:00": true
               },
               "SUNDAY": {
                 "9:00": true,
                 "11:30": true,
-                "13:30": false,
-                "15:00": false,
-                "17:00": false,
+                "13:30": true,
+                "15:00": true,
+                "17:00": true,
                 "19:00": false
               }
             }
@@ -4477,46 +4477,46 @@
             "serviceName": "Haircut",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
-                "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
-                "19:40": true,
+                "19:40": false,
                 "21:00": true
               },
               "TUESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
-                "11:40": true,
+                "11:40": false,
                 "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               },
               "WEDNESDAY": {
-                "9:00": false,
-                "10:20": true,
+                "9:00": true,
+                "10:20": false,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "THURSDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
-                "18:20": true,
+                "17:00": true,
+                "18:20": false,
                 "19:40": true,
                 "21:00": true
               },
@@ -4524,31 +4524,31 @@
                 "9:00": false,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
-                "18:20": true,
-                "19:40": true,
-                "21:00": true
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
+                "18:20": false,
+                "19:40": false,
+                "21:00": false
               },
               "SATURDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
                 "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "SUNDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
@@ -4559,81 +4559,81 @@
             "serviceName": "Beard trimming",
             "hoursAvailability": {
               "MONDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
+                "14:20": true,
                 "15:40": false,
-                "17:00": false,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               },
               "TUESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "WEDNESDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
-                "17:00": false,
+                "14:20": true,
+                "15:40": true,
+                "17:00": true,
                 "18:20": true,
                 "19:40": true,
-                "21:00": true
+                "21:00": false
               },
               "THURSDAY": {
                 "9:00": false,
                 "10:20": true,
                 "11:40": true,
                 "14:20": false,
-                "15:40": false,
-                "17:00": false,
-                "18:20": true,
-                "19:40": true,
-                "21:00": true
+                "15:40": true,
+                "17:00": true,
+                "18:20": false,
+                "19:40": false,
+                "21:00": false
               },
               "FRIDAY": {
-                "9:00": false,
+                "9:00": true,
                 "10:20": true,
                 "11:40": true,
                 "14:20": false,
-                "15:40": false,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
                 "19:40": true,
                 "21:00": true
               },
               "SATURDAY": {
-                "9:00": false,
-                "10:20": true,
-                "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "9:00": true,
+                "10:20": false,
+                "11:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
-                "18:20": true,
-                "19:40": true,
+                "18:20": false,
+                "19:40": false,
                 "21:00": true
               },
               "SUNDAY": {
-                "9:00": false,
-                "10:20": true,
+                "9:00": true,
+                "10:20": false,
                 "11:40": true,
-                "14:20": false,
-                "15:40": false,
+                "14:20": true,
+                "15:40": true,
                 "17:00": false,
                 "18:20": true,
-                "19:40": true,
-                "21:00": true
+                "19:40": false,
+                "21:00": false
               }
             }
           }
@@ -4663,64 +4663,64 @@
               "MONDAY": {
                 "10:00": true,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
                 "16:00": false,
                 "17:30": false,
-                "19:00": true
+                "19:00": false
               },
               "TUESDAY": {
                 "10:00": true,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": false,
+                "16:00": true,
+                "17:30": true,
                 "19:00": true
               },
               "WEDNESDAY": {
                 "10:00": true,
-                "11:30": true,
-                "13:00": false,
+                "11:30": false,
+                "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": false,
+                "16:00": true,
+                "17:30": true,
                 "19:00": true
               },
               "THURSDAY": {
                 "10:00": true,
-                "11:30": true,
-                "13:00": false,
+                "11:30": false,
+                "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": false,
-                "19:00": true
+                "19:00": false
               },
               "FRIDAY": {
                 "10:00": true,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": false,
-                "19:00": true
+                "16:00": true,
+                "17:30": true,
+                "19:00": false
               },
               "SATURDAY": {
                 "10:00": true,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
                 "16:00": false,
-                "17:30": false,
+                "17:30": true,
                 "19:00": true
               },
               "SUNDAY": {
                 "10:00": true,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": false,
+                "16:00": true,
+                "17:30": true,
                 "19:00": true
               }
             }
@@ -4731,54 +4731,54 @@
               "MONDAY": {
                 "10:00": true,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": false,
-                "19:00": true
+                "16:00": true,
+                "17:30": true,
+                "19:00": false
               },
               "TUESDAY": {
-                "10:00": true,
+                "10:00": false,
                 "11:30": true,
-                "13:00": false,
-                "14:30": true,
-                "16:00": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
                 "17:30": false,
                 "19:00": true
               },
               "WEDNESDAY": {
-                "10:00": true,
+                "10:00": false,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
                 "16:00": false,
                 "17:30": false,
                 "19:00": true
               },
               "THURSDAY": {
-                "10:00": true,
+                "10:00": false,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": false,
-                "19:00": true
+                "16:00": true,
+                "17:30": true,
+                "19:00": false
               },
               "FRIDAY": {
-                "10:00": true,
+                "10:00": false,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
-                "16:00": false,
-                "17:30": false,
+                "16:00": true,
+                "17:30": true,
                 "19:00": true
               },
               "SATURDAY": {
                 "10:00": true,
                 "11:30": true,
-                "13:00": false,
+                "13:00": true,
                 "14:30": true,
-                "16:00": false,
+                "16:00": true,
                 "17:30": false,
                 "19:00": true
               },
@@ -4787,9 +4787,9 @@
                 "11:30": true,
                 "13:00": false,
                 "14:30": true,
-                "16:00": false,
-                "17:30": false,
-                "19:00": true
+                "16:00": true,
+                "17:30": true,
+                "19:00": false
               }
             }
           }
@@ -4803,35 +4803,35 @@
             "hoursAvailability": {
               "MONDAY": {
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               },
               "TUESDAY": {
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": false,
                 "15:00": true,
                 "16:30": false,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               },
               "WEDNESDAY": {
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               },
               "THURSDAY": {
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
                 "16:30": false,
                 "18:00": true,
@@ -4839,30 +4839,30 @@
               },
               "FRIDAY": {
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": false,
-                "15:00": true,
-                "16:30": false,
+                "15:00": false,
+                "16:30": true,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               },
               "SATURDAY": {
-                "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": true,
-                "19:30": false
+                "16:30": true,
+                "18:00": false,
+                "19:30": true
               },
               "SUNDAY": {
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               }
             }
           },
@@ -4871,26 +4871,26 @@
             "hoursAvailability": {
               "MONDAY": {
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": false,
                 "15:00": true,
-                "16:30": false,
-                "18:00": true,
-                "19:30": false
+                "16:30": true,
+                "18:00": false,
+                "19:30": true
               },
               "TUESDAY": {
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
+                "16:30": true,
                 "18:00": true,
-                "19:30": false
+                "19:30": true
               },
               "WEDNESDAY": {
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
                 "16:30": false,
                 "18:00": true,
@@ -4898,39 +4898,39 @@
               },
               "THURSDAY": {
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:00": true,
-                "19:30": false
+                "16:30": true,
+                "18:00": false,
+                "19:30": true
               },
               "FRIDAY": {
                 "10:30": true,
-                "12:00": false,
+                "12:00": true,
                 "13:30": false,
                 "15:00": true,
-                "16:30": false,
-                "18:0är00": true,
-                "19:30": false
+                "16:30": true,
+                "18:00": true,
+                "19:30": true
               },
               "SATURDAY": {
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:0är00": true,
-                "19:30": false
+                "16:30": true,
+                "18:00": true,
+                "19:30": true
               },
               "SUNDAY": {
                 "10:30": true,
-                "12:00": false,
-                "13:30": false,
+                "12:00": true,
+                "13:30": true,
                 "15:00": true,
-                "16:30": false,
-                "18:0är00": true,
-                "19:30": false
+                "16:30": true,
+                "18:00": false,
+                "19:30": true
               }
             }
           }
