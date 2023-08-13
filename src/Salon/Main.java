@@ -2,18 +2,18 @@ package Salon;
 
 import Salon.Class.*;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static Scanner sc = new Scanner(System.in);
     public static String menu = """
-            1. Print all Salon
-            2. Search by salon name
-            3. Search by service name
-            4. Sorted by name of Salon
-            5. Make a reservation
-            0. Finish
+            [1] Print all Salon
+            [2] Search by salon name
+            [3] Search by service name
+            [4] Sorted by name of Salon
+            [5] Make a reservation
+            [6] Withdrawal of all reservations
+            [0] Finish
             """;
 
     public static void main(String[] args) {
@@ -37,14 +37,14 @@ public class Main {
                     System.out.println(list.searchByNameSalon(searchNameSalon));
                     break;
 
-                case 3: {
+                case 3:
                     System.out.print("Search: ");
                     String searchNameServices = sc.nextLine();
                     System.out.println(searchNameServices);
                     System.out.println(list.searchByService(searchNameServices));
 
                     break;
-                }
+
                 case 4:
                     System.out.print("All salons sorted: \n");
                     list.sortBySalonName();
@@ -86,7 +86,7 @@ public class Main {
                                 boolean reservationSuccess = list.makeReservation(salonName, employeeName, service, day, hour);
 
                                 if (reservationSuccess) {
-                                    String reservationOutput = reservation.makeReservation2(temp, selectedEmployee, selectedService, selectedDay, hour, list);
+                                    String reservationOutput = reservation.makeReservation2(temp, selectedEmployee, selectedService, selectedDay, hour);
                                     System.out.println(reservationOutput);
                                 } else {
                                     System.out.println("Reservation failed.");
@@ -103,6 +103,16 @@ public class Main {
 
 
                     System.out.println();
+                    break;
+
+                case 6:
+                    System.out.println("All your records : ");
+                    String allReservationsOutput = reservation.printAllReservations();
+                    if (allReservationsOutput.isEmpty()) {
+                        System.out.println("\u001B[31m"+"You don't have any records yet\n"+"\u001B[0m");
+                    } else {
+                        System.out.print("\u001B[32m"+allReservationsOutput+"\u001B[0m");
+                    }
                     break;
                 default:
                     choice = 0;
