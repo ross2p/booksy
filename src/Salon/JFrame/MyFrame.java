@@ -8,9 +8,13 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MyFrame extends JFrame {
+    int jListHeight = 80;
+    int jListWidth = 180;
     private ListSalon list = new ListSalon("src/Salon/salon.json");
 
     private JPanel titlePanel = new JPanel();            //панель для назви
@@ -20,6 +24,9 @@ public class MyFrame extends JFrame {
     private JPanel listPanel = new JPanel();
     private JPanel listPanelSalon = new JPanel();
     private JPanel listPanelEmployee = new JPanel();
+    private JPanel listPanelServiceAvailability = new JPanel();
+    private JPanel listPanelDays = new JPanel();
+    private JPanel listPanelHours = new JPanel();
     private JRadioButton  searchByNameSalon = new JRadioButton("searchByNameSalon",true);       //Радіо кнопка 1. пошук по назві салону
     private JRadioButton  searchByNameServices = new JRadioButton("searchByNameServices");               //Радіо кнопка 2. пошук по назві салону
     private JTextField searchField = new JTextField(20);    //Поле пошуку
@@ -27,9 +34,9 @@ public class MyFrame extends JFrame {
 
     public MyFrame(){
         super("Salon");
-        super.setSize(400, 700);
+        super.setSize(1200, 1000);
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new BorderLayout(400,700));
+        // setLayout(new BorderLayout(400,700));
 
         //панелі
          titlePanel = new JPanel();   //панель для назви
@@ -40,9 +47,6 @@ public class MyFrame extends JFrame {
         //Назва
         JLabel titleLabel = new JLabel("Bookly");
         titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
-
-
-
 
         searchPanel.setLayout(new FlowLayout());
         titlePanel.setLayout(new FlowLayout());
@@ -65,7 +69,19 @@ public class MyFrame extends JFrame {
             }
         });
 
-        JListEmployee(list.getList().get(0).getEmployees());
+        List<Employee> employees = new ArrayList<>();
+        JListEmployee(employees);
+
+        List<ServiceAvailability> serviceAvailabilities = new ArrayList<>();
+        JListServiceAvailability(serviceAvailabilities);
+
+        Map<Days,Map<String,Boolean>> days = new HashMap<>();
+        JListDays(days);
+
+        Map<String, Boolean> hours = new HashMap<>();
+        JListHours(hours);
+
+
 
         titlePanel.add(titleLabel);
 
@@ -77,6 +93,9 @@ public class MyFrame extends JFrame {
 
         listPanel.add(listPanelSalon);
         listPanel.add(listPanelEmployee);
+        listPanel.add(listPanelServiceAvailability);
+        listPanel.add(listPanelDays);
+        listPanel.add(listPanelHours);
 
         menu.add(titlePanel);
         menu.add(searchPanel);
@@ -108,7 +127,8 @@ public class MyFrame extends JFrame {
 
         JList<Salon> jList = new JList<>(model);
         jList.setCellRenderer(new MyListCellRendererSalon());
-        jList.setFixedCellHeight(80);
+        jList.setFixedCellHeight(jListHeight);
+        jList.setFixedCellWidth(jListWidth);
 
         listPanelSalon.removeAll();
         listPanelSalon.add(new JScrollPane(jList));
@@ -120,7 +140,6 @@ public class MyFrame extends JFrame {
     }
 
     public void JListEmployee(java.util.List<Employee> listEmployee) {
-        DefaultListModel<Employee> modelEmploee = new DefaultListModel<>();
         List<String> employeeList = new ArrayList<>();
 
         for (Employee employee : listEmployee) {
@@ -129,13 +148,71 @@ public class MyFrame extends JFrame {
         JList<String> jListEmployee = new JList<>(employeeList.toArray(new String[0]));
 
         listPanelEmployee.removeAll();
+        jListEmployee.setFixedCellHeight(jListHeight);
+        jListEmployee.setFixedCellWidth(jListWidth);
         listPanelEmployee.add(new JScrollPane(jListEmployee));
 
         listPanelEmployee.requestFocusInWindow();
 
         revalidate();
         repaint();
+    }
+    public void JListServiceAvailability(java.util.List<ServiceAvailability> listServiceAvailability) {
+        List<String> serviceAvailabilityList = new ArrayList<>();
 
+        for (ServiceAvailability employee : listServiceAvailability) {
+            serviceAvailabilityList.add(employee.getServiceName());
+        }
+        JList<String> jListServiceAvailability = new JList<>(serviceAvailabilityList.toArray(new String[0]));
 
+        listPanelServiceAvailability.removeAll();
+        jListServiceAvailability.setFixedCellHeight(jListHeight);
+        jListServiceAvailability.setFixedCellWidth(jListWidth);
+        listPanelServiceAvailability.add(new JScrollPane(jListServiceAvailability));
+
+        listPanelServiceAvailability.requestFocusInWindow();
+
+        revalidate();
+        repaint();
+    }
+    public void JListDays(Map<Days,Map<String, Boolean>> mapHoursAvailability){
+        List<String> daysList = new ArrayList<>();
+
+        for (Map.Entry<Days, Map<String, Boolean>> newEntry : mapHoursAvailability.entrySet()) {
+            Days newDay = newEntry.getKey();
+            daysList.add(newDay.toString());
+        }
+        JList<String> jListDays = new JList<>(daysList.toArray(new String[0]));
+
+        listPanelDays.removeAll();
+        jListDays.setFixedCellHeight(jListHeight);
+        jListDays.setFixedCellWidth(jListWidth);
+        listPanelDays.add(new JScrollPane(jListDays));
+
+        listPanelDays.requestFocusInWindow();
+
+        revalidate();
+        repaint();
+
+    }
+    public void JListHours(Map<String, Boolean> HoursList){
+        List<String> hoursList = new ArrayList<>();
+
+        for (Map.Entry<String, Boolean> newInnerEntry : HoursList.entrySet()) {
+            String key = newInnerEntry.getKey();
+//            Boolean value = newInnerEntry.getValue();
+            hoursList.add(key);
+        }
+        JList<String> jListHours = new JList<>(hoursList.toArray(new String[0]));
+
+        listPanelHours.removeAll();
+        jListHours.setFixedCellHeight(jListHeight);
+        jListHours.setFixedCellWidth(jListWidth);
+        listPanelHours.add(new JScrollPane(jListHours));
+
+        listPanelHours.requestFocusInWindow();
+
+        revalidate();
+        repaint();
     }
 }
