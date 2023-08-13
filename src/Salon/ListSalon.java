@@ -8,6 +8,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 
+import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -18,11 +19,11 @@ import java.util.*;
 public class ListSalon {
     private List<Salon> list;
 
-    ListSalon() {
+    public ListSalon() {
         list = new ArrayList<>();
     }
 
-    ListSalon(String fileName) {
+    public ListSalon(String fileName) {
         list = new ArrayList<>();
         Gson gson = new Gson();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
@@ -123,6 +124,7 @@ public class ListSalon {
         Collections.sort(list, new SortBySalonName());
     }
 
+
     private class SortBySalonName implements Comparator<Salon> {
         @Override
         public int compare(Salon s1, Salon s2) {
@@ -139,4 +141,15 @@ public class ListSalon {
         return null;
     }
 
+    public List<Salon> getList() {
+        return list;
+    }
+
+    public List<String> listSalonString(){
+        List<String> listStr = new ArrayList<>();
+        for (Salon s: list){
+            listStr.add(s.getName()+ "\n"+ s.getAddress());
+        }
+        return listStr;
+    }
 }
