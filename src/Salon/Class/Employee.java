@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Employee {
     private String name;
-    private List<ServiceAvailability> services;         //щоб не було однакових послуг
+    private List<ServiceAvailability> services;
 
     public Employee(String name, List<ServiceAvailability> services) {
         this.name = name;
@@ -25,13 +25,16 @@ public class Employee {
     }
 
     public String toString() {
-        StringBuilder servicesToStr = new StringBuilder();
-        for (ServiceAvailability s : services) {
-            servicesToStr.append("\n\t\t").append(s);
-        }
-        return name + servicesToStr.toString();
+//        StringBuilder servicesToStr = new StringBuilder();
+//        for (ServiceAvailability s : services) {
+//            servicesToStr.append("\n\t\t").append(s);
+//        }
+        return name /*+ servicesToStr.toString()*/;
     }
 
+    public String printServicesName(){
+        return services.toString();
+    }
 
     @Override
     //По назві
@@ -67,4 +70,5 @@ public class Employee {
         }
         return null;
     }
+
 }
