@@ -26,8 +26,7 @@ public class ListSalon {
         list = new ArrayList<>();
         Gson gson = new Gson();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-            Type type = new TypeToken<List<Salon>>() {
-            }.getType();
+            Type type = new TypeToken<List<Salon>>() {}.getType();
             list = gson.fromJson(reader, type);
         } catch (FileNotFoundException e) {
             System.err.println("File not found.");
@@ -129,7 +128,9 @@ public class ListSalon {
             return s1.getName().compareTo(s2.getName());
         }
     }
-
+    public List<Salon> getList() {
+        return list;
+    }
     public Salon getSalon(String name){
         for (Salon s: list){
             if (s.getName().equals(name)){

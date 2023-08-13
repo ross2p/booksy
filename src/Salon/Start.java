@@ -19,7 +19,7 @@ public class Start {
                 Lev&Ross project                                                       \s
                 """+"\u001B[0m";
         System.out.println(start);
-        String answer = sc.nextLine();
+        sc.nextLine();
 
     }
 }

@@ -1,8 +1,8 @@
 package Salon;
 
-import Salon.Class.Days;
-import Salon.Class.Salon;
+import Salon.Class.*;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -15,15 +15,17 @@ public class Main {
             5. Make a reservation
             0. Finish
             """;
+
     public static void main(String[] args) {
         Start.start();
         ListSalon list = new ListSalon("src/Salon/salon.json");
         int choice;
+        Reservation reservation = new Reservation();
         do {
             System.out.println(menu);
             choice = sc.nextInt();
             sc.nextLine();
-            //System.out.println(choice);
+
             switch (choice) {
                 case 1:
                     System.out.println(list);
@@ -49,31 +51,57 @@ public class Main {
                     System.out.println(list);
                     break;
                 case 5:
-                   // System.out.println(list);
-                    String salonName, employeeName,service, day, hour;
+                    String salonName, employeeName, service, day, hour;
 
                     System.out.print("Salon name: ");
                     salonName = sc.nextLine();
 
                     Salon temp = list.getSalon(salonName);
-                    System.out.println(temp.getEmployees());
-                    System.out.print("Employee name: ");
-                    employeeName = sc.nextLine();
+
+                    if (temp != null) {
+                        System.out.println(temp.getEmployees());
+                        System.out.print("Employee name: ");
+                        employeeName = sc.nextLine();
+
+                        Employee selectedEmployee = temp.getEmployee(employeeName);
+
+                        if (selectedEmployee != null) {
+                            System.out.println("\n" + selectedEmployee.printServicesName());
+                            System.out.print("Service: ");
+                            service = sc.nextLine();
+
+                            ServiceAvailability selectedService = selectedEmployee.getService(service);
+
+                            if (selectedService != null) {
+                                System.out.println(selectedService.printDays());
+                                System.out.print("Day: ");
+                                day = sc.nextLine();
+
+                                Days selectedDay = Days.getDay(day);
+
+                                System.out.println(selectedService.printHours(selectedDay));
+                                System.out.print("Hours: ");
+                                hour = sc.nextLine();
+
+                                boolean reservationSuccess = list.makeReservation(salonName, employeeName, service, day, hour);
+
+                                if (reservationSuccess) {
+                                    String reservationOutput = reservation.makeReservation2(temp, selectedEmployee, selectedService, selectedDay, hour, list);
+                                    System.out.println(reservationOutput);
+                                } else {
+                                    System.out.println("Reservation failed.");
+                                }
+                            } else {
+                                System.out.println("Service not found.");
+                            }
+                        } else {
+                            System.out.println("Employee not found.");
+                        }
+                    } else {
+                        System.out.println("Salon not found.");
+                    }
 
 
-                    System.out.println("\n"+temp.getEmployee(employeeName).printServicesName());
-                    System.out.print("Service: ");
-                    service = sc.nextLine();
-
-                    System.out.println(temp.getEmployee(employeeName).getService(service).printDays());
-                    System.out.print("Day: ");
-                    day = sc.nextLine();
-
-                    System.out.println(temp.getEmployee(employeeName).getService(service).printHours(Days.getDay(day)));
-                    System.out.print("Hours: ");
-                    hour = sc.nextLine();
-
-                    list.makeReservation(salonName,employeeName,service,day,hour);
                     System.out.println();
                     break;
                 default:
@@ -81,7 +109,7 @@ public class Main {
                     break;
 
             }
-        }while(choice != 0);
+        } while (choice != 0);
         sc.close();
     }
 }
