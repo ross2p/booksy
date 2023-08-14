@@ -96,7 +96,6 @@ public class ListSalon {
                                     return false;
                                 }
                                 serAva.getHoursAvailability().get(Days.getDay(dayName)).replace(hours,false);
-
                                 return true;    //Успішно змінено
                             }
                         }
