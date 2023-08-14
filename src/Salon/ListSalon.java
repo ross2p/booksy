@@ -40,7 +40,7 @@ public class ListSalon {
     public void add(Salon newElement) {
         boolean isRepeated = false;
         for (Salon s : list) {
-            if (this.equals(newElement)) {
+            if (s.equals(newElement)) {
                 isRepeated = true;
                 s.addEmployees(newElement);
             }
@@ -92,6 +92,9 @@ public class ListSalon {
                     if (e.getName().equals(employeeName)){
                         for (ServiceAvailability serAva: e.getServices()){
                             if (serAva.getServiceName().equals(serviceAvailabilityName)){
+                                if (!serAva.getHoursAvailability().get(Days.getDay(dayName)).get(hours)){
+                                    return false;
+                                }
                                 serAva.getHoursAvailability().get(Days.getDay(dayName)).replace(hours,false);
                                 return true;
                             }
