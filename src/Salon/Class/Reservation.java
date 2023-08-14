@@ -2,12 +2,10 @@ package Salon.Class;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import Salon.ListSalon;
 
 public class Reservation {
     private List<String> reservationTables = new ArrayList<>();
-    public String makeReservation2(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
+    public String reservation(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
         StringBuilder output = new StringBuilder();
 
         output.append("+-------------+--------------------+\n");

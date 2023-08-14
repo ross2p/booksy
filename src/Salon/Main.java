@@ -84,10 +84,11 @@ public class Main {
                                 System.out.print("\u001B[34m"+"Hours: "+"\u001B[0m");
                                 hour = sc.nextLine();
 
+
                                 boolean reservationSuccess = list.makeReservation(salonName, employeeName, service, day, hour);
 
-                                if (reservationSuccess) {
-                                    String reservationOutput = reservation.makeReservation2(temp, selectedEmployee, selectedService, selectedDay, hour);
+                                if (reservationSuccess ) {
+                                    String reservationOutput = reservation.reservation(temp, selectedEmployee, selectedService, selectedDay, hour);
                                     System.out.println("\u001B[32m"+reservationOutput+"\u001B[0m");
                                 } else {
                                     System.out.println("\u001B[31m"+"Reservation failed."+"\u001B[0m");

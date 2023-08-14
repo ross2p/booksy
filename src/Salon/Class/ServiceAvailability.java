@@ -14,32 +14,7 @@ public class ServiceAvailability {
 
     @Override
     public String toString() {
-//        StringBuilder reservationToStr = new StringBuilder();
-//
-//        for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
-//            Days day = entry.getKey();
-//            Map<String, Boolean> hoursMap = entry.getValue();
-//            int temp = 0;
-//            reservationToStr.append("\n\t\t\t").append(day).append("\n\t\t\t\t");
-//            for (Map.Entry<String, Boolean> hourEntry : hoursMap.entrySet()) {
-//                String hour = hourEntry.getKey();
-//                Boolean isReserved = hourEntry.getValue();
-//                if(temp == 4){
-//                    reservationToStr.append("\n\t\t\t\t");
-//                    temp = 0;
-//
-//                }
-//                temp++;
-//                if(isReserved){
-//
-//                    reservationToStr.append("[").append("\u001B[32m"+(hour)+"\u001B[0m").append("]\t");
-//                }
-//                else {
-//                    reservationToStr.append("[").append("\u001B[31m"+(hour)+"\u001B[0m").append("]\t");
-//                }
-//            }
-//        }
-        return serviceName /*+ reservationToStr.toString()*/;
+        return serviceName;
     }
 
     public String getServiceName() {
@@ -102,7 +77,7 @@ public class ServiceAvailability {
         Map<String, Boolean> hoursMap = hoursAvailability.get(day);
 
             int temp = 0;
-            //reservationToStr.append("\n\t\t\t").append(day).append("\n\t\t\t\t");
+
             for (Map.Entry<String, Boolean> hourEntry : hoursMap.entrySet()) {
                 String hour = hourEntry.getKey();
                 Boolean isReserved = hourEntry.getValue();

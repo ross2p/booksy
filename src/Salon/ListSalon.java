@@ -76,14 +76,14 @@ public class ListSalon {
                         for (ServiceAvailability serAva: e.getServices()){
                             if (serAva.equals(serviceAvailability)){
                                 serAva.getHoursAvailability().get(day).replace(hours,false);
-                                return true;    //Успішно змінено
+                                return true;
                             }
                         }
                     }
                 }
             }
         }
-        return false;   //Резервація не завершена
+        return false;
     }
     public boolean makeReservation(String salonName,String employeeName, String serviceAvailabilityName, String dayName, String hours) {
         for (Salon s: list){
@@ -93,14 +93,14 @@ public class ListSalon {
                         for (ServiceAvailability serAva: e.getServices()){
                             if (serAva.getServiceName().equals(serviceAvailabilityName)){
                                 serAva.getHoursAvailability().get(Days.getDay(dayName)).replace(hours,false);
-                                return true;    //Успішно змінено
+                                return true;
                             }
                         }
                     }
                 }
             }
         }
-        return false;   //Резервація не завершена
+        return false;
     }
 
     public ListSalon searchByService(String serviceName) {
