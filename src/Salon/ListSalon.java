@@ -69,13 +69,18 @@ public class ListSalon {
         }
         return listByName;
     }
-    private boolean makeReservation(Salon salon,Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
+    public boolean makeReservation(Salon salon,Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
         for (Salon s: list){
+
             if (s.equals(salon)){
+                System.out.println("1");
                 for (Employee e: s.getEmployees()){
                     if (e.equals(employee)){
+                        System.out.println("2");
                         for (ServiceAvailability serAva: e.getServices()){
+
                             if (serAva.equals(serviceAvailability)){
+                                System.out.println("3");
                                 serAva.getHoursAvailability().get(day).replace(hours,false);
                                 return true;    //Успішно змінено
                             }
@@ -145,9 +150,6 @@ public class ListSalon {
         return null;
     }
 
-    public List<Salon> getList() {
-        return list;
-    }
 
     public List<String> listSalonString(){
         List<String> listStr = new ArrayList<>();

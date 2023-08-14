@@ -2,7 +2,7 @@ package Salon.JFrame;
 
 
 import Salon.Class.*;
-import Salon.ListSalon;
+import Salon.*;
 
 import javax.swing.*;
 import javax.swing.event.*;
@@ -14,9 +14,10 @@ import java.util.List;
 import java.util.Map;
 
 public class MyFrame extends JFrame {
-    int jListHeight = 80;
-    int jListWidth = 180;
+    private int jListHeight = 80;
+    private int jListWidth = 180;
     private ListSalon list = new ListSalon("src/Salon/salon.json");
+    private Reservation reservation = new Reservation();
 
     private JPanel titlePanel = new JPanel();            //панель для назви
     private JPanel searchPanel = new JPanel();          //панель для пошуку
@@ -28,29 +29,31 @@ public class MyFrame extends JFrame {
     private JPanel listPanelServiceAvailability = new JPanel();
     private JPanel listPanelDays = new JPanel();
     private JPanel listPanelHours = new JPanel();
-    private JRadioButton  searchByNameSalon = new JRadioButton("searchByNameSalon",true);       //Радіо кнопка 1. пошук по назві салону
-    private JRadioButton  searchByNameServices = new JRadioButton("searchByNameServices");               //Радіо кнопка 2. пошук по назві салону
+    private JRadioButton searchByNameSalon = new JRadioButton("searchByNameSalon", true);       //Радіо кнопка 1. пошук по назві салону
+    private JRadioButton searchByNameServices = new JRadioButton("searchByNameServices");               //Радіо кнопка 2. пошук по назві салону
     private JTextField searchField = new JTextField(20);    //Поле пошуку
     private JButton searchButton = new JButton("Search");       // Кнопка пошуку
 
     private JList<Salon> jListSalon = new JList<>(new DefaultListModel<>());
-    private JList<Employee> jListEmployee =  new JList<>(new DefaultListModel<>());
+    private JList<Employee> jListEmployee = new JList<>(new DefaultListModel<>());
     private JList<ServiceAvailability> jListServiceAvailability = new JList<>(new DefaultListModel<>());
-    private JList<Days>  jListDays;
-    private JList<Map.Entry<String,Boolean>> jListHours;
+    private JList<Days> jListDays;
+    private JList<Map.Entry<String, Boolean>> jListHours;
 
     private Salon selectedValueSalon;
     private Employee selectedValueEmployee;
-    private ServiceAvailability  selectedValueServiceAvailability;
+    private ServiceAvailability selectedValueServiceAvailability;
     private Days selectedValueDays;
-    private Map.Entry<String,Boolean> selectedValueHours;
+    private Map.Entry<String, Boolean> selectedValueHours;
+    private JButton ButtonReservations = new JButton("Reservations");
+    private JPanel PanelButtonReservations = new JPanel();
+    private  JButton account = new JButton(new ImageIcon("account.png"));
+    private JPanel accountPanel = new JPanel();
 
-
-    public MyFrame(){
+    public MyFrame() {
         super("Salon");
-        super.setSize(1200, 1000);
+        super.setSize(1100, 800);
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 
 
         //Назва
@@ -60,6 +63,8 @@ public class MyFrame extends JFrame {
         ButtonGroup group = new ButtonGroup();
         group.add(searchByNameSalon);
         group.add(searchByNameServices);
+
+        ButtonReservations.setPreferredSize(new Dimension(100, 50));
 
 
         //салон
@@ -71,14 +76,11 @@ public class MyFrame extends JFrame {
         List<ServiceAvailability> serviceAvailabilities = new ArrayList<>();
         JListServiceAvailability(serviceAvailabilities);
 
-        Map<Days,Map<String,Boolean>> days = new HashMap<>();
+        Map<Days, Map<String, Boolean>> days = new HashMap<>();
         JListDays(days);
 
         Map<String, Boolean> hours = new HashMap<>();
         JListHours(hours);
-
-
-
 
 
         searchButton.addActionListener(new ActionListener() {
@@ -91,13 +93,16 @@ public class MyFrame extends JFrame {
                     changedList = list.searchByService(searchField.getText());
                 }
                 JListSalon(changedList);
+                JListEmployee(new ArrayList<>());
+                JListServiceAvailability(new ArrayList<>());
+                JListDays(new HashMap<>());
+                JListHours(new HashMap<>());
             }
         });
 
 
-
         titlePanel.add(titleLabel);
-//        add(group);
+
         searchPanel.add(searchField);
         searchPanel.add(searchButton);
 
@@ -110,15 +115,23 @@ public class MyFrame extends JFrame {
         listPanel.add(listPanelDays);
         listPanel.add(listPanelHours);
 
+        PanelButtonReservations.add(ButtonReservations);
+        PanelButtonReservations.add(account);
+
         menu.add(titlePanel);
         menu.add(searchPanel);
         menu.add(buttonGroup);
+        //menu.add(account);
         menu.add(listPanel);
+        menu.add(ButtonReservations);
+
         add(menu);
 
 
+
     }
-    public void JListSalon(ListSalon listSalon){
+
+    public void JListSalon(ListSalon listSalon) {
 
         DefaultListModel<Salon> model = new DefaultListModel<>();
 
@@ -127,7 +140,7 @@ public class MyFrame extends JFrame {
         }
 
         jListSalon = new JList<>(model);
-        jListSalon.setCellRenderer(new DefaultListCellRenderer(){
+        jListSalon.setCellRenderer(new DefaultListCellRenderer() {
             @Override
             public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
                 super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
@@ -175,7 +188,7 @@ public class MyFrame extends JFrame {
         }
 
         jListEmployee = new JList<>(model);
-        jListEmployee.setCellRenderer(new DefaultListCellRenderer(){
+        jListEmployee.setCellRenderer(new DefaultListCellRenderer() {
             @Override
             public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
                 super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
@@ -201,7 +214,7 @@ public class MyFrame extends JFrame {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
-                    Employee selectedValueEmployee = jListEmployee.getSelectedValue();
+                    selectedValueEmployee = jListEmployee.getSelectedValue();
                     JListServiceAvailability(selectedValueEmployee.getServices());
                     JListDays(new HashMap<>());
                     JListHours(new HashMap<>());
@@ -209,6 +222,7 @@ public class MyFrame extends JFrame {
             }
         });
     }
+
     public void JListServiceAvailability(java.util.List<ServiceAvailability> listServiceAvailability) {
         DefaultListModel<ServiceAvailability> model = new DefaultListModel<>();
 
@@ -217,7 +231,7 @@ public class MyFrame extends JFrame {
         }
 
         jListServiceAvailability = new JList<>(model);
-        jListServiceAvailability.setCellRenderer(new DefaultListCellRenderer(){
+        jListServiceAvailability.setCellRenderer(new DefaultListCellRenderer() {
             @Override
             public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
                 super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
@@ -252,7 +266,7 @@ public class MyFrame extends JFrame {
         });
     }
 
-    public void JListDays(Map<Days,Map<String, Boolean>> mapHoursAvailability){
+    public void JListDays(Map<Days, Map<String, Boolean>> mapHoursAvailability) {
         DefaultListModel<Days> model = new DefaultListModel<>();
 
         for (Map.Entry<Days, Map<String, Boolean>> mapDay : mapHoursAvailability.entrySet()) {
@@ -261,7 +275,7 @@ public class MyFrame extends JFrame {
         }
 
         jListDays = new JList<>(model);
-        jListDays.setCellRenderer(new DefaultListCellRenderer(){
+        jListDays.setCellRenderer(new DefaultListCellRenderer() {
             @Override
             public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
                 super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
@@ -287,36 +301,37 @@ public class MyFrame extends JFrame {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
-                    Days selectedValueDays = jListDays.getSelectedValue();
+                    selectedValueDays = jListDays.getSelectedValue();
                     JListHours(selectedValueServiceAvailability.getHoursInDay(selectedValueDays));
 
                 }
             }
         });
     }
-    public void JListHours(Map<String, Boolean> HoursList){
-        DefaultListModel<Map.Entry<String,Boolean>> model = new DefaultListModel<>();
+
+    public void JListHours(Map<String, Boolean> HoursList) {
+        DefaultListModel<Map.Entry<String, Boolean>> model = new DefaultListModel<>();
 
         for (Map.Entry<String, Boolean> mapHour : HoursList.entrySet()) {
             model.addElement(mapHour);
         }
 
         jListHours = new JList<>(model);
-        jListHours.setCellRenderer(new DefaultListCellRenderer(){
+        jListHours.setCellRenderer(new DefaultListCellRenderer() {
             @Override
             public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
                 super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
                 Map.Entry<String, Boolean> label = (Map.Entry<String, Boolean>) value;
                 String hour = label.getKey();
                 Boolean isReserved = label.getValue();
-                if(isReserved){
-                    setForeground(Color.GREEN);
-//                    setForeground(new Color(1,49,33));
-                }
-                else {
+                if (isReserved) {
+//                    setForeground(Color.GREEN);
+                    setForeground(new Color(73, 200, 83));
+                } else {
                     setForeground(Color.RED);
                 }
                 String labelText = hour;
+                setFont(new Font("Arial", Font.BOLD, 15));
                 setText(labelText);
                 return this;
             }
@@ -337,7 +352,22 @@ public class MyFrame extends JFrame {
             @Override
             public void valueChanged(ListSelectionEvent e) {
                 if (!e.getValueIsAdjusting()) {
-                     selectedValueHours = jListHours.getSelectedValue();
+                    selectedValueHours = jListHours.getSelectedValue();
+
+                    ButtonReservations.addActionListener(new ActionListener() {
+                        @Override
+                        public void actionPerformed(ActionEvent e) {
+                            System.out.println("----");
+                            //резервація;
+                            boolean reservationSuccess = list.makeReservation(selectedValueSalon, selectedValueEmployee, selectedValueServiceAvailability, selectedValueDays, selectedValueHours.getKey());
+                            System.out.println(reservationSuccess);
+                            if (reservationSuccess) {
+                                String reservationOutput = reservation.makeReservation2(selectedValueSalon, selectedValueEmployee, selectedValueServiceAvailability, selectedValueDays, selectedValueHours.getKey());
+                                System.out.println("\u001B[32m"+reservationOutput+"\u001B[0m");
+                                JListHours(selectedValueServiceAvailability.getHoursInDay(selectedValueDays));
+                            }
+                        }
+                    });
                 }
             }
         });

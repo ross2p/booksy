@@ -84,7 +84,7 @@ public class Main {
                                 System.out.print("\u001B[34m"+"Hours: "+"\u001B[0m");
                                 hour = sc.nextLine();
 
-                                boolean reservationSuccess = list.makeReservation(salonName, employeeName, service, day, hour);
+                                boolean reservationSuccess = list.makeReservation(temp, selectedEmployee, selectedService, selectedDay, hour);
 
                                 if (reservationSuccess) {
                                     String reservationOutput = reservation.makeReservation2(temp, selectedEmployee, selectedService, selectedDay, hour);
