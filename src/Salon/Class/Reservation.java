@@ -19,7 +19,7 @@ public class Reservation {
         output.append("|  Master     |").append(String.format("%-20s", employee.getName())).append("|\n");
         output.append("|  Day        |").append(String.format("%-20s", day)).append("|\n");
         output.append("|  Time       |").append(String.format("%-20s", hours)).append("|\n");
-        output.append("+-------------+-------------------+\n");
+        output.append("+-------------+--------------------+\n");
         String table = output.toString();
         reservationTables.add(table);
 
@@ -33,5 +33,8 @@ public class Reservation {
         }
 
         return allTablesOutput.toString();
+    }
+    public void deleteAllReservations() {
+        reservationTables.clear();
     }
 }
