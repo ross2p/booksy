@@ -5,6 +5,7 @@ import Salon.Class.*;
 import Salon.ListSalon;
 
 import javax.swing.*;
+import javax.swing.event.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.ArrayList;
@@ -32,42 +33,37 @@ public class MyFrame extends JFrame {
     private JTextField searchField = new JTextField(20);    //Поле пошуку
     private JButton searchButton = new JButton("Search");       // Кнопка пошуку
 
+    private JList<Salon> jListSalon = new JList<>(new DefaultListModel<>());
+    private JList<Employee> jListEmployee =  new JList<>(new DefaultListModel<>());
+    private JList<ServiceAvailability> jListServiceAvailability = new JList<>(new DefaultListModel<>());
+    private JList<Days>  jListDays;
+    private JList<Map.Entry<String,Boolean>> jListHours;
+
+    private Salon selectedValueSalon;
+    private Employee selectedValueEmployee;
+    private ServiceAvailability  selectedValueServiceAvailability;
+    private Days selectedValueDays;
+    private Map.Entry<String,Boolean> selectedValueHours;
+
+
     public MyFrame(){
         super("Salon");
         super.setSize(1200, 1000);
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        // setLayout(new BorderLayout(400,700));
 
-        //панелі
-         titlePanel = new JPanel();   //панель для назви
-         searchPanel = new JPanel();  //панель для пошуку
-         menu = new JPanel();         //панель для елементів списку
-         buttonGroup = new JPanel();  //панель для груп радіо кнопки
+
 
         //Назва
-        JLabel titleLabel = new JLabel("Bookly");
+        JLabel titleLabel = new JLabel("Booksy");
         titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
 
-        searchPanel.setLayout(new FlowLayout());
-        titlePanel.setLayout(new FlowLayout());
-        menu.setLayout(new FlowLayout());
+        ButtonGroup group = new ButtonGroup();
+        group.add(searchByNameSalon);
+        group.add(searchByNameServices);
+
 
         //салон
         JListSalon(list);
-
-
-        searchButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                ListSalon changedList;
-                if (searchByNameSalon.isSelected()) {
-                    changedList = list.searchByNameSalon(searchField.getText());
-                } else {
-                    changedList = list.searchByService(searchField.getText());
-                }
-                JListSalon(changedList);
-            }
-        });
 
         List<Employee> employees = new ArrayList<>();
         JListEmployee(employees);
@@ -83,8 +79,25 @@ public class MyFrame extends JFrame {
 
 
 
-        titlePanel.add(titleLabel);
 
+
+        searchButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ListSalon changedList;
+                if (searchByNameSalon.isSelected()) {
+                    changedList = list.searchByNameSalon(searchField.getText());
+                } else {
+                    changedList = list.searchByService(searchField.getText());
+                }
+                JListSalon(changedList);
+            }
+        });
+
+
+
+        titlePanel.add(titleLabel);
+//        add(group);
         searchPanel.add(searchField);
         searchPanel.add(searchButton);
 
@@ -105,19 +118,7 @@ public class MyFrame extends JFrame {
 
 
     }
-    private class MyListCellRendererSalon extends DefaultListCellRenderer {
-        @Override
-        public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
-            super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
-            Salon label = (Salon) value;
-            String name = label.getName();
-            String address = label.getAddress();
-            String labelText = "<html>Name: " + name + "<br/>Address: " + address + "<br/>";
-            setText(labelText);
-            return this;
-        }
-    }
-    public void JListSalon(ListSalon listSalon ){
+    public void JListSalon(ListSalon listSalon){
 
         DefaultListModel<Salon> model = new DefaultListModel<>();
 
@@ -125,94 +126,220 @@ public class MyFrame extends JFrame {
             model.addElement(salon);
         }
 
-        JList<Salon> jList = new JList<>(model);
-        jList.setCellRenderer(new MyListCellRendererSalon());
-        jList.setFixedCellHeight(jListHeight);
-        jList.setFixedCellWidth(jListWidth);
+        jListSalon = new JList<>(model);
+        jListSalon.setCellRenderer(new DefaultListCellRenderer(){
+            @Override
+            public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+                Salon label = (Salon) value;
+                String name = label.getName();
+                String address = label.getAddress();
+                String labelText = "<html>Name: " + name + "<br/>Address: " + address + "<br/>";
+                setText(labelText);
+                return this;
+            }
+        });
+        jListSalon.setFixedCellHeight(jListHeight);
+        jListSalon.setFixedCellWidth(jListWidth);
 
         listPanelSalon.removeAll();
-        listPanelSalon.add(new JScrollPane(jList));
+        listPanelSalon.add(new JScrollPane(jListSalon));
 
         listPanelSalon.requestFocusInWindow();
 
         revalidate();
         repaint();
+
+        jListSalon.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (!e.getValueIsAdjusting()) {
+                    selectedValueSalon = jListSalon.getSelectedValue();
+                    JListEmployee(selectedValueSalon.getEmployees());
+
+                    JListServiceAvailability(new ArrayList<>());
+                    JListDays(new HashMap<>());
+                    JListHours(new HashMap<>());
+
+                }
+            }
+        });
+
     }
 
     public void JListEmployee(java.util.List<Employee> listEmployee) {
-        List<String> employeeList = new ArrayList<>();
+        DefaultListModel<Employee> model = new DefaultListModel<>();
 
         for (Employee employee : listEmployee) {
-            employeeList.add(employee.getName());
+            model.addElement(employee);
         }
-        JList<String> jListEmployee = new JList<>(employeeList.toArray(new String[0]));
 
-        listPanelEmployee.removeAll();
+        jListEmployee = new JList<>(model);
+        jListEmployee.setCellRenderer(new DefaultListCellRenderer(){
+            @Override
+            public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+                Employee label = (Employee) value;
+                String name = label.getName();
+                String labelText = name;
+                setText(labelText);
+                return this;
+            }
+        });
         jListEmployee.setFixedCellHeight(jListHeight);
         jListEmployee.setFixedCellWidth(jListWidth);
+
+        listPanelEmployee.removeAll();
         listPanelEmployee.add(new JScrollPane(jListEmployee));
 
         listPanelEmployee.requestFocusInWindow();
 
         revalidate();
         repaint();
+
+        jListEmployee.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (!e.getValueIsAdjusting()) {
+                    Employee selectedValueEmployee = jListEmployee.getSelectedValue();
+                    JListServiceAvailability(selectedValueEmployee.getServices());
+                    JListDays(new HashMap<>());
+                    JListHours(new HashMap<>());
+                }
+            }
+        });
     }
     public void JListServiceAvailability(java.util.List<ServiceAvailability> listServiceAvailability) {
-        List<String> serviceAvailabilityList = new ArrayList<>();
+        DefaultListModel<ServiceAvailability> model = new DefaultListModel<>();
 
-        for (ServiceAvailability employee : listServiceAvailability) {
-            serviceAvailabilityList.add(employee.getServiceName());
+        for (ServiceAvailability serviceAvailability : listServiceAvailability) {
+            model.addElement(serviceAvailability);
         }
-        JList<String> jListServiceAvailability = new JList<>(serviceAvailabilityList.toArray(new String[0]));
 
-        listPanelServiceAvailability.removeAll();
+        jListServiceAvailability = new JList<>(model);
+        jListServiceAvailability.setCellRenderer(new DefaultListCellRenderer(){
+            @Override
+            public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+                ServiceAvailability label = (ServiceAvailability) value;
+                String serviceName = label.getServiceName();  // Assuming there's a method to get service name
+                String labelText = serviceName;  // Use the correct property/method to get the label text
+                setText(labelText);
+                return this;
+            }
+        });
         jListServiceAvailability.setFixedCellHeight(jListHeight);
         jListServiceAvailability.setFixedCellWidth(jListWidth);
-        listPanelServiceAvailability.add(new JScrollPane(jListServiceAvailability));
+
+        listPanelServiceAvailability.removeAll();  // Clear the previous content from the panel
+        listPanelServiceAvailability.add(new JScrollPane(jListServiceAvailability));  // Add the new list
 
         listPanelServiceAvailability.requestFocusInWindow();
 
         revalidate();
         repaint();
+
+        jListServiceAvailability.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (!e.getValueIsAdjusting()) {
+                    selectedValueServiceAvailability = jListServiceAvailability.getSelectedValue();
+                    JListDays(selectedValueServiceAvailability.getHoursAvailability());
+                    JListHours(new HashMap<>());
+
+                }
+            }
+        });
     }
+
     public void JListDays(Map<Days,Map<String, Boolean>> mapHoursAvailability){
-        List<String> daysList = new ArrayList<>();
+        DefaultListModel<Days> model = new DefaultListModel<>();
 
-        for (Map.Entry<Days, Map<String, Boolean>> newEntry : mapHoursAvailability.entrySet()) {
-            Days newDay = newEntry.getKey();
-            daysList.add(newDay.toString());
+        for (Map.Entry<Days, Map<String, Boolean>> mapDay : mapHoursAvailability.entrySet()) {
+            Days day = mapDay.getKey();
+            model.addElement(day);
         }
-        JList<String> jListDays = new JList<>(daysList.toArray(new String[0]));
 
-        listPanelDays.removeAll();
+        jListDays = new JList<>(model);
+        jListDays.setCellRenderer(new DefaultListCellRenderer(){
+            @Override
+            public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+                Days label = (Days) value;
+                String dayName = label.toString();
+                String labelText = dayName;
+                setText(labelText);
+                return this;
+            }
+        });
         jListDays.setFixedCellHeight(jListHeight);
         jListDays.setFixedCellWidth(jListWidth);
-        listPanelDays.add(new JScrollPane(jListDays));
+
+        listPanelDays.removeAll();  // Clear the previous content from the panel
+        listPanelDays.add(new JScrollPane(jListDays));  // Add the new list
 
         listPanelDays.requestFocusInWindow();
 
         revalidate();
         repaint();
 
+        jListDays.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (!e.getValueIsAdjusting()) {
+                    Days selectedValueDays = jListDays.getSelectedValue();
+                    JListHours(selectedValueServiceAvailability.getHoursInDay(selectedValueDays));
+
+                }
+            }
+        });
     }
     public void JListHours(Map<String, Boolean> HoursList){
-        List<String> hoursList = new ArrayList<>();
+        DefaultListModel<Map.Entry<String,Boolean>> model = new DefaultListModel<>();
 
-        for (Map.Entry<String, Boolean> newInnerEntry : HoursList.entrySet()) {
-            String key = newInnerEntry.getKey();
-//            Boolean value = newInnerEntry.getValue();
-            hoursList.add(key);
+        for (Map.Entry<String, Boolean> mapHour : HoursList.entrySet()) {
+            model.addElement(mapHour);
         }
-        JList<String> jListHours = new JList<>(hoursList.toArray(new String[0]));
 
-        listPanelHours.removeAll();
+        jListHours = new JList<>(model);
+        jListHours.setCellRenderer(new DefaultListCellRenderer(){
+            @Override
+            public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+                super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+                Map.Entry<String, Boolean> label = (Map.Entry<String, Boolean>) value;
+                String hour = label.getKey();
+                Boolean isReserved = label.getValue();
+                if(isReserved){
+                    setForeground(Color.GREEN);
+//                    setForeground(new Color(1,49,33));
+                }
+                else {
+                    setForeground(Color.RED);
+                }
+                String labelText = hour;
+                setText(labelText);
+                return this;
+            }
+        });
         jListHours.setFixedCellHeight(jListHeight);
         jListHours.setFixedCellWidth(jListWidth);
+
+        listPanelHours.removeAll();
         listPanelHours.add(new JScrollPane(jListHours));
 
         listPanelHours.requestFocusInWindow();
 
         revalidate();
         repaint();
+
+
+        jListHours.addListSelectionListener(new ListSelectionListener() {
+            @Override
+            public void valueChanged(ListSelectionEvent e) {
+                if (!e.getValueIsAdjusting()) {
+                     selectedValueHours = jListHours.getSelectedValue();
+                }
+            }
+        });
     }
 }

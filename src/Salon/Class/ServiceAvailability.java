@@ -112,7 +112,6 @@ public class ServiceAvailability {
                 }
                 temp++;
                 if(isReserved){
-
                     reservationToStr.append("[").append("\u001B[32m"+(hour)+"\u001B[0m").append("]\t");
                 }
                 else {
@@ -122,11 +121,12 @@ public class ServiceAvailability {
 
         return reservationToStr.toString();
     }
-    public Map<String,Boolean> getHoursInDay(String nameDay){
+    public Map<String,Boolean> getHoursInDay(Days nameDay){
+
 
         for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
             Days day = entry.getKey();
-            if (day.equals(Days.getDay(nameDay))){
+            if (day.equals(nameDay)){
                 Map<String, Boolean> hoursMap = entry.getValue();
                 return hoursMap;
             }
