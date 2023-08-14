@@ -1,12 +1,16 @@
-package Salon.Class;
+package Salon;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import Salon.ListSalon;
+
+import Salon.Class.Days;
+import Salon.Class.Employee;
+import Salon.Class.Salon;
+import Salon.Class.ServiceAvailability;
 
 public class Reservation {
-    private List<String> reservationTables = new ArrayList<>();
+    private List<String> reservationTables = new ArrayList<>(); //List<Salon> reservationTables
     public String makeReservation2(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
         StringBuilder output = new StringBuilder();
 
