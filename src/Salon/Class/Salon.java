@@ -6,7 +6,7 @@ public class Salon {
     private String name;
     private List<Employee> employees;
     private String address;
-    private Map<Days, String> workingDays;           // Map<Days, String> до кожного дня має бути година
+    private Map<Days, String> workingDays;
 
     public Salon(String name, List<Employee> employees, String address, Map<Days, String> workingDays) {
         this.name = name;

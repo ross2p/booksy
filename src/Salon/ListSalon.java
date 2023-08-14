@@ -27,8 +27,7 @@ public class ListSalon {
         list = new ArrayList<>();
         Gson gson = new Gson();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-            Type type = new TypeToken<List<Salon>>() {
-            }.getType();
+            Type type = new TypeToken<List<Salon>>() {}.getType();
             list = gson.fromJson(reader, type);
         } catch (FileNotFoundException e) {
             System.err.println("File not found.");
@@ -42,7 +41,7 @@ public class ListSalon {
     public void add(Salon newElement) {
         boolean isRepeated = false;
         for (Salon s : list) {
-            if (this.equals(newElement)) {
+            if (s.equals(newElement)) {
                 isRepeated = true;
                 s.addEmployees(newElement);
             }
@@ -94,6 +93,9 @@ public class ListSalon {
                     if (e.getName().equals(employeeName)){
                         for (ServiceAvailability serAva: e.getServices()){
                             if (serAva.getServiceName().equals(serviceAvailabilityName)){
+                                if (!serAva.getHoursAvailability().get(Days.getDay(dayName)).get(hours)){
+                                    return false;
+                                }
                                 serAva.getHoursAvailability().get(Days.getDay(dayName)).replace(hours,false);
                                 return true;    //Успішно змінено
                             }
@@ -131,7 +133,9 @@ public class ListSalon {
             return s1.getName().compareTo(s2.getName());
         }
     }
-
+    public List<Salon> getList() {
+        return list;
+    }
     public Salon getSalon(String name){
         for (Salon s: list){
             if (s.getName().equals(name)){
