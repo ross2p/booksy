@@ -3,7 +3,6 @@ package Salon;
 import Salon.Class.*;
 
 import java.util.Scanner;
-
 public class Main {
     public static Scanner sc = new Scanner(System.in);
     public static String menu = "\u001B[34m"+"""
