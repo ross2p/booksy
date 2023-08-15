@@ -5,7 +5,6 @@ Welcome to the booksy project ross&lev! This project is designed to provide a so
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 ## Introduction
