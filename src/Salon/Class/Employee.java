@@ -30,13 +30,13 @@ public class Employee {
     }
 
     public String printServicesName() {
-//        StringBuilder servicesNameToString = new StringBuilder("[");
-        StringBuilder servicesNameToString = new StringBuilder("[");
+        List<String> serviceName = new ArrayList<>();
+        //StringBuilder servicesNameToString = new StringBuilder("[");
         for (ServiceAvailability s : services) {
-            servicesNameToString.append(s.getServiceName()).append(",");
+            serviceName.add(s.getServiceName());
         }
-        servicesNameToString.append("]");
-        return servicesNameToString.toString();
+        //servicesNameToString.append("]");
+        return serviceName.toString();
     }
 
     @Override

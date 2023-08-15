@@ -79,12 +79,20 @@ public class ListSalon {
                         for (ServiceAvailability serAva: e.getServices()){
 
                             if (serAva.equals(serviceAvailability)){
-                                if (serAva.getHoursAvailability().get(day).get(hours)) {
-                                    serAva.getHoursAvailability().get(day).replace(hours, false);
-                                    return true;
-                                }else {
+                                Map<String,Boolean> hoursMap = serAva.getHoursInDay(day);
+                                Map<Days, Map<String,Boolean>> daysMap = serAva.getHoursAvailability();
+                                if(!daysMap.containsKey(day)){
                                     return false;
                                 }
+                                if(!hoursMap.containsKey(hours)){
+                                    return false;
+                                }
+                                   if (serAva.getHoursAvailability().get(day).get(hours)) {
+                                       serAva.getHoursAvailability().get(day).replace(hours, false);
+                                       return true;
+                                   } else {
+                                       return false;
+                                   }
                             }
                         }
                     }

@@ -111,7 +111,7 @@ public class Main {
                     break;
 
                 case 6:
-                    System.out.println("All your records : ");
+                    System.out.println("\u001B[34m"+"All your records : "+"\u001B[0m");
                     String allReservationsOutput = reservation.toString();
                     if (allReservationsOutput.isEmpty()) {
                         System.out.println("\u001B[31m"+"You don't have any records yet\n"+"\u001B[0m");
