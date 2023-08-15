@@ -10,6 +10,7 @@ public class Employee {
         this.name = name;
         this.services = services;
     }
+
     public Employee(String name, ServiceAvailability service) {
         this.name = name;
         this.services = new ArrayList<>();
@@ -28,8 +29,13 @@ public class Employee {
         return name;
     }
 
-    public String printServicesName(){
-        return services.toString();
+    public String printServicesName() {
+        StringBuilder servicesNameToString = new StringBuilder("[");
+        for (ServiceAvailability s : services) {
+            servicesNameToString.append(s.getServiceName() + ",");
+        }
+        servicesNameToString.append("]");
+        return servicesNameToString.toString();
     }
 
     @Override
@@ -44,23 +50,25 @@ public class Employee {
     public int hashCode() {
         return Objects.hash(name);
     }
-    public void addServices(List<ServiceAvailability> newElement){
-        for (ServiceAvailability newServices: newElement){
+
+    public void addServices(List<ServiceAvailability> newElement) {
+        for (ServiceAvailability newServices : newElement) {
             boolean isRepeated = false;
-            for (ServiceAvailability s:services){
-                if ( s.equals(newServices)) {
+            for (ServiceAvailability s : services) {
+                if (s.equals(newServices)) {
                     isRepeated = true;
                     s.addHoursAvailability(newServices.getHoursAvailability());
                 }
             }
-            if (!isRepeated){
+            if (!isRepeated) {
                 services.add(newServices);
             }
         }
     }
-    public ServiceAvailability getService(String servicesName){
-        for (ServiceAvailability ser: services){
-            if (ser.getServiceName().equals(servicesName)){
+
+    public ServiceAvailability getService(String servicesName) {
+        for (ServiceAvailability ser : services) {
+            if (ser.getServiceName().equals(servicesName)) {
                 return ser;
             }
         }

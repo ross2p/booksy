@@ -8,7 +8,6 @@ import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 
-import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -53,11 +52,11 @@ public class ListSalon {
 
     @Override
     public String toString() {
-        String listToStr = "";
+        StringBuilder listToStr =  new StringBuilder();
         for (Salon s : list) {
-            listToStr += s.toString();
+            listToStr.append(s.toString());
         }
-        return listToStr;
+        return listToStr.toString();
     }
 
     public ListSalon searchByNameSalon(String name){
@@ -132,7 +131,7 @@ public class ListSalon {
     }
 
 
-    private class SortBySalonName implements Comparator<Salon> {
+    static private class SortBySalonName implements Comparator<Salon> {
         @Override
         public int compare(Salon s1, Salon s2) {
             return s1.getName().compareTo(s2.getName());
@@ -148,14 +147,5 @@ public class ListSalon {
             }
         }
         return null;
-    }
-
-
-    public List<String> listSalonString(){
-        List<String> listStr = new ArrayList<>();
-        for (Salon s: list){
-            listStr.add(s.getName()+ "\n"+ s.getAddress());
-        }
-        return listStr;
     }
 }

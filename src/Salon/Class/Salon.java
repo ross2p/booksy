@@ -54,7 +54,7 @@ public class Salon {
 
         return "\nName: " + name + '\n' +
                 "Address: " + address +  /*'\n' +
-                "HoursOfWork: " + */ HoursOfWorkToStr.toString() + '\n' ;
+                "HoursOfWork: " + */ HoursOfWorkToStr + '\n' ;
     }
 
     @Override

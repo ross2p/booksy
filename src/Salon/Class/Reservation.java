@@ -2,8 +2,6 @@ package Salon.Class;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import Salon.ListSalon;
 
 public class Reservation {
     private List<String> reservationTables = new ArrayList<>();
@@ -20,10 +18,9 @@ public class Reservation {
         output.append("|  Day        |").append(String.format("%-20s", day)).append("|\n");
         output.append("|  Time       |").append(String.format("%-20s", hours)).append("|\n");
         output.append("+-------------+--------------------+\n");
-        String table = output.toString();
-        reservationTables.add(table);
+        reservationTables.add(output.toString());
 
-        return table;
+        return output.toString();
     }
     public String printAllReservations() {
         StringBuilder allTablesOutput = new StringBuilder();

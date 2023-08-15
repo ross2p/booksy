@@ -1,6 +1,7 @@
 package Salon;
 
 import Salon.Class.*;
+import Salon.Class.Reservation;
 
 import java.util.Scanner;
 

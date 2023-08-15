@@ -100,8 +100,7 @@ public class ServiceAvailability {
         for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
             Days day = entry.getKey();
             if (day.equals(nameDay)){
-                Map<String, Boolean> hoursMap = entry.getValue();
-                return hoursMap;
+                return entry.getValue();
             }
         }
         return null;

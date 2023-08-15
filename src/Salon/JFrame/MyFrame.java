@@ -47,8 +47,9 @@ public class MyFrame extends JFrame {
     private Map.Entry<String, Boolean> selectedValueHours;
     private JButton ButtonReservations = new JButton("Reservations");
     private JPanel PanelButtonReservations = new JPanel();
-    private  JButton account = new JButton(new ImageIcon("account.png"));
+
     private JPanel accountPanel = new JPanel();
+    private JButton account = new JButton(new ImageIcon("src/Salon/JFrame/account_ava.png"));
 
     public MyFrame() {
         super("Salon");
@@ -64,8 +65,8 @@ public class MyFrame extends JFrame {
         group.add(searchByNameSalon);
         group.add(searchByNameServices);
 
-        ButtonReservations.setPreferredSize(new Dimension(100, 50));
 
+        ButtonReservations.setPreferredSize(new Dimension(100, 50));
 
         //салон
         JListSalon(list);
@@ -100,7 +101,6 @@ public class MyFrame extends JFrame {
             }
         });
 
-
         titlePanel.add(titleLabel);
 
         searchPanel.add(searchField);
@@ -109,6 +109,8 @@ public class MyFrame extends JFrame {
         buttonGroup.add(searchByNameSalon);
         buttonGroup.add(searchByNameServices);
 
+        accountPanel.add(account);
+
         listPanel.add(listPanelSalon);
         listPanel.add(listPanelEmployee);
         listPanel.add(listPanelServiceAvailability);
@@ -116,19 +118,15 @@ public class MyFrame extends JFrame {
         listPanel.add(listPanelHours);
 
         PanelButtonReservations.add(ButtonReservations);
-        PanelButtonReservations.add(account);
 
         menu.add(titlePanel);
         menu.add(searchPanel);
         menu.add(buttonGroup);
-        //menu.add(account);
+        menu.add(accountPanel);
         menu.add(listPanel);
         menu.add(ButtonReservations);
 
         add(menu);
-
-
-
     }
 
     public void JListSalon(ListSalon listSalon) {
@@ -173,7 +171,6 @@ public class MyFrame extends JFrame {
                     JListServiceAvailability(new ArrayList<>());
                     JListDays(new HashMap<>());
                     JListHours(new HashMap<>());
-
                 }
             }
         });
@@ -236,8 +233,8 @@ public class MyFrame extends JFrame {
             public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
                 super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
                 ServiceAvailability label = (ServiceAvailability) value;
-                String serviceName = label.getServiceName();  // Assuming there's a method to get service name
-                String labelText = serviceName;  // Use the correct property/method to get the label text
+                String serviceName = label.getServiceName();
+                String labelText = serviceName;
                 setText(labelText);
                 return this;
             }
@@ -245,8 +242,8 @@ public class MyFrame extends JFrame {
         jListServiceAvailability.setFixedCellHeight(jListHeight);
         jListServiceAvailability.setFixedCellWidth(jListWidth);
 
-        listPanelServiceAvailability.removeAll();  // Clear the previous content from the panel
-        listPanelServiceAvailability.add(new JScrollPane(jListServiceAvailability));  // Add the new list
+        listPanelServiceAvailability.removeAll();
+        listPanelServiceAvailability.add(new JScrollPane(jListServiceAvailability));
 
         listPanelServiceAvailability.requestFocusInWindow();
 

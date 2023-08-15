@@ -10,4 +10,4 @@ public enum Days {
             return Days.MONDAY;
         }
     }
-};
+}
