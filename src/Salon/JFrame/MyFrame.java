@@ -18,7 +18,6 @@ public class MyFrame extends JFrame {
     private int jListWidth = 180;
     private ListSalon list = new ListSalon("src/Salon/salon.json");
     private Reservation reservation = new Reservation();
-
     private JPanel titlePanel = new JPanel();            //панель для назви
     private JPanel searchPanel = new JPanel();          //панель для пошуку
     private JPanel menu = new JPanel();                 //панель для елементів списку
@@ -33,13 +32,11 @@ public class MyFrame extends JFrame {
     private JRadioButton searchByNameServices = new JRadioButton("searchByNameServices");               //Радіо кнопка 2. пошук по назві салону
     private JTextField searchField = new JTextField(20);    //Поле пошуку
     private JButton searchButton = new JButton("Search");       // Кнопка пошуку
-
     private JList<Salon> jListSalon = new JList<>(new DefaultListModel<>());
     private JList<Employee> jListEmployee = new JList<>(new DefaultListModel<>());
     private JList<ServiceAvailability> jListServiceAvailability = new JList<>(new DefaultListModel<>());
     private JList<Days> jListDays;
     private JList<Map.Entry<String, Boolean>> jListHours;
-
     private Salon selectedValueSalon;
     private Employee selectedValueEmployee;
     private ServiceAvailability selectedValueServiceAvailability;
@@ -47,10 +44,8 @@ public class MyFrame extends JFrame {
     private Map.Entry<String, Boolean> selectedValueHours;
     private JButton ButtonReservations = new JButton("Reservations");
     private JPanel PanelButtonReservations = new JPanel();
-
     private JPanel accountPanel = new JPanel();
     private JButton account = new JButton(new ImageIcon("src/Salon/JFrame/account_ava.png"));
-
     boolean isConfirmation;
 
     public MyFrame() {
@@ -91,6 +86,7 @@ public class MyFrame extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 JFrame jframe = new JFrame("Your Account");
                 jframe.setSize(400, 400);
+
 
                 jframe.setVisible(true);
             }

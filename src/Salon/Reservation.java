@@ -1,4 +1,9 @@
-package Salon.Class;
+package Salon;
+
+import Salon.Class.Days;
+import Salon.Class.Employee;
+import Salon.Class.Salon;
+import Salon.Class.ServiceAvailability;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +36,11 @@ public class Reservation {
 
         return allTablesOutput.toString();
     }
+
+    public List<String> getReservationTables() {
+        return reservationTables;
+    }
+
     public void deleteAllReservations() {
         reservationTables.clear();
     }
