@@ -30,9 +30,10 @@ public class Employee {
     }
 
     public String printServicesName() {
+//        StringBuilder servicesNameToString = new StringBuilder("[");
         StringBuilder servicesNameToString = new StringBuilder("[");
         for (ServiceAvailability s : services) {
-            servicesNameToString.append(s.getServiceName() + ",");
+            servicesNameToString.append(s.getServiceName()).append(",");
         }
         servicesNameToString.append("]");
         return servicesNameToString.toString();

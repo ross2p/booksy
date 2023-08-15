@@ -93,26 +93,6 @@ public class ListSalon {
         }
         return false;
     }
-    public boolean makeReservation(String salonName,String employeeName, String serviceAvailabilityName, String dayName, String hours) {
-        for (Salon s: list){
-            if (s.getName().equals(salonName)){
-                for (Employee e: s.getEmployees()){
-                    if (e.getName().equals(employeeName)){
-                        for (ServiceAvailability serAva: e.getServices()){
-                            if (serAva.getServiceName().equals(serviceAvailabilityName)){
-                                if (!serAva.getHoursAvailability().get(Days.getDay(dayName)).get(hours)){
-                                    return false;
-                                }
-                                serAva.getHoursAvailability().get(Days.getDay(dayName)).replace(hours,false);
-                                return true;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        return false;
-    }
 
     public ListSalon searchByService(String serviceName) {
         ListSalon foundSalons = new ListSalon();
@@ -130,7 +110,7 @@ public class ListSalon {
     }
 
     public void sortBySalonName() {
-        Collections.sort(list, new SortBySalonName());
+        list.sort(new SortBySalonName());
     }
 
 

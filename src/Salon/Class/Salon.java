@@ -43,14 +43,14 @@ public class Salon {
     @Override
     public String toString() {
         StringBuilder HoursOfWorkToStr = new StringBuilder();
-        HoursOfWorkToStr.append(String.format("\n+------------+-------------+"));
+        HoursOfWorkToStr.append("\n+------------+-------------+");
         HoursOfWorkToStr.append(String.format("\n| %-10s | %-11s |", "Day", "HoursOfWork"));
-        HoursOfWorkToStr.append(String.format("\n+------------+-------------+"));
+        HoursOfWorkToStr.append("\n+------------+-------------+");
 
         for (Map.Entry<Days, String> entry : workingDays.entrySet()) {
             HoursOfWorkToStr.append(String.format("\n| %-10s | %-11s |", entry.getKey(), entry.getValue()));
         }
-        HoursOfWorkToStr.append(String.format("\n+------------+-------------+"));
+        HoursOfWorkToStr.append("\n+------------+-------------+");
 
         return "\nName: " + name + '\n' +
                 "Address: " + address +  /*'\n' +

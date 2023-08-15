@@ -87,10 +87,10 @@ public class ServiceAvailability {
                 }
                 temp++;
                 if(isReserved){
-                    reservationToStr.append("[").append("\u001B[32m"+(hour)+"\u001B[0m").append("]\t");
+                    reservationToStr.append("[").append("\u001B[32m").append(hour).append("\u001B[0m").append("]\t");
                 }
                 else {
-                    reservationToStr.append("[").append("\u001B[31m"+(hour)+"\u001B[0m").append("]\t");
+                    reservationToStr.append("[").append("\u001B[31m").append(hour).append("\u001B[0m").append("]\t");
                 }
             }
 

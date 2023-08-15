@@ -23,18 +23,16 @@ public class Reservation {
     }
 
     static public String printReservation(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
-        StringBuilder output = new StringBuilder();
-        output.append("+-------------+--------------------+\n");
-        output.append("|              𝗥𝗘𝗖𝗢𝗥𝗗              |\n");
-        output.append("+-------------+--------------------+\n");
-        output.append("|  Salon name |").append(String.format("%-20s", salon.getName())).append("|\n");
-        output.append("|  Address    |").append(String.format("%-20s", salon.getAddress())).append("|\n");
-        output.append("|  Service    |").append(String.format("%-20s", serviceAvailability.getServiceName())).append("|\n");
-        output.append("|  Master     |").append(String.format("%-20s", employee.getName())).append("|\n");
-        output.append("|  Day        |").append(String.format("%-20s", day)).append("|\n");
-        output.append("|  Time       |").append(String.format("%-20s", hours)).append("|\n");
-        output.append("+-------------+--------------------+\n");
-        return output.toString();
+        return "+-------------+--------------------+\n"+
+                "|              𝗥𝗘𝗖𝗢𝗥𝗗              |\n"+
+                "+-------------+--------------------+\n"+
+                "|  Salon name |" + String.format("%-20s", salon.getName())+ "|\n"+
+                "|  Address    |"+String.format("%-20s", salon.getAddress())+ "|\n"+
+                "|  Service    |"+String.format("%-20s", serviceAvailability.getServiceName())+"|\n"+
+                "|  Master     |"+String.format("%-20s", employee.getName())+"|\n"+
+                "|  Day        |"+String.format("%-20s", day)+"|\n"+
+                "|  Time       |"+String.format("%-20s", hours)+"|\n"+
+                "+-------------+--------------------+\n";
     }
 
     public void add(Salon newElement) {
@@ -63,7 +61,7 @@ public class Reservation {
                         Map<String, Boolean> hoursMap = newEntry.getValue();
                         for (Map.Entry<String, Boolean> hoursMapEntry : hoursMap.entrySet()) {
                             String hour = hoursMapEntry.getKey();
-                            Boolean isReservation = hoursMapEntry.getValue();
+
                             reservationTablesToString.append(printReservation(s, e, ser, newDay, hour));
                         }
                     }
