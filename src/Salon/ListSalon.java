@@ -79,9 +79,12 @@ public class ListSalon {
                         for (ServiceAvailability serAva: e.getServices()){
 
                             if (serAva.equals(serviceAvailability)){
-
-                                serAva.getHoursAvailability().get(day).replace(hours,false);
-                                return true;
+                                if (serAva.getHoursAvailability().get(day).get(hours)) {
+                                    serAva.getHoursAvailability().get(day).replace(hours, false);
+                                    return true;
+                                }else {
+                                    return false;
+                                }
                             }
                         }
                     }

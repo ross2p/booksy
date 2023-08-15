@@ -77,6 +77,9 @@ public class Reservation {
     public List<Salon> getReservationTables() {
         return reservationTables;
     }
+    public int size(){
+        return reservationTables.size();
+    }
 
     public void deleteAllReservations() {
         reservationTables.clear();

@@ -13,6 +13,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static Salon.Reservation.printReservation;
+
 public class MyFrame extends JFrame {
     private int jListHeight = 80;
     private int jListWidth = 180;
@@ -86,8 +88,37 @@ public class MyFrame extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 JFrame jframe = new JFrame("Your Account");
                 jframe.setSize(400, 400);
+                JPanel panel = new JPanel();
 
+                for (Salon s : reservation.getReservationTables()) {
+                    for (Employee employee : s.getEmployees()) {
+                        for (ServiceAvailability ser : employee.getServices()) {
+                            for (Map.Entry<Days, Map<String, Boolean>> newEntry : ser.getHoursAvailability().entrySet()) {
+                                Days day = newEntry.getKey();
+                                Map<String, Boolean> hoursMap = newEntry.getValue();
+                                for (Map.Entry<String, Boolean> hoursMapEntry : hoursMap.entrySet()) {
+                                    String hour = hoursMapEntry.getKey();
+                                    StringBuilder output = new StringBuilder();
 
+                                    String printRes = new String();
+                                    printRes += "<html>+-------------+--------------------+<br>"+
+                                                "Salon name: " + s.getName()+"<br>"+
+                                                "Address: " + s.getAddress()+"<br>"+
+                                                "Service: " + ser.getServiceName()+"<br>"+
+                                                "Master: " + employee.getName() +"<br>"+
+                                                "Day: " +day+"<br>"+
+                                                "Time: " + hour+"<br>"+
+                                                "+-------------+--------------------+</html>"
+                                    ;
+
+                                    JLabel jlabel = new JLabel(printRes);
+                                    panel.add(jlabel);
+                                }
+                            }
+                        }
+                    }
+                }
+                jframe.add(new JScrollPane(panel));
                 jframe.setVisible(true);
             }
         });
@@ -293,8 +324,8 @@ public class MyFrame extends JFrame {
         jListDays.setFixedCellHeight(jListHeight);
         jListDays.setFixedCellWidth(jListWidth);
 
-        listPanelDays.removeAll();  // Clear the previous content from the panel
-        listPanelDays.add(new JScrollPane(jListDays));  // Add the new list
+        listPanelDays.removeAll();
+        listPanelDays.add(new JScrollPane(jListDays));
 
         listPanelDays.requestFocusInWindow();
 
