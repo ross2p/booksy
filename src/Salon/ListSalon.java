@@ -43,7 +43,7 @@ public class ListSalon {
         for (Salon s : list) {
             if (s.equals(newElement)) {
                 isRepeated = true;
-                s.addEmployees(newElement);
+                s.addEmployees(newElement.getEmployees());
             }
         }
         if (!isRepeated) {

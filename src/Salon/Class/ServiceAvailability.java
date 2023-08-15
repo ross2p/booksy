@@ -122,8 +122,6 @@ public class ServiceAvailability {
         return reservationToStr.toString();
     }
     public Map<String,Boolean> getHoursInDay(Days nameDay){
-
-
         for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
             Days day = entry.getKey();
             if (day.equals(nameDay)){

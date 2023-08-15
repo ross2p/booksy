@@ -70,8 +70,8 @@ public class Salon {
         return Objects.hash(name);
     }
 
-    public void addEmployees(Salon newElement) {
-        for (Employee newEmployee : newElement.getEmployees()) {
+    public void addEmployees(List<Employee> newElements) {
+        for (Employee newEmployee : newElements) {
             boolean isRepeated = false;
             for (Employee e : employees) {
                 if (e.equals(newEmployee)) {
