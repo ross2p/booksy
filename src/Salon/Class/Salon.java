@@ -84,6 +84,7 @@ public class Salon {
             }
         }
     }
+
     public Employee getEmployee(String name){
         for (Employee e: employees){
             if (e.getName().equals(name)){

@@ -89,7 +89,7 @@ public class Main {
                                 boolean reservationSuccess = list.makeReservation(temp, selectedEmployee, selectedService, selectedDay, hour);
 
                                 if (reservationSuccess) {
-                                    String reservationOutput = reservation.makeReservation2(temp, selectedEmployee, selectedService, selectedDay, hour);
+                                    String reservationOutput = reservation.makeReservation(temp, selectedEmployee, selectedService, selectedDay, hour);
                                     System.out.println("\u001B[32m"+reservationOutput+"\u001B[0m");
                                     flag = true;
                                 } else {
@@ -112,7 +112,7 @@ public class Main {
 
                 case 6:
                     System.out.println("All your records : ");
-                    String allReservationsOutput = reservation.printAllReservations();
+                    String allReservationsOutput = reservation.toString();
                     if (allReservationsOutput.isEmpty()) {
                         System.out.println("\u001B[31m"+"You don't have any records yet\n"+"\u001B[0m");
                     } else {

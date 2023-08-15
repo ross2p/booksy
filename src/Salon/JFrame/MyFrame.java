@@ -50,7 +50,7 @@ public class MyFrame extends JFrame {
 
     public MyFrame() {
         super("Salon");
-        super.setSize(1100, 800);
+        super.setSize(1100, 850);
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 
@@ -385,7 +385,7 @@ public class MyFrame extends JFrame {
                                             boolean reservationSuccess = list.makeReservation(selectedValueSalon, selectedValueEmployee, selectedValueServiceAvailability, selectedValueDays, selectedValueHours.getKey());
                                             System.out.println(reservationSuccess);
                                             if (reservationSuccess) {
-                                                String reservationOutput = reservation.makeReservation2(selectedValueSalon, selectedValueEmployee, selectedValueServiceAvailability, selectedValueDays, selectedValueHours.getKey());
+                                                String reservationOutput = reservation.makeReservation(selectedValueSalon, selectedValueEmployee, selectedValueServiceAvailability, selectedValueDays, selectedValueHours.getKey());
                                                 System.out.println("\u001B[32m" + reservationOutput + "\u001B[0m");
                                                 JListHours(selectedValueServiceAvailability.getHoursInDay(selectedValueDays));
                                             }
