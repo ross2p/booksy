@@ -81,6 +81,8 @@ public class Main {
                                 Days selectedDay = Days.getDay(day);
 
                                 System.out.println(selectedService.printHours(selectedDay));
+                                boolean flag = false;
+                                do{
                                 System.out.print("\u001B[34m"+"Hours: "+"\u001B[0m");
                                 hour = sc.nextLine();
 
@@ -89,9 +91,11 @@ public class Main {
                                 if (reservationSuccess) {
                                     String reservationOutput = reservation.makeReservation2(temp, selectedEmployee, selectedService, selectedDay, hour);
                                     System.out.println("\u001B[32m"+reservationOutput+"\u001B[0m");
+                                    flag = true;
                                 } else {
-                                    System.out.println("\u001B[31m"+"Reservation failed."+"\u001B[0m");
+                                    System.out.println("\u001B[31m"+"You cannot sign up for this hour. Please enter another hour."+"\u001B[0m");
                                 }
+                                }while (!flag);
                             } else {
                                 System.out.println("\u001B[31m"+"Service not found."+"\u001B[0m");
                             }

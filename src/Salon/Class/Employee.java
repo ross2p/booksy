@@ -25,11 +25,7 @@ public class Employee {
     }
 
     public String toString() {
-//        StringBuilder servicesToStr = new StringBuilder();
-//        for (ServiceAvailability s : services) {
-//            servicesToStr.append("\n\t\t").append(s);
-//        }
-        return name /*+ servicesToStr.toString()*/;
+        return name;
     }
 
     public String printServicesName(){
