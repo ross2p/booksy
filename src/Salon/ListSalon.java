@@ -26,7 +26,8 @@ public class ListSalon {
         list = new ArrayList<>();
         Gson gson = new Gson();
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-            Type type = new TypeToken<List<Salon>>() {}.getType();
+            Type type = new TypeToken<List<Salon>>() {
+            }.getType();
             list = gson.fromJson(reader, type);
         } catch (FileNotFoundException e) {
             System.err.println("File not found.");
@@ -52,37 +53,38 @@ public class ListSalon {
 
     @Override
     public String toString() {
-        StringBuilder listToStr =  new StringBuilder();
+        StringBuilder listToStr = new StringBuilder();
         for (Salon s : list) {
             listToStr.append(s.toString());
         }
         return listToStr.toString();
     }
 
-    public ListSalon searchByNameSalon(String name){
+    public ListSalon searchByNameSalon(String name) {
         ListSalon listByName = new ListSalon();
-        for (Salon s: list){
-            if (s.getName().toUpperCase().contains(name.toUpperCase())){
+        for (Salon s : list) {
+            if (s.getName().toUpperCase().contains(name.toUpperCase())) {
                 listByName.add(s);
             }
         }
         return listByName;
     }
-    public boolean makeReservation(Salon salon,Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
-        for (Salon s: list){
 
-            if (s.equals(salon)){
+    public boolean makeReservation(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
+        for (Salon s : list) {
 
-                for (Employee e: s.getEmployees()){
-                    if (e.equals(employee)){
+            if (s.equals(salon)) {
 
-                        for (ServiceAvailability serAva: e.getServices()){
+                for (Employee e : s.getEmployees()) {
+                    if (e.equals(employee)) {
 
-                            if (serAva.equals(serviceAvailability)){
+                        for (ServiceAvailability serAva : e.getServices()) {
+
+                            if (serAva.equals(serviceAvailability)) {
                                 if (serAva.getHoursAvailability().get(day).get(hours)) {
                                     serAva.getHoursAvailability().get(day).replace(hours, false);
                                     return true;
-                                }else {
+                                } else {
                                     return false;
                                 }
                             }
@@ -120,12 +122,14 @@ public class ListSalon {
             return s1.getName().compareTo(s2.getName());
         }
     }
+
     public List<Salon> getList() {
         return list;
     }
-    public Salon getSalon(String name){
-        for (Salon s: list){
-            if (s.getName().equals(name)){
+
+    public Salon getSalon(String name) {
+        for (Salon s : list) {
+            if (s.getName().equals(name)) {
                 return s;
             }
         }

@@ -5,9 +5,9 @@ import java.util.Objects;
 
 public class ServiceAvailability {
     private String serviceName;
-    private Map<Days,Map<String, Boolean>> hoursAvailability;
+    private Map<Days, Map<String, Boolean>> hoursAvailability;
 
-    public ServiceAvailability(String serviceName, Map<Days,Map<String, Boolean>> hoursAvailability) {
+    public ServiceAvailability(String serviceName, Map<Days, Map<String, Boolean>> hoursAvailability) {
         this.serviceName = serviceName;
         this.hoursAvailability = hoursAvailability;
     }
@@ -21,7 +21,7 @@ public class ServiceAvailability {
         return serviceName;
     }
 
-    public Map<Days,Map<String, Boolean>> getHoursAvailability() {
+    public Map<Days, Map<String, Boolean>> getHoursAvailability() {
         return hoursAvailability;
     }
 
@@ -58,48 +58,50 @@ public class ServiceAvailability {
             }
         }
     }
-    public String printDays(){
+
+    public String printDays() {
         StringBuilder reservationToStr = new StringBuilder();
         int temp = 0;
         for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
             reservationToStr.append(entry.getKey().toString()).append("\t");
             temp++;
-            if (temp == 4){
+            if (temp == 4) {
                 reservationToStr.append("\n");
                 temp = 0;
             }
         }
         return reservationToStr.toString();
     }
-    public String printHours(Days day){
+
+    public String printHours(Days day) {
         StringBuilder reservationToStr = new StringBuilder();
 
         Map<String, Boolean> hoursMap = hoursAvailability.get(day);
 
-            int temp = 0;
+        int temp = 0;
 
-            for (Map.Entry<String, Boolean> hourEntry : hoursMap.entrySet()) {
-                String hour = hourEntry.getKey();
-                Boolean isReserved = hourEntry.getValue();
-                if(temp == 4){
-                    reservationToStr.append("\n");
-                    temp = 0;
-                }
-                temp++;
-                if(isReserved){
-                    reservationToStr.append("[").append("\u001B[32m").append(hour).append("\u001B[0m").append("]\t");
-                }
-                else {
-                    reservationToStr.append("[").append("\u001B[31m").append(hour).append("\u001B[0m").append("]\t");
-                }
+        for (Map.Entry<String, Boolean> hourEntry : hoursMap.entrySet()) {
+            String hour = hourEntry.getKey();
+            Boolean isReserved = hourEntry.getValue();
+            if (temp == 4) {
+                reservationToStr.append("\n");
+                temp = 0;
             }
+            temp++;
+            if (isReserved) {
+                reservationToStr.append("[").append("\u001B[32m").append(hour).append("\u001B[0m").append("]\t");
+            } else {
+                reservationToStr.append("[").append("\u001B[31m").append(hour).append("\u001B[0m").append("]\t");
+            }
+        }
 
         return reservationToStr.toString();
     }
-    public Map<String,Boolean> getHoursInDay(Days nameDay){
+
+    public Map<String, Boolean> getHoursInDay(Days nameDay) {
         for (Map.Entry<Days, Map<String, Boolean>> entry : hoursAvailability.entrySet()) {
             Days day = entry.getKey();
-            if (day.equals(nameDay)){
+            if (day.equals(nameDay)) {
                 return entry.getValue();
             }
         }

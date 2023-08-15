@@ -239,6 +239,7 @@ public class MyFrame extends JFrame {
             }
         });
     }
+
     public void JListServiceAvailability(java.util.List<ServiceAvailability> listServiceAvailability) {
         DefaultListModel<ServiceAvailability> model = new DefaultListModel<>();
 
@@ -354,7 +355,7 @@ public class MyFrame extends JFrame {
 
     }
 
-    public void setButtonAccount(){
+    public void setButtonAccount() {
 
         account.addActionListener(e -> {
             JFrame jframe = new JFrame("Your Account");
@@ -373,19 +374,19 @@ public class MyFrame extends JFrame {
                                 String hour = hoursMapEntry.getKey();
 
                                 Container containerElement = new Container();
-                                containerElement.setLayout(new GridLayout(8,2,0,0));
+                                containerElement.setLayout(new GridLayout(8, 2, 0, 0));
                                 containerElement.add(new Label("Salon name: "));
-                                containerElement.add(new Label("<html><font color='blue'>" + s.getName()+"</html>"));
+                                containerElement.add(new Label("<html><font color='blue'>" + s.getName() + "</html>"));
                                 containerElement.add(new Label("Address: "));
-                                containerElement.add(new Label("<html><font color='blue'>" + s.getAddress()+"</html>"));
+                                containerElement.add(new Label("<html><font color='blue'>" + s.getAddress() + "</html>"));
                                 containerElement.add(new Label("Master: "));
-                                containerElement.add(new Label("<html><font color='blue'>" + employee.getName()+"</html>"));
+                                containerElement.add(new Label("<html><font color='blue'>" + employee.getName() + "</html>"));
                                 containerElement.add(new Label("Service: "));
-                                containerElement.add(new Label("<html><font color='blue'>" + ser.getServiceName()+"</html>"));
+                                containerElement.add(new Label("<html><font color='blue'>" + ser.getServiceName() + "</html>"));
                                 containerElement.add(new Label("Day: "));
-                                containerElement.add(new Label("<html><font color='blue'>" + day+"</html>"));
+                                containerElement.add(new Label("<html><font color='blue'>" + day + "</html>"));
                                 containerElement.add(new Label("Time: "));
-                                containerElement.add(new Label("<html><font color='blue'>" + hour+"</html>"));
+                                containerElement.add(new Label("<html><font color='blue'>" + hour + "</html>"));
                                 GridBagConstraints gbc = new GridBagConstraints();
 
                                 JLabel label = new JLabel("");

@@ -54,7 +54,7 @@ public class Salon {
 
         return "\nName: " + name + '\n' +
                 "Address: " + address +  /*'\n' +
-                "HoursOfWork: " + */ HoursOfWorkToStr + '\n' ;
+                "HoursOfWork: " + */ HoursOfWorkToStr + '\n';
     }
 
     @Override
@@ -85,9 +85,9 @@ public class Salon {
         }
     }
 
-    public Employee getEmployee(String name){
-        for (Employee e: employees){
-            if (e.getName().equals(name)){
+    public Employee getEmployee(String name) {
+        for (Employee e : employees) {
+            if (e.getName().equals(name)) {
                 return e;
             }
         }

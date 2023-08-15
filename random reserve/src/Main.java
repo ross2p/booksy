@@ -7,17 +7,18 @@ import java.nio.file.Paths;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 /***
  * Програма для рандомного резервування json
  * для правдоподібності
  * ***/
 public class Main {
-    public static Boolean getRandom(int a){
+    public static Boolean getRandom(int a) {
         Random random = new Random();
-        int number = (random.nextInt(0,101));        //0% - 100%
-        if (number <= a){
+        int number = (random.nextInt(0, 101));        //0% - 100%
+        if (number <= a) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
@@ -35,6 +36,7 @@ public class Main {
 
         return result.toString();
     }
+
     public static String readFileToString(String filePath) throws IOException {
         Path path = Paths.get(filePath);
         byte[] bytes = Files.readAllBytes(path);
@@ -43,9 +45,9 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            String json = readFileToString( "src/Salon/salon.json");
-                json = replace(json,50);
-                System.out.println(json);
+            String json = readFileToString("src/Salon/salon.json");
+            json = replace(json, 50);
+            System.out.println(json);
             try (BufferedWriter writer = new BufferedWriter(new FileWriter("src/Salon/salon.json"))) {
                 writer.write(json);
             } catch (IOException e) {

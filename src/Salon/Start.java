@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class Start {
     public static Scanner sc = new Scanner(System.in);
-    public static void start(){
 
-        String start = "\u001B[34m"+"""
+    public static void start() {
+
+        String start = "\u001B[34m" + """
                                                                                        
                 ██████╗  ██████╗  ██████╗ ██╗  ██╗███████╗██╗   ██╗
                 ██╔══██╗██╔═══██╗██╔═══██╗██║ ██╔╝██╔════╝╚██╗ ██╔╝
@@ -15,7 +16,7 @@ public class Start {
                 ██╔══██╗██║   ██║██║   ██║██╔═██╗ ╚════██║  ╚██╔╝
                 ██████╔╝╚██████╔╝╚██████╔╝██║  ██╗███████║   ██║
                 ╚═════╝  ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝   ╚═╝  ʟᴇᴠ&ʀᴏꜱꜱ ᴘʀᴏᴊᴇᴄᴛ
-                """+"\u001B[0m";
+                """ + "\u001B[0m";
         System.out.println(start);
         sc.nextLine();
 
