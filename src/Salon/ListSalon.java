@@ -72,14 +72,14 @@ public class ListSalon {
         for (Salon s: list){
 
             if (s.equals(salon)){
-                System.out.println("1");
+
                 for (Employee e: s.getEmployees()){
                     if (e.equals(employee)){
-                        System.out.println("2");
+
                         for (ServiceAvailability serAva: e.getServices()){
 
                             if (serAva.equals(serviceAvailability)){
-                                System.out.println("3");
+
                                 serAva.getHoursAvailability().get(day).replace(hours,false);
                                 return true;
                             }

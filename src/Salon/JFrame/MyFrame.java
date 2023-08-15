@@ -51,6 +51,8 @@ public class MyFrame extends JFrame {
     private JPanel accountPanel = new JPanel();
     private JButton account = new JButton(new ImageIcon("src/Salon/JFrame/account_ava.png"));
 
+    boolean isConfirmation;
+
     public MyFrame() {
         super("Salon");
         super.setSize(1100, 800);
@@ -83,6 +85,16 @@ public class MyFrame extends JFrame {
         Map<String, Boolean> hours = new HashMap<>();
         JListHours(hours);
 
+
+        account.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame jframe = new JFrame("Your Account");
+                jframe.setSize(400, 400);
+
+                jframe.setVisible(true);
+            }
+        });
 
         searchButton.addActionListener(new ActionListener() {
             @Override
@@ -219,7 +231,6 @@ public class MyFrame extends JFrame {
             }
         });
     }
-
     public void JListServiceAvailability(java.util.List<ServiceAvailability> listServiceAvailability) {
         DefaultListModel<ServiceAvailability> model = new DefaultListModel<>();
 
@@ -354,16 +365,55 @@ public class MyFrame extends JFrame {
                     ButtonReservations.addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
-                            System.out.println("----");
-                            //резервація;
-                            boolean reservationSuccess = list.makeReservation(selectedValueSalon, selectedValueEmployee, selectedValueServiceAvailability, selectedValueDays, selectedValueHours.getKey());
-                            System.out.println(reservationSuccess);
-                            if (reservationSuccess) {
-                                String reservationOutput = reservation.makeReservation2(selectedValueSalon, selectedValueEmployee, selectedValueServiceAvailability, selectedValueDays, selectedValueHours.getKey());
-                                System.out.println("\u001B[32m"+reservationOutput+"\u001B[0m");
-                                JListHours(selectedValueServiceAvailability.getHoursInDay(selectedValueDays));
+
+                                JFrame confirmation = new JFrame("Confirmation");
+                                confirmation.setBounds(400,400,400,150);
+                                confirmation.setVisible(true);
+
+                                JPanel panel = new JPanel();
+                                JPanel label = new JPanel();
+                                JPanel buttons = new JPanel();
+
+                                JLabel question = new JLabel("Do you want to reserve?");
+
+                                question.setFont(new Font("Arial", Font.BOLD, 24));
+
+                                JButton yesButton = new JButton("Yes");
+                                JButton noButton = new JButton("No");
+
+                                yesButton.addActionListener(new ActionListener() {
+                                    @Override
+                                    public void actionPerformed(ActionEvent e) {
+                                        confirmation.dispose();
+                                            //резервація;
+                                            boolean reservationSuccess = list.makeReservation(selectedValueSalon, selectedValueEmployee, selectedValueServiceAvailability, selectedValueDays, selectedValueHours.getKey());
+                                            System.out.println(reservationSuccess);
+                                            if (reservationSuccess) {
+                                                String reservationOutput = reservation.makeReservation2(selectedValueSalon, selectedValueEmployee, selectedValueServiceAvailability, selectedValueDays, selectedValueHours.getKey());
+                                                System.out.println("\u001B[32m" + reservationOutput + "\u001B[0m");
+                                                JListHours(selectedValueServiceAvailability.getHoursInDay(selectedValueDays));
+                                            }
+                                        }
+
+                                });
+
+                                noButton.addActionListener(new ActionListener() {
+                                    @Override
+                                    public void actionPerformed(ActionEvent e) {
+                                        confirmation.dispose();
+                                        JListHours(selectedValueServiceAvailability.getHoursInDay(selectedValueDays));
+
+                                    }
+                                });
+
+                                label.add(question);
+                                buttons.add(yesButton);
+                                buttons.add(noButton);
+                                panel.add(label);
+                                panel.add(buttons);
+                                confirmation.add(panel);
                             }
-                        }
+
                     });
                 }
             }
