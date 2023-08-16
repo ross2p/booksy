@@ -4,16 +4,10 @@ import Salon.Class.Days;
 import Salon.Class.Employee;
 import Salon.Class.Salon;
 import Salon.Class.ServiceAvailability;
-import com.google.gson.Gson;
-import com.google.gson.JsonSyntaxException;
-import com.google.gson.reflect.TypeToken;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class ListSalon {
     private List<Salon> list;
@@ -22,21 +16,6 @@ public class ListSalon {
         list = new ArrayList<>();
     }
 
-    public ListSalon(String fileName) {
-        list = new ArrayList<>();
-        Gson gson = new Gson();
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-            Type type = new TypeToken<List<Salon>>() {
-            }.getType();
-            list = gson.fromJson(reader, type);
-        } catch (FileNotFoundException e) {
-            System.err.println("File not found.");
-        } catch (JsonSyntaxException e) {
-            System.err.println("Invalid JSON syntax in the file.");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public void add(Salon newElement) {
         boolean isRepeated = false;
