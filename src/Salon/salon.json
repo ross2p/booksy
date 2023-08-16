@@ -3664,7 +3664,7 @@
     }
   },
   {
-    "name": "Beauty Haven",
+    "name": "Beauty Style",
     "employees": [
       {
         "name": "Emma",
@@ -4890,6 +4890,2604 @@
       "SATURDAY": "8:00-22:00",
       "SUNDAY": "8:00-22:00"
     }
+  },
+  {
+    "name": "New Classic Cuts",
+    "employees": [
+      {
+        "name": "John",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "8:30": false,
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "8:30": false,
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "FRIDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": false,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "SATURDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Shave",
+            "hoursAvailability": {
+              "MONDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "8:30": false,
+                "9:00": false,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "FRIDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "SUNDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Michael",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": false,
+                "17:30": true
+              },
+              "TUESDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": false,
+                "14:30": true,
+                "16:00": false,
+                "17:30": false
+              },
+              "WEDNESDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": true,
+                "16:00": false,
+                "17:30": true
+              },
+              "THURSDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": false
+              },
+              "FRIDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": false
+              },
+              "SATURDAY": {
+                "10:00": false,
+                "11:30": false,
+                "13:00": true,
+                "14:30": true,
+                "16:00": true,
+                "17:30": false
+              },
+              "SUNDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Beard trimming",
+            "hoursAvailability": {
+              "MONDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": true,
+                "14:30": true,
+                "16:00": false,
+                "17:30": false
+              },
+              "TUESDAY": {
+                "10:00": false,
+                "11:30": false,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": true
+              },
+              "WEDNESDAY": {
+                "10:00": false,
+                "11:30": false,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": true
+              },
+              "THURSDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": false,
+                "14:30": false,
+                "16:00": true,
+                "17:30": true
+              },
+              "FRIDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": true
+              },
+              "SATURDAY": {
+                "10:00": true,
+                "11:30": true,
+                "13:00": false,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "SUNDAY": {
+                "10:00": false,
+                "11:30": false,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "address": "45 Maple Avenue",
+    "workingDays": {
+      "MONDAY": "9:00-20:00",
+      "TUESDAY": "9:00-20:00",
+      "WEDNESDAY": "9:00-20:00",
+      "THURSDAY": "9:00-20:00",
+      "FRIDAY": "9:00-20:00",
+      "SATURDAY": "9:00-18:00",
+      "SUNDAY": "10:00-17:00"
+    }
+  },
+  {
+    "name": "Fresh Cuts Salon",
+    "employees": [
+      {
+        "name": "Emily",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Coloring",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Daniel",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Shave",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "address": "15 Elm Street",
+    "workingDays": {
+      "MONDAY": "10:00-18:00",
+      "TUESDAY": "10:00-18:00",
+      "WEDNESDAY": "10:00-18:00",
+      "THURSDAY": "10:00-18:00",
+      "FRIDAY": "10:00-18:00",
+      "SATURDAY": "9:00-17:00"
+    }
+  },
+  {
+    "name": "Elegant Styles",
+    "employees": [
+      {
+        "name": "Sophia",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Coloring",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Liam",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Shave",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "address": "23 Cedar Avenue",
+    "workingDays": {
+      "MONDAY": "9:00-19:00",
+      "TUESDAY": "9:00-19:00",
+      "WEDNESDAY": "9:00-19:00",
+      "THURSDAY": "9:00-19:00",
+      "FRIDAY": "9:00-19:00",
+      "SATURDAY": "9:00-16:00"
+    }
+  },
+  {
+    "name": "Beauty Haven",
+    "employees": [
+      {
+        "name": "Sophia",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Coloring",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Manicure",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Massage",
+            "hoursAvailability": {
+              "MONDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "TUESDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": false
+              },
+              "WEDNESDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": true
+              },
+              "THURSDAY": {
+                "10:00": true,
+                "11:30": true,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": true
+              },
+              "FRIDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": true,
+                "14:30": true,
+                "16:00": false,
+                "17:30": false
+              },
+              "SATURDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "SUNDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Liam",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Shave",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Pedicure",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Facial",
+            "hoursAvailability": {
+              "MONDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "TUESDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": false
+              },
+              "WEDNESDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": true
+              },
+              "THURSDAY": {
+                "10:00": true,
+                "11:30": true,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": true
+              },
+              "FRIDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": true,
+                "14:30": true,
+                "16:00": false,
+                "17:30": false
+              },
+              "SATURDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "SUNDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "address": "15 Maple Street",
+    "workingDays": {
+      "MONDAY": "9:00-20:00",
+      "TUESDAY": "9:00-20:00",
+      "WEDNESDAY": "9:00-20:00",
+      "THURSDAY": "9:00-20:00",
+      "FRIDAY": "9:00-20:00",
+      "SATURDAY": "9:00-18:00"
+    }
+  },
+  {
+    "name": "Wellness Oasis",
+    "employees": [
+      {
+        "name": "Emily",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Manicure",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Massage",
+            "hoursAvailability": {
+              "MONDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "TUESDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": false
+              },
+              "WEDNESDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": true
+              },
+              "THURSDAY": {
+                "10:00": true,
+                "11:30": true,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": true
+              },
+              "FRIDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": true,
+                "14:30": true,
+                "16:00": false,
+                "17:30": false
+              },
+              "SATURDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "SUNDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Aromatherapy",
+            "hoursAvailability": {
+              "MONDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "TUESDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": false
+              },
+              "WEDNESDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": true
+              },
+              "THURSDAY": {
+                "10:00": true,
+                "11:30": true,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": true
+              },
+              "FRIDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": true,
+                "14:30": true,
+                "16:00": false,
+                "17:30": false
+              },
+              "SATURDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "SUNDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Daniel",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Shave",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Manicure",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "address": "50 Relaxation Avenue",
+    "workingDays": {
+      "MONDAY": "9:00-21:00",
+      "TUESDAY": "9:00-21:00",
+      "WEDNESDAY": "9:00-21:00",
+      "THURSDAY": "9:00-21:00",
+      "FRIDAY": "9:00-21:00",
+      "SATURDAY": "9:00-18:00"
+    }
+  },
+  {
+    "name": "Beauty Salon",
+    "employees": [
+      {
+        "name": "Sophia",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Manicure",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Massage",
+            "hoursAvailability": {
+              "MONDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "TUESDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": false
+              },
+              "WEDNESDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": true
+              },
+              "THURSDAY": {
+                "10:00": true,
+                "11:30": true,
+                "13:00": false,
+                "14:30": false,
+                "16:00": false,
+                "17:30": true
+              },
+              "FRIDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": true,
+                "14:30": true,
+                "16:00": false,
+                "17:30": false
+              },
+              "SATURDAY": {
+                "10:00": true,
+                "11:30": false,
+                "13:00": true,
+                "14:30": false,
+                "16:00": true,
+                "17:30": false
+              },
+              "SUNDAY": {
+                "10:00": false,
+                "11:30": true,
+                "13:00": false,
+                "14:30": true,
+                "16:00": true,
+                "17:30": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Oliver",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Beard Grooming",
+            "hoursAvailability": {
+              "MONDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "WEDNESDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          },
+          {
+            "serviceName": "Facial",
+            "hoursAvailability": {
+              "MONDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "FRIDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "SUNDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "address": "15 Serenity Lane",
+    "workingDays": {
+      "MONDAY": "8:30-19:00",
+      "TUESDAY": "8:30-19:00",
+      "WEDNESDAY": "8:30-19:00",
+      "THURSDAY": "8:30-19:00",
+      "FRIDAY": "8:30-19:00",
+      "SATURDAY": "9:00-16:00"
+    }
+  },
+  {
+    "name": "Wellness Oasis",
+    "employees": [
+      {
+        "name": "Isabella",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "SUNDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Manicure",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "THURSDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "SATURDAY": {
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "SUNDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Aromatherapy",
+            "hoursAvailability": {
+              "MONDAY": {
+                "10:00": true,
+                "11:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "10:00": false,
+                "11:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "10:00": true,
+                "11:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "THURSDAY": {
+                "10:00": true,
+                "11:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "10:00": true,
+                "11:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "10:00": true,
+                "11:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "SUNDAY": {
+                "10:00": true,
+                "11:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Ethan",
+        "services": [
+          {
+            "serviceName": "Haircut",
+            "hoursAvailability": {
+              "MONDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "SATURDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": true,
+                "12:00": false,
+                "13:30": false,
+                "15:00": true,
+                "16:30": true
+              },
+              "SUNDAY": {
+                "8:30": true,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": false,
+                "15:00": false,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Massage",
+            "hoursAvailability": {
+              "MONDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "TUESDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "THURSDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              },
+              "SATURDAY": {
+                "8:30": true,
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "SUNDAY": {
+                "8:30": false,
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": false
+              }
+            }
+          },
+          {
+            "serviceName": "Skin Care",
+            "hoursAvailability": {
+              "MONDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "TUESDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              },
+              "WEDNESDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "THURSDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              },
+              "FRIDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              },
+              "SATURDAY": {
+                "9:00": false,
+                "10:30": true,
+                "12:00": true,
+                "13:30": true,
+                "15:00": true,
+                "16:30": true
+              },
+              "SUNDAY": {
+                "9:00": true,
+                "10:30": false,
+                "12:00": true,
+                "13:30": true,
+                "15:00": false,
+                "16:30": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "address": "7 Tranquil Avenue",
+    "workingDays": {
+      "MONDAY": "9:00-18:00",
+      "TUESDAY": "9:00-18:00",
+      "WEDNESDAY": "9:00-18:00",
+      "THURSDAY": "9:00-18:00",
+      "FRIDAY": "9:00-18:00",
+      "SATURDAY": "9:00-14:00"
+    }
   }
+
 ]
 

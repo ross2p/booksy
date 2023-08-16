@@ -162,6 +162,7 @@ public class MyFrame extends JFrame {
     public void JListSalon(ListSalon listSalon) {
 
         DefaultListModel<Salon> model = new DefaultListModel<>();
+        listSalon.sortBySalonName();
 
         for (Salon salon : listSalon.getList()) {
             model.addElement(salon);

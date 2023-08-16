@@ -5,10 +5,10 @@ import Salon.Class.Employee;
 import Salon.Class.Salon;
 import Salon.Class.ServiceAvailability;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.DayOfWeek;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.util.*;
 
 public class Reservation {
     private List<Salon> reservationTables = new ArrayList<>();
@@ -70,6 +70,36 @@ public class Reservation {
         }
 
         return reservationTablesToString.toString();
+    }
+    static public String timeToRecord(Days day, String hours) {
+
+        StringBuilder buffer = new StringBuilder();
+
+        DayOfWeek selectedDay = Days.getDayOfWeekFromDay(day);
+        String selectedTime = hours;
+
+        LocalDateTime today = LocalDateTime.now();
+        LocalDateTime selectedDateTime = today
+                .with(selectedDay)
+                .withHour(Integer.parseInt(selectedTime.split(":")[0]))
+                .withMinute(Integer.parseInt(selectedTime.split(":")[1]))
+                .withSecond(0);
+
+        if (selectedDateTime.isBefore(today)) {
+            selectedDateTime = selectedDateTime.plusWeeks(1);
+        }
+
+        Duration durationDifference = Duration.between(today, selectedDateTime);
+
+        long daysDifference = durationDifference.toDays();
+        long hoursDifference = durationDifference.toHoursPart();
+        long minutesDifference = durationDifference.toMinutesPart();
+
+        buffer.append(daysDifference).append("d ");
+        buffer.append(hoursDifference).append("h ");
+        buffer.append(minutesDifference).append("m");
+
+        return buffer.toString();
     }
 
     public List<Salon> getReservationTables() {
