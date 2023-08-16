@@ -23,16 +23,17 @@ public class Reservation {
     }
 
     static public String printReservation(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
-        return "+-------------+--------------------+\n" +
-                "|              𝗥𝗘𝗖𝗢𝗥𝗗              |\n" +
-                "+-------------+--------------------+\n" +
-                "|  Salon name |" + String.format("%-20s", salon.getName()) + "|\n" +
-                "|  Address    |" + String.format("%-20s", salon.getAddress()) + "|\n" +
-                "|  Service    |" + String.format("%-20s", serviceAvailability.getServiceName()) + "|\n" +
-                "|  Master     |" + String.format("%-20s", employee.getName()) + "|\n" +
-                "|  Day        |" + String.format("%-20s", day) + "|\n" +
-                "|  Time       |" + String.format("%-20s", hours) + "|\n" +
-                "+-------------+--------------------+\n";
+        return "+---------------+--------------------+\n" +
+                "|              𝗥𝗘𝗖𝗢𝗥𝗗               |\n" +
+                "+--------------+--------------------+\n" +
+                "|  Salon name  |" + String.format("%-20s", salon.getName()) + "|\n" +
+                "|  Address     |" + String.format("%-20s", salon.getAddress()) + "|\n" +
+                "|  Service     |" + String.format("%-20s", serviceAvailability.getServiceName()) + "|\n" +
+                "|  Master      |" + String.format("%-20s", employee.getName()) + "|\n" +
+                "|  Day         |" + String.format("%-20s", day) + "|\n" +
+                "|  Time        |" + String.format("%-20s", hours) + "|\n" +
+                "|Time to record|" + String.format("%-20s", timeToRecord(day, hours)) + "|\n" +
+                "+--------------+--------------------+\n";
     }
 
     public void add(Salon newElement) {

@@ -13,7 +13,6 @@ public enum Days {
         }
     }
 
-
     static public DayOfWeek getDayOfWeekFromDay(Days day) {
         switch (day) {
             case MONDAY:
