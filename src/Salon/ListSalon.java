@@ -1,5 +1,6 @@
 package Salon;
 
+import Salon.Class.Days;
 import Salon.Class.Employee;
 import Salon.Class.Salon;
 import Salon.Class.ServiceAvailability;
@@ -70,8 +71,31 @@ public class ListSalon {
         }
         return listByName;
     }
+    public boolean makeReservation(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
+        for (Salon s : list) {
 
+            if (s.equals(salon)) {
 
+                for (Employee e : s.getEmployees()) {
+                    if (e.equals(employee)) {
+
+                        for (ServiceAvailability serAva : e.getServices()) {
+
+                            if (serAva.equals(serviceAvailability)) {
+                                if (serAva.getHoursAvailability().get(day).get(hours)) {
+                                    serAva.getHoursAvailability().get(day).replace(hours, false);
+                                    return true;
+                                } else {
+                                    return false;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
     public ListSalon searchByService(String serviceName) {
         ListSalon foundSalons = new ListSalon();
         for (Salon s : list) {
