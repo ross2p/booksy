@@ -1,6 +1,5 @@
 package Salon;
 
-import Salon.Class.Days;
 import Salon.Class.Employee;
 import Salon.Class.Salon;
 import Salon.Class.ServiceAvailability;
@@ -13,7 +12,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class ListSalon {
     private List<Salon> list;
@@ -70,31 +71,6 @@ public class ListSalon {
         return listByName;
     }
 
-    public boolean makeReservation(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
-        for (Salon s : list) {
-
-            if (s.equals(salon)) {
-
-                for (Employee e : s.getEmployees()) {
-                    if (e.equals(employee)) {
-
-                        for (ServiceAvailability serAva : e.getServices()) {
-
-                            if (serAva.equals(serviceAvailability)) {
-                                if (serAva.getHoursAvailability().get(day).get(hours)) {
-                                    serAva.getHoursAvailability().get(day).replace(hours, false);
-                                    return true;
-                                } else {
-                                    return false;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        return false;
-    }
 
     public ListSalon searchByService(String serviceName) {
         ListSalon foundSalons = new ListSalon();
