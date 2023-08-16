@@ -6,8 +6,8 @@ import Salon.Class.Salon;
 import Salon.Class.ServiceAvailability;
 
 import java.time.DayOfWeek;
+import java.time.Duration;
 import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -27,41 +27,49 @@ public class Reservation {
 
     public String printReservation(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
         String localJsonInfo = timeToRecord(day, hours);
-        return  "+--------------+--------------------+\n"+
-                "|               𝗥𝗘𝗖𝗢𝗥𝗗              |\n"+
-                "+--------------+--------------------+\n"+
-                "|  Salon name  |" + String.format("%-20s", salon.getName())+ "|\n"+
-                "|  Address     |"+String.format("%-20s", salon.getAddress())+ "|\n"+
-                "|  Service     |"+String.format("%-20s", serviceAvailability.getServiceName())+"|\n"+
-                "|  Master      |"+String.format("%-20s", employee.getName())+"|\n"+
-                "|  Day         |"+String.format("%-20s", day)+"|\n"+
-                "|  Time        |"+String.format("%-20s", hours)+"|\n"+
-                "|Time to record|"+String.format("%-20s", localJsonInfo)+"|\n"+
+        return "+--------------+--------------------+\n" +
+                "|               𝗥𝗘𝗖𝗢𝗥𝗗              |\n" +
+                "+--------------+--------------------+\n" +
+                "|  Salon name  |" + String.format("%-20s", salon.getName()) + "|\n" +
+                "|  Address     |" + String.format("%-20s", salon.getAddress()) + "|\n" +
+                "|  Service     |" + String.format("%-20s", serviceAvailability.getServiceName()) + "|\n" +
+                "|  Master      |" + String.format("%-20s", employee.getName()) + "|\n" +
+                "|  Day         |" + String.format("%-20s", day) + "|\n" +
+                "|  Time        |" + String.format("%-20s", hours) + "|\n" +
+                "|Time to record|" + String.format("%-20s", localJsonInfo) + "|\n" +
                 "+--------------+--------------------+\n";
     }
-    public String timeToRecord(Days day, String hours){
+
+    public String timeToRecord(Days day, String hours) {
         StringBuilder buffer = new StringBuilder();
 
-            DayOfWeek selectedDay = getDayOfWeekFromDay(day); // Вибраний день (змініть за потребою)
-            String selectedTime = hours; // Вибрана година (змініть за потребою)
+        DayOfWeek selectedDay = getDayOfWeekFromDay(day); // Вибраний день (змініть за потребою)
+        String selectedTime = hours; // Вибрана година (змініть за потребою)
 
-            LocalDateTime today = LocalDateTime.now();
-            LocalDateTime selectedDateTime = today
-                    .with(selectedDay)
-                    .withHour(Integer.parseInt(selectedTime.split(":")[0]))
-                    .withMinute(Integer.parseInt(selectedTime.split(":")[1]))
-                    .withSecond(0);
+        LocalDateTime today = LocalDateTime.now();
+        LocalDateTime selectedDateTime = today
+                .with(selectedDay)
+                .withHour(Integer.parseInt(selectedTime.split(":")[0]))
+                .withMinute(Integer.parseInt(selectedTime.split(":")[1]))
+                .withSecond(0);
 
-            long daysDifference = today.until(selectedDateTime, ChronoUnit.DAYS);
-            long hoursDifference = today.until(selectedDateTime, ChronoUnit.HOURS) % 24;
-            long minutesDifference = today.until(selectedDateTime, ChronoUnit.MINUTES) % 60;
+        if (selectedDateTime.isBefore(today)) {
+            selectedDateTime = selectedDateTime.plusWeeks(1);
+        }
 
-            buffer.append(daysDifference).append("d ");
-            buffer.append(hoursDifference).append("h ");
-            buffer.append(minutesDifference).append("m");
+        Duration durationDifference = Duration.between(today, selectedDateTime);
+
+        long daysDifference = durationDifference.toDays();
+        long hoursDifference = durationDifference.toHoursPart();
+        long minutesDifference = durationDifference.toMinutesPart();
+
+        buffer.append(daysDifference).append("d ");
+        buffer.append(hoursDifference).append("h ");
+        buffer.append(minutesDifference).append("m");
 
         return buffer.toString();
     }
+
     private DayOfWeek getDayOfWeekFromDay(Days day) {
         switch (day) {
             case MONDAY:
@@ -124,7 +132,8 @@ public class Reservation {
     public List<Salon> getReservationTables() {
         return reservationTables;
     }
-    public int size(){
+
+    public int size() {
         return reservationTables.size();
     }
 
