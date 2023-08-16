@@ -362,6 +362,7 @@ public class MyFrame extends JFrame {
             jframe.setSize(400, 400);
             // Container containerAllReservation = new Container();
             JPanel panel = new JPanel();
+            panel.removeAll();
             panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
             panel.setBorder(new EmptyBorder(10, 10, 10, 10));
             for (Salon s : reservation.getReservationTables()) {
