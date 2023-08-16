@@ -26,7 +26,6 @@ public class Reservation {
     }
 
     public String printReservation(Salon salon, Employee employee, ServiceAvailability serviceAvailability, Days day, String hours) {
-        String localJsonInfo = timeToRecord(day, hours);
         return "+--------------+--------------------+\n" +
                 "|               𝗥𝗘𝗖𝗢𝗥𝗗              |\n" +
                 "+--------------+--------------------+\n" +
@@ -36,14 +35,14 @@ public class Reservation {
                 "|  Master      |" + String.format("%-20s", employee.getName()) + "|\n" +
                 "|  Day         |" + String.format("%-20s", day) + "|\n" +
                 "|  Time        |" + String.format("%-20s", hours) + "|\n" +
-                "|Time to record|" + String.format("%-20s", localJsonInfo) + "|\n" +
+                "|Time to record|" + String.format("%-20s", timeToRecord(day, hours)) + "|\n" +
                 "+--------------+--------------------+\n";
     }
 
-    public String timeToRecord(Days day, String hours) {
+    static public String timeToRecord(Days day, String hours) {
         StringBuilder buffer = new StringBuilder();
 
-        DayOfWeek selectedDay = getDayOfWeekFromDay(day); // Вибраний день (змініть за потребою)
+        DayOfWeek selectedDay = Days.getDayOfWeekFromDay(day); // Вибраний день (змініть за потребою)
         String selectedTime = hours; // Вибрана година (змініть за потребою)
 
         LocalDateTime today = LocalDateTime.now();
@@ -68,27 +67,6 @@ public class Reservation {
         buffer.append(minutesDifference).append("m");
 
         return buffer.toString();
-    }
-
-    private DayOfWeek getDayOfWeekFromDay(Days day) {
-        switch (day) {
-            case MONDAY:
-                return DayOfWeek.MONDAY;
-            case TUESDAY:
-                return DayOfWeek.TUESDAY;
-            case WEDNESDAY:
-                return DayOfWeek.WEDNESDAY;
-            case THURSDAY:
-                return DayOfWeek.THURSDAY;
-            case FRIDAY:
-                return DayOfWeek.FRIDAY;
-            case SATURDAY:
-                return DayOfWeek.SATURDAY;
-            case SUNDAY:
-                return DayOfWeek.SUNDAY;
-            default:
-                throw new IllegalArgumentException("Невідомий день: " + day);
-        }
     }
 
 

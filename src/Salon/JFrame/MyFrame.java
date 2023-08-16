@@ -373,7 +373,7 @@ public class MyFrame extends JFrame {
                                 String hour = hoursMapEntry.getKey();
 
                                 Container containerElement = new Container();
-                                containerElement.setLayout(new GridLayout(8,2,0,0));
+                                containerElement.setLayout(new GridLayout(9,2,0,0));
                                 containerElement.add(new Label("Salon name: "));
                                 containerElement.add(new Label("<html><font color='blue'>" + s.getName()+"</html>"));
                                 containerElement.add(new Label("Address: "));
@@ -386,6 +386,8 @@ public class MyFrame extends JFrame {
                                 containerElement.add(new Label("<html><font color='blue'>" + day+"</html>"));
                                 containerElement.add(new Label("Time: "));
                                 containerElement.add(new Label("<html><font color='blue'>" + hour+"</html>"));
+                                containerElement.add(new Label("Time to record: "));
+                                containerElement.add(new Label("<html><font color='blue'>" + Reservation.timeToRecord(day, hour)+"</html>"));
                                 GridBagConstraints gbc = new GridBagConstraints();
 
                                 JLabel label = new JLabel("");
