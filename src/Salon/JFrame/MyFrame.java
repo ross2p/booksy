@@ -42,12 +42,15 @@ public class MyFrame extends JFrame {
     private JList<ServiceAvailability> jListServiceAvailability = new JList<>(new DefaultListModel<>());
     private JList<Days> jListDays;
     private JList<Map.Entry<String, Boolean>> jListHours;
+    private String name;
+    private String surname;
 
-    public MyFrame() {
+    public MyFrame(String name, String surname) {
         super("Salon");
         super.setSize(1100, 850);
         super.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        this.name = name;
+        this.surname = surname;
 
         JLabel titleLabel = new JLabel("Booksy");
         titleLabel.setFont(new Font("Arial", Font.BOLD, 24));
@@ -354,7 +357,7 @@ public class MyFrame extends JFrame {
     public void setButtonAccount(){
 
         account.addActionListener(e -> {
-            JFrame jframe = new JFrame("Your Account");
+            JFrame jframe = new JFrame(name+surname);
             jframe.setSize(400, 400);
             // Container containerAllReservation = new Container();
             JPanel panel = new JPanel();
