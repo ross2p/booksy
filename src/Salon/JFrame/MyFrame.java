@@ -78,11 +78,7 @@ public class MyFrame extends JFrame {
 
         searchButton.addActionListener(e -> {
             ListSalon changedList;
-            if (searchByNameSalon.isSelected()) {
-                changedList = list.searchByNameSalon(searchField.getText());
-            } else {
-                changedList = list.searchByService(searchField.getText());
-            }
+            changedList = list.searchByNameSalon(searchField.getText());
             JListSalon(changedList);
             JListEmployee(new ArrayList<>());
             JListServiceAvailability(new ArrayList<>());
